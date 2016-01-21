@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="uwalcsdl.github.io" content="">
 
-    <title>{{pageTitle}}</title>
+    <title>UWA LCS DL</title>
 
     <!-- jQuery Version 1.11.1 -->
     <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
@@ -33,6 +33,15 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <!-- Find unit redirect script
+            Redirects to /units/$InputValue -->
+    <script type="text/javascript">
+        function unitRedirect(){
+            var unitCode = $('#unitCode').val();
+            window.location = 'units/'+unitCode+'.html';
+            return false;
+        }
+    </script>
 
 </head>
 
@@ -75,6 +84,13 @@
 
         <div class="row">
             <div class="col-sm-12 text-center">
-                <h1>{{pageTitle}} </h1>
-                <ul class="list-unstyled">
-
+                <h1>Find Unit Lectures:</h1>
+                <form class="form-inline">
+                  <div class="form-group">
+                    <label class="sr-only" for="unitCode">Unit to find</label>
+                    <div class="input-group">
+                      <input type="text" class="form-control" id="unitCode" nanme="unitCoode" placeholder="UNIT1001">
+                    </div>
+                  </div>
+                <input type="button" id="findUnitForm" name="submit" onclick="unitRedirect()" value="Go to unit" class="btn btn-primary"/>
+                </form>

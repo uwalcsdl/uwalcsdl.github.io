@@ -15,7 +15,7 @@ def getHashesFromDir(url):
 	links = text.split("<a href=\"")
 	links = links[6:]
 	links.reverse()
-	
+
 	hashLinks = []
 	for link in links:
 		hashLinks.append(link[0:36])
@@ -181,7 +181,7 @@ def saveUnitSemesterLinks( year, semester,
             <div class="col-md-4"></div>
             <div class="col-md-1">{0}:</div>
             <div class="col-md-3">
-            	<div class="col-md-4"><a href="/{2}/{0}.html">Downloads</a></div>
+            	<div class="col-md-4"><a href="{2}/{0}.html">Downloads</a></div>
                 <div class="col-md-4"><a href="{1}">Echo</a></div>
             </div>
             <div class="col-md-4"></div>

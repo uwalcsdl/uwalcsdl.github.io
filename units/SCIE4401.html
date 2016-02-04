@@ -2,14 +2,14 @@
 <html lang="en">
 
 <head>
-
+    <base = href="file:///home/alastair/Desktop/uwalcsdl"/>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="uwalcsdl.github.io" content="">
 
-    <title>SCIE4401 Lectures</title>
+    <title>SCIE4401</title>
 
     <!-- jQuery Version 1.11.1 -->
     <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
@@ -33,7 +33,7 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-
+    <script src="/uwalcsdl.js"></script>
 </head>
 
 <body>
@@ -49,17 +49,19 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="../index.html">UWA LCS DL</a>
+                <a class="navbar-brand" href="/index.html">UWA LCS DL</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
+                <ul class="nav navbar-nav" id="navbar-list">
                     <li>
-                        <a href="../unitList.html">Units</a>
+                        <a href="/unitList.html">Units</a>
                     </li>
                     <li>
-                        <a href="../index.html">Search</a>
+                        <a href="/index.html">Search</a>
                     </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
                     <li>
                         <a href="https://github.com/uwalcsdl/uwalcsdl.github.io">GitHub</a>
                     </li>
@@ -69,24 +71,267 @@
         </div>
         <!-- /.container -->
     </nav>
-
+    <script type="text/javascript">
+        getUnitShortcuts();
+    </script>
     <!-- Page Content -->
     <div class="container"> 
 
         <div class="row">
-            <div class="col-sm-12 text-center">
-                <h1>SCIE4401 Lectures </h1>
-                <ul class="list-unstyled">
+            <div class="col-sm-12 text-center" id="unit-title-div">
+                <h1>SCIE4401 Lectures: </h1>
+            </div>
+            <script type="text/javascript">addUnitShortcutButton();</script>
+        </div>
 
-<li><a download="SCIE4401 2015-07-28 9AM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1531/2/7ef648e4-8ae0-4c61-ac8b-04aca806e90b/audio-vga.m4v">2015-07-28 9AM</a></li>
-<li><a download="SCIE4401 2015-07-28 1PM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1531/2/e495563f-52c8-4586-b37b-e30396398d78/audio-vga.m4v">2015-07-28 1PM</a></li>
-<li><a download="SCIE4401 2015-08-11 9AM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1533/2/387842c7-7ae2-48b5-be58-c5ab3b294de7/audio-vga.m4v">2015-08-11 9AM</a></li>
-<li><a download="SCIE4401 2015-08-11 1PM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1533/2/e9a9ec80-1f57-4026-95c8-34c6c0f2275f/audio-vga.m4v">2015-08-11 1PM</a></li>
-<li><a download="SCIE4401 2015-09-08 9AM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1537/2/06bc486d-0ac3-48bf-b443-060e9014fd4d/audio-vga.m4v">2015-09-08 9AM</a></li>
-<li><a download="SCIE4401 2015-09-08 1PM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1537/2/f6af4dec-a1bc-43bf-b5d6-d2c6a7f1b692/audio-vga.m4v">2015-09-08 1PM</a></li>
-<li><a download="SCIE4401 2015-09-22 1PM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1539/2/34ab5869-dec7-4d72-9985-f06689d44f65/audio-vga.m4v">2015-09-22 1PM</a></li>
-<li><a download="SCIE4401 2015-09-22 9AM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1539/2/50d93f7c-458d-4640-8a1a-a7be9abdc737/audio-vga.m4v">2015-09-22 9AM</a></li>
-<li><a download="SCIE4401 2015-10-13 1PM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1542/2/199f732b-ecb6-483c-97be-8f4f960922fc/audio-vga.m4v">2015-10-13 1PM</a></li>
-<li><a download="SCIE4401 2015-10-13 9AM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1542/2/f6e6b8f2-765b-47c4-9c94-6e9c6e6160ef/audio-vga.m4v">2015-10-13 9AM</a></li>
-<li><a download="SCIE4401 2015-10-27 1PM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1544/2/eb6df4c9-6ec6-465c-9b1d-56c817b11b5a/audio-vga.m4v">2015-10-27 1PM</a></li>
-<li><a download="SCIE4401 2015-10-27 9AM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1544/2/ef1d1eab-f555-4f77-a951-1cebb1f64858/audio-vga.m4v">2015-10-27 9AM</a></li>
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">9AM Tuesday</div>
+                <div class="col-sm-12">28-July-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: GENERAL PURPOSE BUILDING 3, Simmonds Lecture Theatre [235:G01]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1531/2/7ef648e4-8ae0-4c61-ac8b-04aca806e90b/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">1PM Tuesday</div>
+                <div class="col-sm-12">28-July-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: GENERAL PURPOSE BUILDING 3, Simmonds Lecture Theatre [235:G01]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1531/2/e495563f-52c8-4586-b37b-e30396398d78/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">9AM Tuesday</div>
+                <div class="col-sm-12">11-August-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: GENERAL PURPOSE BUILDING 3, Simmonds Lecture Theatre [235:G01]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1533/2/387842c7-7ae2-48b5-be58-c5ab3b294de7/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">1PM Tuesday</div>
+                <div class="col-sm-12">11-August-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: GENERAL PURPOSE BUILDING 3, Simmonds Lecture Theatre [235:G01]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1533/2/e9a9ec80-1f57-4026-95c8-34c6c0f2275f/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">9AM Tuesday</div>
+                <div class="col-sm-12">08-September-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: GENERAL PURPOSE BUILDING 3, Simmonds Lecture Theatre [235:G01]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1537/2/06bc486d-0ac3-48bf-b443-060e9014fd4d/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">1PM Tuesday</div>
+                <div class="col-sm-12">08-September-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: GENERAL PURPOSE BUILDING 3, Simmonds Lecture Theatre [235:G01]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1537/2/f6af4dec-a1bc-43bf-b5d6-d2c6a7f1b692/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">1PM Tuesday</div>
+                <div class="col-sm-12">22-September-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: GENERAL PURPOSE BUILDING 3, Simmonds Lecture Theatre [235:G01]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1539/2/34ab5869-dec7-4d72-9985-f06689d44f65/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">9AM Tuesday</div>
+                <div class="col-sm-12">22-September-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: GENERAL PURPOSE BUILDING 3, Simmonds Lecture Theatre [235:G01]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1539/2/50d93f7c-458d-4640-8a1a-a7be9abdc737/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">1PM Tuesday</div>
+                <div class="col-sm-12">13-October-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: GENERAL PURPOSE BUILDING 3, Simmonds Lecture Theatre [235:G01]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1542/2/199f732b-ecb6-483c-97be-8f4f960922fc/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">9AM Tuesday</div>
+                <div class="col-sm-12">13-October-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: GENERAL PURPOSE BUILDING 3, Simmonds Lecture Theatre [235:G01]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1542/2/f6e6b8f2-765b-47c4-9c94-6e9c6e6160ef/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">1PM Tuesday</div>
+                <div class="col-sm-12">27-October-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: GENERAL PURPOSE BUILDING 3, Simmonds Lecture Theatre [235:G01]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1544/2/eb6df4c9-6ec6-465c-9b1d-56c817b11b5a/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">9AM Tuesday</div>
+                <div class="col-sm-12">27-October-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: GENERAL PURPOSE BUILDING 3, Simmonds Lecture Theatre [235:G01]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1544/2/ef1d1eab-f555-4f77-a951-1cebb1f64858/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        

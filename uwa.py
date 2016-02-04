@@ -14,7 +14,8 @@ def getHashesFromDir(url):
 
 	links = text.split("<a href=\"")
 	links = links[6:]
-
+	links.reverse()
+	
 	hashLinks = []
 	for link in links:
 		hashLinks.append(link[0:36])
@@ -31,8 +32,6 @@ def checkYearWeekDay( year, week, day):
 		ISO week number, valid range: 1 to 53
 	day : int
 		ISO weekda, valid range: 1 (Monday) to 7(Sunday)
-	lectureHash : string
-		Name of lecture's parent directory (e.g. 01234567-89ab-cdef-0123-456789abcdef)
 
 	Raises
 	------
@@ -133,21 +132,31 @@ class LectureXML:
 	def getLectureVideoURL(self):
 		return self.url + 'audio-vga.m4v'
 
-	def getLectureTime(self):
+	def getLectureTimeDate(self):
+		""" Returns a tuple (time,date) which is suitable for printing:
+		time : string
+			time and day of video (e.g. "9AM Monday")
+		date : string
+			day month year of video (e.g. "29 July 2015")
+		"""
 		time = self.tree.find('presentation-properties').find('start-timestamp')
 		time = datetime.strptime(time.text, "%d-%b-%Y %H:%M:%S")
 		time = time + timedelta(minutes=2) #Lecture recordings start 2min prior to Lecture time
-		date = time.strftime("%Y-%m-%d ")
-		time = time.strftime("%I%p")
+		date = time.strftime("%d %B %Y ")
+		time = time.strftime("%I%p %A")
 		if time[0] == '0':
 			time = time[1:]
-		return date+time
+		return time, date
 
+	def getLectureLocation(self):
+		location = self.tree.find('presentation-properties').find('location')
+		return location.text
  
 def saveUnitSemesterLinks( year, semester, 
-						   fileName='unitList.html', 
-						   template='unitTemplate.html',
-						   unitDir='units'):
+						   unitListFileName='unitList.html',
+						   unitListTemplateFileName='unitListTemplate.html',
+						   unitTemplateFileName='unitTemplate.html',
+						   unitDirName='units'):
 	"""Fetches all units in a given semester and sets up unitCode.html files for each one.
 
 	Parameters
@@ -156,15 +165,34 @@ def saveUnitSemesterLinks( year, semester,
 		two digit abbreviation of Year in which the units ran
 	semester : string
 		Semester in which the units ran
-	fileName : string
-		Location of HTML file to append list of units to.
-	template : string
+	unitListFileName : string
+		Location of HTML file to add list of units to.
+	unitListTemplateFileName : string
+		File containing template for unitListFileName
+	unitTemplateFileName : string
 		Location of HTML template for unitCode.html files.
-	unitDir : string
+	unitDirName : string
 		Directory in which to place unitCode.html files.
 	"""
+
+	# Use .format( [unitCode], [echoLink], [unitDir]) with unitHTML string
+	unitHTML = """
+		<div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-1">{0}:</div>
+            <div class="col-md-3">
+            	<div class="col-md-4"><a href="/{2}/{0}.html">Downloads</a></div>
+                <div class="col-md-4"><a href="{1}">Echo</a></div>
+            </div>
+            <div class="col-md-4"></div>
+        </div>
+        """
+
 	validUnit = re.compile('[a-zA-Z]{4}[0-9]{4}')
+
 	unitHashes = getHashesFromDir(baseURL + 'sections/')
+
+	# Fetch unit info from retrieved hashes
 	output = []
 	for i, unitHash in enumerate(unitHashes):
 		xml = UnitXML(unitHash)
@@ -181,20 +209,23 @@ def saveUnitSemesterLinks( year, semester,
 			print( percent + "%" +" complete")
 	output.sort()
 
+	# Write out unit.html file links to unitListFile
 	print("Fetched "+str(len(output))+" units, writing to file...")
-	unitListFile = open(fileName, 'a')
+	unitListTemplateFile = open(unitListTemplateFileName, 'r')
+	unitListFileHTML = unitListTemplateFile.read()
 	for unit in output:
-		unitLine = "<li> {0}      <a href=\"{2}/{0}.html\">Download</a>     <a href=\"{1}\">View Online</a></li>".format(unit[0], unit[1],unitDir)
-		unitListFile.write(unitLine)
+		unitListFileHTML += unitHTML.format(unit[0], unit[1],unitDirName)
+	unitListFile = open(unitListFileName, 'w')
+	unitListFile.write(unitListFileHTML)
 	unitListFile.close()
 
-	templateFile = open(template, 'r')
-	template = templateFile.read()
-	templateFile.close()
-
+	# Write out individual unitCode.html files in unitDirName
+	unitTemplateFile = open(unitTemplateFileName, 'r')
+	template = unitTemplateFile.read()
+	unitTemplateFile.close()
 	for unit in output:
-		unitPage = open(unitDir+'/'+unit[0]+'.html', 'w')
-		unitTemplate = template.replace('{{pageTitle}}', unit[0]+' Lectures')
+		unitPage = open(unitDirName+'/'+unit[0]+'.html', 'w')
+		unitTemplate = template.replace('{{pageTitle}}', unit[0])
 		unitPage.write(unitTemplate)
 		unitPage.close()
 
@@ -210,10 +241,12 @@ def fetchDaysUnits( year, week, day):
 		unitCode = xml.getLectureUnit()
 		if unitHasPage(unitCode):
 			lectureURL = xml.getLectureVideoURL()
-			lectureDateTime = xml.getLectureTime()
-			appendLecture(unitCode, lectureURL, lectureDateTime)
+			lectureDayTime, lectureDate = xml.getLectureTimeDate()
+			lectureLocation = xml.getLectureLocation()
+			appendLecture(unitCode, lectureURL, lectureDayTime, lectureDate, lectureLocation)
 
 def unitHasPage(unitCode):
+	"""Checks a html file exists for the given unitCode in /units/"""
 	return os.path.isfile('units/'+unitCode+'.html')
 
 def fetchWeeksUnits( year, week):
@@ -224,8 +257,30 @@ def fetchWeeksUnits( year, week):
 def addUnit(unitCode):
 	pass
 
-def appendLecture(unitCode, lectureURL, lectureDateTime):
+def appendLecture(unitCode, lectureURL, lectureDayTime, lectureDate, lectureLocation):
+	lectureHTML = """
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">{0}</div>
+                <div class="col-sm-12">{1}</div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">{2}</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="{3}">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        """
+	link = lectureHTML.format(lectureDayTime, lectureDate, lectureLocation, lectureURL)
 	unitPage = open('units/'+unitCode+'.html', 'a')
-	link = '<li><a download="{1} {2}.m4v" href="{0}">{2}</a></li>\n'.format(lectureURL, unitCode, lectureDateTime)
 	unitPage.write(link)
 	unitPage.close()

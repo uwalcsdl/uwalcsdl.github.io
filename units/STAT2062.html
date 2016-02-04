@@ -2,14 +2,14 @@
 <html lang="en">
 
 <head>
-
+    <base = href="file:///home/alastair/Desktop/uwalcsdl"/>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="uwalcsdl.github.io" content="">
 
-    <title>STAT2062 Lectures</title>
+    <title>STAT2062</title>
 
     <!-- jQuery Version 1.11.1 -->
     <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
@@ -33,7 +33,7 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-
+    <script src="/uwalcsdl.js"></script>
 </head>
 
 <body>
@@ -49,17 +49,19 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="../index.html">UWA LCS DL</a>
+                <a class="navbar-brand" href="/index.html">UWA LCS DL</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
+                <ul class="nav navbar-nav" id="navbar-list">
                     <li>
-                        <a href="../unitList.html">Units</a>
+                        <a href="/unitList.html">Units</a>
                     </li>
                     <li>
-                        <a href="../index.html">Search</a>
+                        <a href="/index.html">Search</a>
                     </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
                     <li>
                         <a href="https://github.com/uwalcsdl/uwalcsdl.github.io">GitHub</a>
                     </li>
@@ -69,26 +71,309 @@
         </div>
         <!-- /.container -->
     </nav>
-
+    <script type="text/javascript">
+        getUnitShortcuts();
+    </script>
     <!-- Page Content -->
     <div class="container"> 
 
         <div class="row">
-            <div class="col-sm-12 text-center">
-                <h1>STAT2062 Lectures </h1>
-                <ul class="list-unstyled">
+            <div class="col-sm-12 text-center" id="unit-title-div">
+                <h1>STAT2062 Lectures: </h1>
+            </div>
+            <script type="text/javascript">addUnitShortcutButton();</script>
+        </div>
 
-<li><a download="STAT2062 2015-07-27 12PM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1531/1/090c5c59-8b11-4ff3-9d98-ae37741be6b3/audio-vga.m4v">2015-07-27 12PM</a></li>
-<li><a download="STAT2062 2015-07-30 2PM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1531/4/c0e8f3fb-97dc-47e3-b958-859edacf97e1/audio-vga.m4v">2015-07-30 2PM</a></li>
-<li><a download="STAT2062 2015-08-06 2PM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1532/4/ce0b7a69-0678-4a9d-b355-5b61f45b4912/audio-vga.m4v">2015-08-06 2PM</a></li>
-<li><a download="STAT2062 2015-08-13 2PM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1533/4/85e88a68-135d-4c00-a6f1-4960a4ee6911/audio-vga.m4v">2015-08-13 2PM</a></li>
-<li><a download="STAT2062 2015-08-20 2PM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1534/4/30435c57-0865-48ec-b473-e5958a87f38d/audio-vga.m4v">2015-08-20 2PM</a></li>
-<li><a download="STAT2062 2015-08-27 2PM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1535/4/67a8404b-fbbb-4380-bb04-f9e7645005ea/audio-vga.m4v">2015-08-27 2PM</a></li>
-<li><a download="STAT2062 2015-09-03 2PM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1536/4/c792ba3c-1855-4ebd-943f-3090f3f822ca/audio-vga.m4v">2015-09-03 2PM</a></li>
-<li><a download="STAT2062 2015-09-10 2PM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1537/4/743d39d4-fc8f-400a-b5e6-b1f6aa18517c/audio-vga.m4v">2015-09-10 2PM</a></li>
-<li><a download="STAT2062 2015-09-17 2PM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1538/4/bdbcfb7f-904f-4e92-bed6-ee7a51f9d09c/audio-vga.m4v">2015-09-17 2PM</a></li>
-<li><a download="STAT2062 2015-09-24 2PM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1539/4/4cd7ae96-ba58-434f-9011-f9b98dc1fc53/audio-vga.m4v">2015-09-24 2PM</a></li>
-<li><a download="STAT2062 2015-10-08 2PM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1541/4/e4738ca0-197d-43e5-8e9b-62b08a072535/audio-vga.m4v">2015-10-08 2PM</a></li>
-<li><a download="STAT2062 2015-10-15 2PM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1542/4/7946138c-3f5d-46c7-a79b-c82b87b45870/audio-vga.m4v">2015-10-15 2PM</a></li>
-<li><a download="STAT2062 2015-10-22 2PM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1543/4/dd1ca896-aaff-46e3-97d6-c1b7c4fae83e/audio-vga.m4v">2015-10-22 2PM</a></li>
-<li><a download="STAT2062 2015-10-29 2PM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1544/4/6b51f96a-d7fd-48d4-b72a-44b7deff53cc/audio-vga.m4v">2015-10-29 2PM</a></li>
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">12PM Monday</div>
+                <div class="col-sm-12">27-July-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: MATHEMATICS, Blakers Lecture Theatre [223:G18]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1531/1/090c5c59-8b11-4ff3-9d98-ae37741be6b3/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">2PM Thursday</div>
+                <div class="col-sm-12">30-July-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: MATHEMATICS, Maths Lecture Room 1 [223:G17]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1531/4/c0e8f3fb-97dc-47e3-b958-859edacf97e1/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">2PM Thursday</div>
+                <div class="col-sm-12">06-August-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: MATHEMATICS, Maths Lecture Room 1 [223:G17]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1532/4/ce0b7a69-0678-4a9d-b355-5b61f45b4912/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">2PM Thursday</div>
+                <div class="col-sm-12">13-August-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: MATHEMATICS, Maths Lecture Room 1 [223:G17]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1533/4/85e88a68-135d-4c00-a6f1-4960a4ee6911/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">2PM Thursday</div>
+                <div class="col-sm-12">20-August-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: MATHEMATICS, Maths Lecture Room 1 [223:G17]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1534/4/30435c57-0865-48ec-b473-e5958a87f38d/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">2PM Thursday</div>
+                <div class="col-sm-12">27-August-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: MATHEMATICS, Maths Lecture Room 1 [223:G17]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1535/4/67a8404b-fbbb-4380-bb04-f9e7645005ea/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">2PM Thursday</div>
+                <div class="col-sm-12">03-September-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: MATHEMATICS, Maths Lecture Room 1 [223:G17]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1536/4/c792ba3c-1855-4ebd-943f-3090f3f822ca/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">2PM Thursday</div>
+                <div class="col-sm-12">10-September-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: MATHEMATICS, Maths Lecture Room 1 [223:G17]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1537/4/743d39d4-fc8f-400a-b5e6-b1f6aa18517c/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">2PM Thursday</div>
+                <div class="col-sm-12">17-September-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: MATHEMATICS, Maths Lecture Room 1 [223:G17]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1538/4/bdbcfb7f-904f-4e92-bed6-ee7a51f9d09c/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">2PM Thursday</div>
+                <div class="col-sm-12">24-September-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: MATHEMATICS, Maths Lecture Room 1 [223:G17]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1539/4/4cd7ae96-ba58-434f-9011-f9b98dc1fc53/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">2PM Thursday</div>
+                <div class="col-sm-12">08-October-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: MATHEMATICS, Maths Lecture Room 1 [223:G17]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1541/4/e4738ca0-197d-43e5-8e9b-62b08a072535/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">2PM Thursday</div>
+                <div class="col-sm-12">15-October-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: MATHEMATICS, Maths Lecture Room 1 [223:G17]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1542/4/7946138c-3f5d-46c7-a79b-c82b87b45870/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">2PM Thursday</div>
+                <div class="col-sm-12">22-October-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: MATHEMATICS, Maths Lecture Room 1 [223:G17]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1543/4/dd1ca896-aaff-46e3-97d6-c1b7c4fae83e/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">2PM Thursday</div>
+                <div class="col-sm-12">29-October-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: MATHEMATICS, Maths Lecture Room 1 [223:G17]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1544/4/6b51f96a-d7fd-48d4-b72a-44b7deff53cc/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        

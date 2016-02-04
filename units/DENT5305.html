@@ -2,14 +2,14 @@
 <html lang="en">
 
 <head>
-
+    <base = href="file:///home/alastair/Desktop/uwalcsdl"/>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="uwalcsdl.github.io" content="">
 
-    <title>DENT5305 Lectures</title>
+    <title>DENT5305</title>
 
     <!-- jQuery Version 1.11.1 -->
     <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
@@ -33,7 +33,7 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-
+    <script src="/uwalcsdl.js"></script>
 </head>
 
 <body>
@@ -49,17 +49,19 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="../index.html">UWA LCS DL</a>
+                <a class="navbar-brand" href="/index.html">UWA LCS DL</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
+                <ul class="nav navbar-nav" id="navbar-list">
                     <li>
-                        <a href="../unitList.html">Units</a>
+                        <a href="/unitList.html">Units</a>
                     </li>
                     <li>
-                        <a href="../index.html">Search</a>
+                        <a href="/index.html">Search</a>
                     </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
                     <li>
                         <a href="https://github.com/uwalcsdl/uwalcsdl.github.io">GitHub</a>
                     </li>
@@ -69,21 +71,204 @@
         </div>
         <!-- /.container -->
     </nav>
-
+    <script type="text/javascript">
+        getUnitShortcuts();
+    </script>
     <!-- Page Content -->
     <div class="container"> 
 
         <div class="row">
-            <div class="col-sm-12 text-center">
-                <h1>DENT5305 Lectures </h1>
-                <ul class="list-unstyled">
+            <div class="col-sm-12 text-center" id="unit-title-div">
+                <h1>DENT5305 Lectures: </h1>
+            </div>
+            <script type="text/javascript">addUnitShortcutButton();</script>
+        </div>
 
-<li><a download="DENT5305 2015-07-31 1PM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1531/5/9ce6fc22-9832-4281-ac02-a71a9b408900/audio-vga.m4v">2015-07-31 1PM</a></li>
-<li><a download="DENT5305 2015-08-06 10AM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1532/4/ab67f1d0-d54e-44ce-b7b3-409f466ec720/audio-vga.m4v">2015-08-06 10AM</a></li>
-<li><a download="DENT5305 2015-08-07 1PM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1532/5/ca14e8ce-bb8b-49a4-8acd-67fae7d0bee6/audio-vga.m4v">2015-08-07 1PM</a></li>
-<li><a download="DENT5305 2015-08-14 1PM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1533/5/156788e7-f9f4-4068-943c-62b928eb8cf7/audio-vga.m4v">2015-08-14 1PM</a></li>
-<li><a download="DENT5305 2015-08-21 1PM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1534/5/e34e6b59-e7cb-4690-9826-e9d0b8b404d8/audio-vga.m4v">2015-08-21 1PM</a></li>
-<li><a download="DENT5305 2015-08-28 1PM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1535/5/50abaf9d-2ae9-4ea9-a159-e9fbdec60040/audio-vga.m4v">2015-08-28 1PM</a></li>
-<li><a download="DENT5305 2015-09-04 1PM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1536/5/93ee19cf-e629-4a55-812f-2986f407e458/audio-vga.m4v">2015-09-04 1PM</a></li>
-<li><a download="DENT5305 2015-09-11 1PM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1537/5/e63eb926-ede9-4cde-97e0-8db9395b39b9/audio-vga.m4v">2015-09-11 1PM</a></li>
-<li><a download="DENT5305 2015-09-25 1PM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1539/5/72ae22f6-a64e-4760-b59d-ed97414726c2/audio-vga.m4v">2015-09-25 1PM</a></li>
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">1PM Friday</div>
+                <div class="col-sm-12">31-July-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: ORAL HEALTH CENTRE OF WA, Kenneth J G Sutherland Lecture Theatre [500:G15]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1531/5/9ce6fc22-9832-4281-ac02-a71a9b408900/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">10AM Thursday</div>
+                <div class="col-sm-12">06-August-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: ORAL HEALTH CENTRE OF WA, Kenneth J G Sutherland Lecture Theatre [500:G15]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1532/4/ab67f1d0-d54e-44ce-b7b3-409f466ec720/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">1PM Friday</div>
+                <div class="col-sm-12">07-August-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: ORAL HEALTH CENTRE OF WA, Kenneth J G Sutherland Lecture Theatre [500:G15]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1532/5/ca14e8ce-bb8b-49a4-8acd-67fae7d0bee6/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">1PM Friday</div>
+                <div class="col-sm-12">14-August-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: ORAL HEALTH CENTRE OF WA, Kenneth J G Sutherland Lecture Theatre [500:G15]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1533/5/156788e7-f9f4-4068-943c-62b928eb8cf7/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">1PM Friday</div>
+                <div class="col-sm-12">21-August-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: ORAL HEALTH CENTRE OF WA, Kenneth J G Sutherland Lecture Theatre [500:G15]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1534/5/e34e6b59-e7cb-4690-9826-e9d0b8b404d8/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">1PM Friday</div>
+                <div class="col-sm-12">28-August-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: ORAL HEALTH CENTRE OF WA, Kenneth J G Sutherland Lecture Theatre [500:G15]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1535/5/50abaf9d-2ae9-4ea9-a159-e9fbdec60040/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">1PM Friday</div>
+                <div class="col-sm-12">04-September-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: ORAL HEALTH CENTRE OF WA, Kenneth J G Sutherland Lecture Theatre [500:G15]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1536/5/93ee19cf-e629-4a55-812f-2986f407e458/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">1PM Friday</div>
+                <div class="col-sm-12">11-September-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: ORAL HEALTH CENTRE OF WA, Kenneth J G Sutherland Lecture Theatre [500:G15]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1537/5/e63eb926-ede9-4cde-97e0-8db9395b39b9/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">1PM Friday</div>
+                <div class="col-sm-12">25-September-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: ORAL HEALTH CENTRE OF WA, Kenneth J G Sutherland Lecture Theatre [500:G15]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1539/5/72ae22f6-a64e-4760-b59d-ed97414726c2/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        

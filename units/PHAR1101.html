@@ -2,14 +2,14 @@
 <html lang="en">
 
 <head>
-
+    <base = href="file:///home/alastair/Desktop/uwalcsdl"/>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="uwalcsdl.github.io" content="">
 
-    <title>PHAR1101 Lectures</title>
+    <title>PHAR1101</title>
 
     <!-- jQuery Version 1.11.1 -->
     <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
@@ -33,7 +33,7 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-
+    <script src="/uwalcsdl.js"></script>
 </head>
 
 <body>
@@ -49,17 +49,19 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="../index.html">UWA LCS DL</a>
+                <a class="navbar-brand" href="/index.html">UWA LCS DL</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
+                <ul class="nav navbar-nav" id="navbar-list">
                     <li>
-                        <a href="../unitList.html">Units</a>
+                        <a href="/unitList.html">Units</a>
                     </li>
                     <li>
-                        <a href="../index.html">Search</a>
+                        <a href="/index.html">Search</a>
                     </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
                     <li>
                         <a href="https://github.com/uwalcsdl/uwalcsdl.github.io">GitHub</a>
                     </li>
@@ -69,41 +71,624 @@
         </div>
         <!-- /.container -->
     </nav>
-
+    <script type="text/javascript">
+        getUnitShortcuts();
+    </script>
     <!-- Page Content -->
     <div class="container"> 
 
         <div class="row">
-            <div class="col-sm-12 text-center">
-                <h1>PHAR1101 Lectures </h1>
-                <ul class="list-unstyled">
+            <div class="col-sm-12 text-center" id="unit-title-div">
+                <h1>PHAR1101 Lectures: </h1>
+            </div>
+            <script type="text/javascript">addUnitShortcutButton();</script>
+        </div>
 
-<li><a download="PHAR1101 2015-07-29 10AM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1531/3/320098b0-bd5a-48ff-8a9a-7d396d41e72e/audio-vga.m4v">2015-07-29 10AM</a></li>
-<li><a download="PHAR1101 2015-07-29 10AM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1531/3/e5bf14be-17a9-491c-9823-cb7f998af063/audio-vga.m4v">2015-07-29 10AM</a></li>
-<li><a download="PHAR1101 2015-07-30 9AM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1531/4/6d5d4be2-5115-4867-a008-d6b7fd410598/audio-vga.m4v">2015-07-30 9AM</a></li>
-<li><a download="PHAR1101 2015-07-30 9AM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1531/4/c2c21c58-ef47-4b40-b9ad-53267367db37/audio-vga.m4v">2015-07-30 9AM</a></li>
-<li><a download="PHAR1101 2015-08-05 10AM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1532/3/369b4fd5-42fd-4179-8746-5cb86e530f66/audio-vga.m4v">2015-08-05 10AM</a></li>
-<li><a download="PHAR1101 2015-08-05 10AM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1532/3/dafa8967-aa56-4377-9a3f-74d8303671ed/audio-vga.m4v">2015-08-05 10AM</a></li>
-<li><a download="PHAR1101 2015-08-06 9AM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1532/4/83bca323-e470-4d2b-ac8c-96461097b20c/audio-vga.m4v">2015-08-06 9AM</a></li>
-<li><a download="PHAR1101 2015-08-06 9AM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1532/4/b8c2d554-3fe3-49f0-8d90-c2f67a0e836e/audio-vga.m4v">2015-08-06 9AM</a></li>
-<li><a download="PHAR1101 2015-08-12 10AM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1533/3/946f0760-e6eb-4f77-b243-c45c25b6153e/audio-vga.m4v">2015-08-12 10AM</a></li>
-<li><a download="PHAR1101 2015-08-13 9AM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1533/4/fb9d5a2b-5952-4c88-a098-92a79997136f/audio-vga.m4v">2015-08-13 9AM</a></li>
-<li><a download="PHAR1101 2015-08-19 10AM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1534/3/3151ea57-e1af-4261-ba90-8c8e2cf3b599/audio-vga.m4v">2015-08-19 10AM</a></li>
-<li><a download="PHAR1101 2015-08-20 9AM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1534/4/d7471b35-ed41-4f3c-b9f5-d42ffe249621/audio-vga.m4v">2015-08-20 9AM</a></li>
-<li><a download="PHAR1101 2015-08-26 10AM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1535/3/430b69a8-9ef2-4cb5-a732-e8c76f7d1763/audio-vga.m4v">2015-08-26 10AM</a></li>
-<li><a download="PHAR1101 2015-08-27 9AM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1535/4/d3850061-1fea-4d32-b046-4d7ad5f4570c/audio-vga.m4v">2015-08-27 9AM</a></li>
-<li><a download="PHAR1101 2015-09-02 10AM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1536/3/34b00107-a3c3-4a26-8b2f-513c3721688e/audio-vga.m4v">2015-09-02 10AM</a></li>
-<li><a download="PHAR1101 2015-09-03 9AM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1536/4/8210364b-74ce-46be-9c61-3657ed852ccd/audio-vga.m4v">2015-09-03 9AM</a></li>
-<li><a download="PHAR1101 2015-09-09 10AM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1537/3/fd181822-c9e9-43ac-bfdd-d98db9ed1b27/audio-vga.m4v">2015-09-09 10AM</a></li>
-<li><a download="PHAR1101 2015-09-16 10AM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1538/3/f43dd760-33c8-4fd5-a7de-ba40eb357d41/audio-vga.m4v">2015-09-16 10AM</a></li>
-<li><a download="PHAR1101 2015-09-17 9AM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1538/4/f98cca86-dfb2-4e23-a76e-8d2d11e47edc/audio-vga.m4v">2015-09-17 9AM</a></li>
-<li><a download="PHAR1101 2015-09-23 10AM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1539/3/d7649176-81bb-40b0-aa69-5b2b38166779/audio-vga.m4v">2015-09-23 10AM</a></li>
-<li><a download="PHAR1101 2015-09-24 9AM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1539/4/45a513ce-d0fe-4b4f-acbb-1fc722bf533f/audio-vga.m4v">2015-09-24 9AM</a></li>
-<li><a download="PHAR1101 2015-10-07 10AM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1541/3/af9d8469-e9f0-4774-9e30-58f2f3abc8df/audio-vga.m4v">2015-10-07 10AM</a></li>
-<li><a download="PHAR1101 2015-10-08 9AM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1541/4/4ddf909e-d2b8-4af7-864f-292f98e952bd/audio-vga.m4v">2015-10-08 9AM</a></li>
-<li><a download="PHAR1101 2015-10-14 10AM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1542/3/2d9d7709-04d6-429a-b0f5-fde6da50230d/audio-vga.m4v">2015-10-14 10AM</a></li>
-<li><a download="PHAR1101 2015-10-15 9AM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1542/4/24351c27-a4f9-4962-8231-05a846fd8769/audio-vga.m4v">2015-10-15 9AM</a></li>
-<li><a download="PHAR1101 2015-10-21 10AM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1543/3/ae61571c-e931-4f4d-83e5-83632cd1d493/audio-vga.m4v">2015-10-21 10AM</a></li>
-<li><a download="PHAR1101 2015-10-22 9AM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1543/4/be9ea257-fcf6-40fe-8f15-45fff68fbbd9/audio-vga.m4v">2015-10-22 9AM</a></li>
-<li><a download="PHAR1101 2015-10-28 10AM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1544/3/4b01d56a-15be-446e-921d-9049074ac4a9/audio-vga.m4v">2015-10-28 10AM</a></li>
-<li><a download="PHAR1101 2015-10-29 9AM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1544/4/dccfb0b9-215c-4c63-b5c3-08603e9bdb39/audio-vga.m4v">2015-10-29 9AM</a></li>
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">10AM Wednesday</div>
+                <div class="col-sm-12">29-July-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: PHYSICS, Clews Lecture Theatre [245:243]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1531/3/320098b0-bd5a-48ff-8a9a-7d396d41e72e/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">10AM Wednesday</div>
+                <div class="col-sm-12">29-July-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: PHYSICS, Ross Lecture Theatre [245:G41]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1531/3/e5bf14be-17a9-491c-9823-cb7f998af063/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">9AM Thursday</div>
+                <div class="col-sm-12">30-July-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: ARTS, Alexander Lecture Theatre [106:G57]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1531/4/6d5d4be2-5115-4867-a008-d6b7fd410598/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">9AM Thursday</div>
+                <div class="col-sm-12">30-July-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: ARTS, Murdoch Lecture Theatre [106:G58]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1531/4/c2c21c58-ef47-4b40-b9ad-53267367db37/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">10AM Wednesday</div>
+                <div class="col-sm-12">05-August-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: PHYSICS, Clews Lecture Theatre [245:243]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1532/3/369b4fd5-42fd-4179-8746-5cb86e530f66/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">10AM Wednesday</div>
+                <div class="col-sm-12">05-August-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: PHYSICS, Ross Lecture Theatre [245:G41]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1532/3/dafa8967-aa56-4377-9a3f-74d8303671ed/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">9AM Thursday</div>
+                <div class="col-sm-12">06-August-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: ARTS, Murdoch Lecture Theatre [106:G58]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1532/4/83bca323-e470-4d2b-ac8c-96461097b20c/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">9AM Thursday</div>
+                <div class="col-sm-12">06-August-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: ARTS, Alexander Lecture Theatre [106:G57]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1532/4/b8c2d554-3fe3-49f0-8d90-c2f67a0e836e/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">10AM Wednesday</div>
+                <div class="col-sm-12">12-August-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: PHYSICS, Ross Lecture Theatre [245:G41]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1533/3/946f0760-e6eb-4f77-b243-c45c25b6153e/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">9AM Thursday</div>
+                <div class="col-sm-12">13-August-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: ARTS, Alexander Lecture Theatre [106:G57]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1533/4/fb9d5a2b-5952-4c88-a098-92a79997136f/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">10AM Wednesday</div>
+                <div class="col-sm-12">19-August-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: PHYSICS, Ross Lecture Theatre [245:G41]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1534/3/3151ea57-e1af-4261-ba90-8c8e2cf3b599/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">9AM Thursday</div>
+                <div class="col-sm-12">20-August-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: ARTS, Alexander Lecture Theatre [106:G57]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1534/4/d7471b35-ed41-4f3c-b9f5-d42ffe249621/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">10AM Wednesday</div>
+                <div class="col-sm-12">26-August-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: PHYSICS, Ross Lecture Theatre [245:G41]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1535/3/430b69a8-9ef2-4cb5-a732-e8c76f7d1763/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">9AM Thursday</div>
+                <div class="col-sm-12">27-August-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: ARTS, Alexander Lecture Theatre [106:G57]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1535/4/d3850061-1fea-4d32-b046-4d7ad5f4570c/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">10AM Wednesday</div>
+                <div class="col-sm-12">02-September-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: PHYSICS, Ross Lecture Theatre [245:G41]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1536/3/34b00107-a3c3-4a26-8b2f-513c3721688e/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">9AM Thursday</div>
+                <div class="col-sm-12">03-September-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: ARTS, Alexander Lecture Theatre [106:G57]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1536/4/8210364b-74ce-46be-9c61-3657ed852ccd/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">10AM Wednesday</div>
+                <div class="col-sm-12">09-September-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: PHYSICS, Ross Lecture Theatre [245:G41]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1537/3/fd181822-c9e9-43ac-bfdd-d98db9ed1b27/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">10AM Wednesday</div>
+                <div class="col-sm-12">16-September-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: PHYSICS, Ross Lecture Theatre [245:G41]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1538/3/f43dd760-33c8-4fd5-a7de-ba40eb357d41/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">9AM Thursday</div>
+                <div class="col-sm-12">17-September-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: ARTS, Alexander Lecture Theatre [106:G57]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1538/4/f98cca86-dfb2-4e23-a76e-8d2d11e47edc/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">10AM Wednesday</div>
+                <div class="col-sm-12">23-September-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: PHYSICS, Ross Lecture Theatre [245:G41]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1539/3/d7649176-81bb-40b0-aa69-5b2b38166779/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">9AM Thursday</div>
+                <div class="col-sm-12">24-September-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: ARTS, Alexander Lecture Theatre [106:G57]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1539/4/45a513ce-d0fe-4b4f-acbb-1fc722bf533f/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">10AM Wednesday</div>
+                <div class="col-sm-12">07-October-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: PHYSICS, Ross Lecture Theatre [245:G41]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1541/3/af9d8469-e9f0-4774-9e30-58f2f3abc8df/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">9AM Thursday</div>
+                <div class="col-sm-12">08-October-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: ARTS, Alexander Lecture Theatre [106:G57]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1541/4/4ddf909e-d2b8-4af7-864f-292f98e952bd/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">10AM Wednesday</div>
+                <div class="col-sm-12">14-October-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: PHYSICS, Ross Lecture Theatre [245:G41]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1542/3/2d9d7709-04d6-429a-b0f5-fde6da50230d/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">9AM Thursday</div>
+                <div class="col-sm-12">15-October-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: ARTS, Alexander Lecture Theatre [106:G57]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1542/4/24351c27-a4f9-4962-8231-05a846fd8769/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">10AM Wednesday</div>
+                <div class="col-sm-12">21-October-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: PHYSICS, Ross Lecture Theatre [245:G41]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1543/3/ae61571c-e931-4f4d-83e5-83632cd1d493/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">9AM Thursday</div>
+                <div class="col-sm-12">22-October-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: ARTS, Alexander Lecture Theatre [106:G57]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1543/4/be9ea257-fcf6-40fe-8f15-45fff68fbbd9/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">10AM Wednesday</div>
+                <div class="col-sm-12">28-October-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: PHYSICS, Ross Lecture Theatre [245:G41]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1544/3/4b01d56a-15be-446e-921d-9049074ac4a9/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">9AM Thursday</div>
+                <div class="col-sm-12">29-October-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: ARTS, Alexander Lecture Theatre [106:G57]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1544/4/dccfb0b9-215c-4c63-b5c3-08603e9bdb39/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        

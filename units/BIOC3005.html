@@ -2,14 +2,14 @@
 <html lang="en">
 
 <head>
-
+    <base = href="file:///home/alastair/Desktop/uwalcsdl"/>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="uwalcsdl.github.io" content="">
 
-    <title>BIOC3005 Lectures</title>
+    <title>BIOC3005</title>
 
     <!-- jQuery Version 1.11.1 -->
     <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
@@ -33,7 +33,7 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-
+    <script src="/uwalcsdl.js"></script>
 </head>
 
 <body>
@@ -49,17 +49,19 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="../index.html">UWA LCS DL</a>
+                <a class="navbar-brand" href="/index.html">UWA LCS DL</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
+                <ul class="nav navbar-nav" id="navbar-list">
                     <li>
-                        <a href="../unitList.html">Units</a>
+                        <a href="/unitList.html">Units</a>
                     </li>
                     <li>
-                        <a href="../index.html">Search</a>
+                        <a href="/index.html">Search</a>
                     </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
                     <li>
                         <a href="https://github.com/uwalcsdl/uwalcsdl.github.io">GitHub</a>
                     </li>
@@ -69,38 +71,561 @@
         </div>
         <!-- /.container -->
     </nav>
-
+    <script type="text/javascript">
+        getUnitShortcuts();
+    </script>
     <!-- Page Content -->
     <div class="container"> 
 
         <div class="row">
-            <div class="col-sm-12 text-center">
-                <h1>BIOC3005 Lectures </h1>
-                <ul class="list-unstyled">
+            <div class="col-sm-12 text-center" id="unit-title-div">
+                <h1>BIOC3005 Lectures: </h1>
+            </div>
+            <script type="text/javascript">addUnitShortcutButton();</script>
+        </div>
 
-<li><a download="BIOC3005 2015-07-28 8AM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1531/1/ecbe6afe-1fba-40f1-b16f-19770c8387fe/audio-vga.m4v">2015-07-28 8AM</a></li>
-<li><a download="BIOC3005 2015-07-31 9AM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1531/5/ee7f97c2-c155-441e-8fe1-b7451010124d/audio-vga.m4v">2015-07-31 9AM</a></li>
-<li><a download="BIOC3005 2015-08-04 8AM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1532/1/071a4624-a951-4184-8c0b-01e06e8068e8/audio-vga.m4v">2015-08-04 8AM</a></li>
-<li><a download="BIOC3005 2015-08-07 9AM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1532/5/dc30a5ee-af70-462e-a85f-da12afa5ab87/audio-vga.m4v">2015-08-07 9AM</a></li>
-<li><a download="BIOC3005 2015-08-11 8AM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1533/1/a7d6dbe1-bb91-4085-bc3d-84e78451862a/audio-vga.m4v">2015-08-11 8AM</a></li>
-<li><a download="BIOC3005 2015-08-14 9AM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1533/5/57e15cf1-c051-4152-bb63-11acd43fef5e/audio-vga.m4v">2015-08-14 9AM</a></li>
-<li><a download="BIOC3005 2015-08-18 8AM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1534/1/f559119f-d8a7-4039-a2aa-4f6796de3e27/audio-vga.m4v">2015-08-18 8AM</a></li>
-<li><a download="BIOC3005 2015-08-21 9AM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1534/5/9fddecd5-b9cc-473f-9070-42bd73b0a199/audio-vga.m4v">2015-08-21 9AM</a></li>
-<li><a download="BIOC3005 2015-08-25 8AM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1535/1/2dbd9595-d1a9-49e5-abe3-b64c94e68a6d/audio-vga.m4v">2015-08-25 8AM</a></li>
-<li><a download="BIOC3005 2015-08-28 9AM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1535/5/dedacb82-297f-4c2e-853a-afa0e3831662/audio-vga.m4v">2015-08-28 9AM</a></li>
-<li><a download="BIOC3005 2015-09-01 8AM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1536/1/89d37c85-754c-47c4-9644-4e8f210496fa/audio-vga.m4v">2015-09-01 8AM</a></li>
-<li><a download="BIOC3005 2015-09-04 9AM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1536/5/39d84334-43aa-4d13-8069-f56fe67905f0/audio-vga.m4v">2015-09-04 9AM</a></li>
-<li><a download="BIOC3005 2015-09-08 8AM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1537/1/d265a604-ae49-468f-9ac4-ab0d6383ea8d/audio-vga.m4v">2015-09-08 8AM</a></li>
-<li><a download="BIOC3005 2015-09-11 9AM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1537/5/1889ae2e-69d1-4ee3-a1f8-9e7fc0fcac4c/audio-vga.m4v">2015-09-11 9AM</a></li>
-<li><a download="BIOC3005 2015-09-15 8AM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1538/1/46599153-ec52-48e9-bb3d-8b7d29db4f79/audio-vga.m4v">2015-09-15 8AM</a></li>
-<li><a download="BIOC3005 2015-09-18 9AM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1538/5/a8d06e03-0539-4024-a2c6-be91cb33788b/audio-vga.m4v">2015-09-18 9AM</a></li>
-<li><a download="BIOC3005 2015-09-22 8AM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1539/1/521c0690-f0ab-4813-b775-e08c91f80444/audio-vga.m4v">2015-09-22 8AM</a></li>
-<li><a download="BIOC3005 2015-09-25 9AM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1539/5/ebc58838-60d7-4d5f-9191-897cc83b5398/audio-vga.m4v">2015-09-25 9AM</a></li>
-<li><a download="BIOC3005 2015-10-06 8AM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1541/1/858c3cf4-2e82-41b7-b19b-7eec5a2569b4/audio-vga.m4v">2015-10-06 8AM</a></li>
-<li><a download="BIOC3005 2015-10-09 9AM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1541/5/ede8cf01-dca9-4b7f-9ef3-39af6bb0fbfe/audio-vga.m4v">2015-10-09 9AM</a></li>
-<li><a download="BIOC3005 2015-10-13 8AM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1542/1/9bb04035-2e94-49a8-aeb3-cc5720a1f27b/audio-vga.m4v">2015-10-13 8AM</a></li>
-<li><a download="BIOC3005 2015-10-16 9AM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1542/5/2a5f98ee-3ab6-4dfb-9f83-34297520ae65/audio-vga.m4v">2015-10-16 9AM</a></li>
-<li><a download="BIOC3005 2015-10-20 8AM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1543/1/557fab48-b23f-423f-880a-6506b1a7ec69/audio-vga.m4v">2015-10-20 8AM</a></li>
-<li><a download="BIOC3005 2015-10-23 9AM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1543/5/cb13398d-a0d8-4954-859e-62008c9c3453/audio-vga.m4v">2015-10-23 9AM</a></li>
-<li><a download="BIOC3005 2015-10-27 8AM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1544/1/988145da-362d-4894-b976-2adc54bbced8/audio-vga.m4v">2015-10-27 8AM</a></li>
-<li><a download="BIOC3005 2015-10-30 9AM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1544/5/609597d3-55b7-47ac-9bbc-d04cb0788bc9/audio-vga.m4v">2015-10-30 9AM</a></li>
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">8AM Tuesday</div>
+                <div class="col-sm-12">28-July-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: BAYLISS BUILDING (MCS), MCS Lecture Room G.33 [211:G33]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1531/1/ecbe6afe-1fba-40f1-b16f-19770c8387fe/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">9AM Friday</div>
+                <div class="col-sm-12">31-July-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: BAYLISS BUILDING (MCS), MCS Lecture Room G.33 [211:G33]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1531/5/ee7f97c2-c155-441e-8fe1-b7451010124d/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">8AM Tuesday</div>
+                <div class="col-sm-12">04-August-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: BAYLISS BUILDING (MCS), MCS Lecture Room G.33 [211:G33]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1532/1/071a4624-a951-4184-8c0b-01e06e8068e8/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">9AM Friday</div>
+                <div class="col-sm-12">07-August-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: BAYLISS BUILDING (MCS), MCS Lecture Room G.33 [211:G33]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1532/5/dc30a5ee-af70-462e-a85f-da12afa5ab87/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">8AM Tuesday</div>
+                <div class="col-sm-12">11-August-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: BAYLISS BUILDING (MCS), MCS Lecture Room G.33 [211:G33]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1533/1/a7d6dbe1-bb91-4085-bc3d-84e78451862a/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">9AM Friday</div>
+                <div class="col-sm-12">14-August-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: BAYLISS BUILDING (MCS), MCS Lecture Room G.33 [211:G33]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1533/5/57e15cf1-c051-4152-bb63-11acd43fef5e/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">8AM Tuesday</div>
+                <div class="col-sm-12">18-August-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: BAYLISS BUILDING (MCS), MCS Lecture Room G.33 [211:G33]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1534/1/f559119f-d8a7-4039-a2aa-4f6796de3e27/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">9AM Friday</div>
+                <div class="col-sm-12">21-August-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: BAYLISS BUILDING (MCS), MCS Lecture Room G.33 [211:G33]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1534/5/9fddecd5-b9cc-473f-9070-42bd73b0a199/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">8AM Tuesday</div>
+                <div class="col-sm-12">25-August-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: BAYLISS BUILDING (MCS), MCS Lecture Room G.33 [211:G33]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1535/1/2dbd9595-d1a9-49e5-abe3-b64c94e68a6d/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">9AM Friday</div>
+                <div class="col-sm-12">28-August-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: BAYLISS BUILDING (MCS), MCS Lecture Room G.33 [211:G33]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1535/5/dedacb82-297f-4c2e-853a-afa0e3831662/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">8AM Tuesday</div>
+                <div class="col-sm-12">01-September-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: BAYLISS BUILDING (MCS), MCS Lecture Room G.33 [211:G33]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1536/1/89d37c85-754c-47c4-9644-4e8f210496fa/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">9AM Friday</div>
+                <div class="col-sm-12">04-September-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: BAYLISS BUILDING (MCS), MCS Lecture Room G.33 [211:G33]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1536/5/39d84334-43aa-4d13-8069-f56fe67905f0/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">8AM Tuesday</div>
+                <div class="col-sm-12">08-September-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: BAYLISS BUILDING (MCS), MCS Lecture Room G.33 [211:G33]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1537/1/d265a604-ae49-468f-9ac4-ab0d6383ea8d/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">9AM Friday</div>
+                <div class="col-sm-12">11-September-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: BAYLISS BUILDING (MCS), MCS Lecture Room G.33 [211:G33]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1537/5/1889ae2e-69d1-4ee3-a1f8-9e7fc0fcac4c/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">8AM Tuesday</div>
+                <div class="col-sm-12">15-September-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: BAYLISS BUILDING (MCS), MCS Lecture Room G.33 [211:G33]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1538/1/46599153-ec52-48e9-bb3d-8b7d29db4f79/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">9AM Friday</div>
+                <div class="col-sm-12">18-September-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: BAYLISS BUILDING (MCS), MCS Lecture Room G.33 [211:G33]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1538/5/a8d06e03-0539-4024-a2c6-be91cb33788b/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">8AM Tuesday</div>
+                <div class="col-sm-12">22-September-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: BAYLISS BUILDING (MCS), MCS Lecture Room G.33 [211:G33]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1539/1/521c0690-f0ab-4813-b775-e08c91f80444/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">9AM Friday</div>
+                <div class="col-sm-12">25-September-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: BAYLISS BUILDING (MCS), MCS Lecture Room G.33 [211:G33]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1539/5/ebc58838-60d7-4d5f-9191-897cc83b5398/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">8AM Tuesday</div>
+                <div class="col-sm-12">06-October-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: BAYLISS BUILDING (MCS), MCS Lecture Room G.33 [211:G33]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1541/1/858c3cf4-2e82-41b7-b19b-7eec5a2569b4/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">9AM Friday</div>
+                <div class="col-sm-12">09-October-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: BAYLISS BUILDING (MCS), MCS Lecture Room G.33 [211:G33]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1541/5/ede8cf01-dca9-4b7f-9ef3-39af6bb0fbfe/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">8AM Tuesday</div>
+                <div class="col-sm-12">13-October-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: BAYLISS BUILDING (MCS), MCS Lecture Room G.33 [211:G33]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1542/1/9bb04035-2e94-49a8-aeb3-cc5720a1f27b/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">9AM Friday</div>
+                <div class="col-sm-12">16-October-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: BAYLISS BUILDING (MCS), MCS Lecture Room G.33 [211:G33]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1542/5/2a5f98ee-3ab6-4dfb-9f83-34297520ae65/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">8AM Tuesday</div>
+                <div class="col-sm-12">20-October-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: BAYLISS BUILDING (MCS), MCS Lecture Room G.33 [211:G33]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1543/1/557fab48-b23f-423f-880a-6506b1a7ec69/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">9AM Friday</div>
+                <div class="col-sm-12">23-October-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: BAYLISS BUILDING (MCS), MCS Lecture Room G.33 [211:G33]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1543/5/cb13398d-a0d8-4954-859e-62008c9c3453/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">8AM Tuesday</div>
+                <div class="col-sm-12">27-October-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: BAYLISS BUILDING (MCS), MCS Lecture Room G.33 [211:G33]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1544/1/988145da-362d-4894-b976-2adc54bbced8/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">9AM Friday</div>
+                <div class="col-sm-12">30-October-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: BAYLISS BUILDING (MCS), MCS Lecture Room G.33 [211:G33]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1544/5/609597d3-55b7-47ac-9bbc-d04cb0788bc9/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        

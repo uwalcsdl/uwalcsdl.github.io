@@ -2,14 +2,14 @@
 <html lang="en">
 
 <head>
-
+    <base = href="file:///home/alastair/Desktop/uwalcsdl"/>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="uwalcsdl.github.io" content="">
 
-    <title>PHAR3320 Lectures</title>
+    <title>PHAR3320</title>
 
     <!-- jQuery Version 1.11.1 -->
     <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
@@ -33,7 +33,7 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-
+    <script src="/uwalcsdl.js"></script>
 </head>
 
 <body>
@@ -49,17 +49,19 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="../index.html">UWA LCS DL</a>
+                <a class="navbar-brand" href="/index.html">UWA LCS DL</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
+                <ul class="nav navbar-nav" id="navbar-list">
                     <li>
-                        <a href="../unitList.html">Units</a>
+                        <a href="/unitList.html">Units</a>
                     </li>
                     <li>
-                        <a href="../index.html">Search</a>
+                        <a href="/index.html">Search</a>
                     </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
                     <li>
                         <a href="https://github.com/uwalcsdl/uwalcsdl.github.io">GitHub</a>
                     </li>
@@ -69,51 +71,834 @@
         </div>
         <!-- /.container -->
     </nav>
-
+    <script type="text/javascript">
+        getUnitShortcuts();
+    </script>
     <!-- Page Content -->
     <div class="container"> 
 
         <div class="row">
-            <div class="col-sm-12 text-center">
-                <h1>PHAR3320 Lectures </h1>
-                <ul class="list-unstyled">
+            <div class="col-sm-12 text-center" id="unit-title-div">
+                <h1>PHAR3320 Lectures: </h1>
+            </div>
+            <script type="text/javascript">addUnitShortcutButton();</script>
+        </div>
 
-<li><a download="PHAR3320 2015-07-27 11AM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1531/1/e1f615e4-4576-432d-a91d-b356db747781/audio-vga.m4v">2015-07-27 11AM</a></li>
-<li><a download="PHAR3320 2015-07-28 11AM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1531/2/ae6fb444-209e-43a6-8461-9d60bfea6a78/audio-vga.m4v">2015-07-28 11AM</a></li>
-<li><a download="PHAR3320 2015-07-30 11AM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1531/4/2a8d93ea-b1b1-4800-9c1a-d88b8826afd0/audio-vga.m4v">2015-07-30 11AM</a></li>
-<li><a download="PHAR3320 2015-08-03 11AM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1532/1/0895885a-c399-4612-98c8-b8e20ece68d4/audio-vga.m4v">2015-08-03 11AM</a></li>
-<li><a download="PHAR3320 2015-08-04 11AM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1532/2/fa2b884d-048c-4eb0-a73b-4fb49f6b9fa4/audio-vga.m4v">2015-08-04 11AM</a></li>
-<li><a download="PHAR3320 2015-08-06 11AM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1532/4/b3234cd4-88f2-4409-aec7-296116c592f7/audio-vga.m4v">2015-08-06 11AM</a></li>
-<li><a download="PHAR3320 2015-08-10 11AM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1533/1/97d3110f-d2d5-41ac-84eb-78349cb720d4/audio-vga.m4v">2015-08-10 11AM</a></li>
-<li><a download="PHAR3320 2015-08-11 11AM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1533/2/956d0218-7047-43d9-be8e-a9756bb4613d/audio-vga.m4v">2015-08-11 11AM</a></li>
-<li><a download="PHAR3320 2015-08-13 11AM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1533/4/8b729450-acec-442f-9699-2cdc9bd6c363/audio-vga.m4v">2015-08-13 11AM</a></li>
-<li><a download="PHAR3320 2015-08-17 11AM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1534/1/ee393d90-bd55-4c61-9f70-2017c9c5647f/audio-vga.m4v">2015-08-17 11AM</a></li>
-<li><a download="PHAR3320 2015-08-18 11AM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1534/2/2e6cea6b-0d1f-463c-b6cf-dd24dc324a4c/audio-vga.m4v">2015-08-18 11AM</a></li>
-<li><a download="PHAR3320 2015-08-20 11AM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1534/4/1fbc75db-4d09-4509-b8bb-83e83160b5e9/audio-vga.m4v">2015-08-20 11AM</a></li>
-<li><a download="PHAR3320 2015-08-24 11AM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1535/1/d695c2fd-c382-4b03-9b33-a751a7cb6483/audio-vga.m4v">2015-08-24 11AM</a></li>
-<li><a download="PHAR3320 2015-08-25 11AM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1535/2/62de5eb3-22d4-446d-99f3-14fd0dbca016/audio-vga.m4v">2015-08-25 11AM</a></li>
-<li><a download="PHAR3320 2015-08-27 11AM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1535/4/d9ca3199-5f10-4c64-a54e-8439f460fbc1/audio-vga.m4v">2015-08-27 11AM</a></li>
-<li><a download="PHAR3320 2015-08-31 11AM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1536/1/5871a7e5-db52-4428-9eb9-935677015b2e/audio-vga.m4v">2015-08-31 11AM</a></li>
-<li><a download="PHAR3320 2015-09-01 11AM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1536/2/0994d08e-7d7b-4217-bc9c-37430a8a029d/audio-vga.m4v">2015-09-01 11AM</a></li>
-<li><a download="PHAR3320 2015-09-03 11AM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1536/4/7c8d533f-a6b1-4de5-b347-96d6be6dac93/audio-vga.m4v">2015-09-03 11AM</a></li>
-<li><a download="PHAR3320 2015-09-07 11AM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1537/1/ce57eca1-cc21-4f06-b728-4d307fb224bd/audio-vga.m4v">2015-09-07 11AM</a></li>
-<li><a download="PHAR3320 2015-09-08 11AM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1537/2/b1909304-2289-4074-8edc-3749f5845dbf/audio-vga.m4v">2015-09-08 11AM</a></li>
-<li><a download="PHAR3320 2015-09-10 11AM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1537/4/0cb50b72-a9d1-496c-a077-c7228ca3c426/audio-vga.m4v">2015-09-10 11AM</a></li>
-<li><a download="PHAR3320 2015-09-14 11AM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1538/1/53a50d67-4c10-44e6-8a7a-e0c9d64019ac/audio-vga.m4v">2015-09-14 11AM</a></li>
-<li><a download="PHAR3320 2015-09-15 11AM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1538/2/7a50bda9-7b6f-4883-8fda-a2df1ff2e30d/audio-vga.m4v">2015-09-15 11AM</a></li>
-<li><a download="PHAR3320 2015-09-17 11AM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1538/4/e0ea77e2-10e9-4b66-9d18-de94dda96ede/audio-vga.m4v">2015-09-17 11AM</a></li>
-<li><a download="PHAR3320 2015-09-21 11AM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1539/1/0429b36a-e60a-4394-8f08-6b8156f417d9/audio-vga.m4v">2015-09-21 11AM</a></li>
-<li><a download="PHAR3320 2015-09-22 11AM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1539/2/6175808b-a23f-4192-bd4a-e6ac3128dad9/audio-vga.m4v">2015-09-22 11AM</a></li>
-<li><a download="PHAR3320 2015-09-24 11AM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1539/4/f14601d0-aa4b-47bb-a949-fc7a436bf10e/audio-vga.m4v">2015-09-24 11AM</a></li>
-<li><a download="PHAR3320 2015-10-05 11AM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1541/1/578418a0-b8ec-4917-b8b8-411382deb324/audio-vga.m4v">2015-10-05 11AM</a></li>
-<li><a download="PHAR3320 2015-10-06 11AM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1541/2/22dea523-32a9-41d9-b045-cf74a54a5a9f/audio-vga.m4v">2015-10-06 11AM</a></li>
-<li><a download="PHAR3320 2015-10-08 11AM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1541/4/61ad97cf-d5bf-4469-a86a-755c6e73e454/audio-vga.m4v">2015-10-08 11AM</a></li>
-<li><a download="PHAR3320 2015-10-12 11AM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1542/1/483a267b-60cb-43a8-bad3-ff1e8653c2e1/audio-vga.m4v">2015-10-12 11AM</a></li>
-<li><a download="PHAR3320 2015-10-13 11AM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1542/2/62bf2942-45c1-489e-a029-3633c7fb1de3/audio-vga.m4v">2015-10-13 11AM</a></li>
-<li><a download="PHAR3320 2015-10-15 11AM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1542/4/40b51c78-730e-485b-babe-b4a5d8e2d185/audio-vga.m4v">2015-10-15 11AM</a></li>
-<li><a download="PHAR3320 2015-10-19 11AM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1543/1/7c67d79e-e30f-4fb7-8c4e-c346706434d8/audio-vga.m4v">2015-10-19 11AM</a></li>
-<li><a download="PHAR3320 2015-10-20 11AM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1543/2/0d367ad1-bc75-4f17-b963-4c4ff4057be3/audio-vga.m4v">2015-10-20 11AM</a></li>
-<li><a download="PHAR3320 2015-10-22 11AM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1543/4/094ba08b-943d-4304-88ef-065c96b49ac0/audio-vga.m4v">2015-10-22 11AM</a></li>
-<li><a download="PHAR3320 2015-10-26 11AM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1544/1/b45dbf66-89e6-4111-bf0c-5308ab276757/audio-vga.m4v">2015-10-26 11AM</a></li>
-<li><a download="PHAR3320 2015-10-27 11AM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1544/2/d71f1041-f5e9-4c99-892d-49fbfd0abde7/audio-vga.m4v">2015-10-27 11AM</a></li>
-<li><a download="PHAR3320 2015-10-29 11AM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1544/4/59b9d132-c497-4266-b6fd-cb3e4d6e3a66/audio-vga.m4v">2015-10-29 11AM</a></li>
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">11AM Monday</div>
+                <div class="col-sm-12">27-July-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: QE II - P BLOCK, Mary Lockett Lecture Theatre [507:G16]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1531/1/e1f615e4-4576-432d-a91d-b356db747781/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">11AM Tuesday</div>
+                <div class="col-sm-12">28-July-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: QE II - P BLOCK, Mary Lockett Lecture Theatre [507:G16]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1531/2/ae6fb444-209e-43a6-8461-9d60bfea6a78/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">11AM Thursday</div>
+                <div class="col-sm-12">30-July-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: QE II - P BLOCK, Mary Lockett Lecture Theatre [507:G16]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1531/4/2a8d93ea-b1b1-4800-9c1a-d88b8826afd0/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">11AM Monday</div>
+                <div class="col-sm-12">03-August-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: QE II - P BLOCK, Mary Lockett Lecture Theatre [507:G16]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1532/1/0895885a-c399-4612-98c8-b8e20ece68d4/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">11AM Tuesday</div>
+                <div class="col-sm-12">04-August-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: QE II - P BLOCK, Mary Lockett Lecture Theatre [507:G16]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1532/2/fa2b884d-048c-4eb0-a73b-4fb49f6b9fa4/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">11AM Thursday</div>
+                <div class="col-sm-12">06-August-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: QE II - P BLOCK, Mary Lockett Lecture Theatre [507:G16]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1532/4/b3234cd4-88f2-4409-aec7-296116c592f7/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">11AM Monday</div>
+                <div class="col-sm-12">10-August-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: QE II - P BLOCK, Mary Lockett Lecture Theatre [507:G16]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1533/1/97d3110f-d2d5-41ac-84eb-78349cb720d4/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">11AM Tuesday</div>
+                <div class="col-sm-12">11-August-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: QE II - P BLOCK, Mary Lockett Lecture Theatre [507:G16]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1533/2/956d0218-7047-43d9-be8e-a9756bb4613d/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">11AM Thursday</div>
+                <div class="col-sm-12">13-August-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: QE II - P BLOCK, Mary Lockett Lecture Theatre [507:G16]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1533/4/8b729450-acec-442f-9699-2cdc9bd6c363/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">11AM Monday</div>
+                <div class="col-sm-12">17-August-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: QE II - P BLOCK, Mary Lockett Lecture Theatre [507:G16]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1534/1/ee393d90-bd55-4c61-9f70-2017c9c5647f/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">11AM Tuesday</div>
+                <div class="col-sm-12">18-August-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: QE II - P BLOCK, Mary Lockett Lecture Theatre [507:G16]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1534/2/2e6cea6b-0d1f-463c-b6cf-dd24dc324a4c/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">11AM Thursday</div>
+                <div class="col-sm-12">20-August-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: QE II - P BLOCK, Mary Lockett Lecture Theatre [507:G16]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1534/4/1fbc75db-4d09-4509-b8bb-83e83160b5e9/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">11AM Monday</div>
+                <div class="col-sm-12">24-August-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: QE II - P BLOCK, Mary Lockett Lecture Theatre [507:G16]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1535/1/d695c2fd-c382-4b03-9b33-a751a7cb6483/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">11AM Tuesday</div>
+                <div class="col-sm-12">25-August-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: QE II - P BLOCK, Mary Lockett Lecture Theatre [507:G16]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1535/2/62de5eb3-22d4-446d-99f3-14fd0dbca016/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">11AM Thursday</div>
+                <div class="col-sm-12">27-August-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: QE II - P BLOCK, Mary Lockett Lecture Theatre [507:G16]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1535/4/d9ca3199-5f10-4c64-a54e-8439f460fbc1/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">11AM Monday</div>
+                <div class="col-sm-12">31-August-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: QE II - P BLOCK, Mary Lockett Lecture Theatre [507:G16]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1536/1/5871a7e5-db52-4428-9eb9-935677015b2e/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">11AM Tuesday</div>
+                <div class="col-sm-12">01-September-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: QE II - P BLOCK, Mary Lockett Lecture Theatre [507:G16]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1536/2/0994d08e-7d7b-4217-bc9c-37430a8a029d/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">11AM Thursday</div>
+                <div class="col-sm-12">03-September-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: QE II - P BLOCK, Mary Lockett Lecture Theatre [507:G16]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1536/4/7c8d533f-a6b1-4de5-b347-96d6be6dac93/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">11AM Monday</div>
+                <div class="col-sm-12">07-September-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: QE II - P BLOCK, Mary Lockett Lecture Theatre [507:G16]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1537/1/ce57eca1-cc21-4f06-b728-4d307fb224bd/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">11AM Tuesday</div>
+                <div class="col-sm-12">08-September-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: QE II - P BLOCK, Mary Lockett Lecture Theatre [507:G16]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1537/2/b1909304-2289-4074-8edc-3749f5845dbf/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">11AM Thursday</div>
+                <div class="col-sm-12">10-September-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: QE II - P BLOCK, Mary Lockett Lecture Theatre [507:G16]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1537/4/0cb50b72-a9d1-496c-a077-c7228ca3c426/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">11AM Monday</div>
+                <div class="col-sm-12">14-September-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: QE II - P BLOCK, Mary Lockett Lecture Theatre [507:G16]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1538/1/53a50d67-4c10-44e6-8a7a-e0c9d64019ac/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">11AM Tuesday</div>
+                <div class="col-sm-12">15-September-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: QE II - P BLOCK, Mary Lockett Lecture Theatre [507:G16]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1538/2/7a50bda9-7b6f-4883-8fda-a2df1ff2e30d/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">11AM Thursday</div>
+                <div class="col-sm-12">17-September-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: QE II - P BLOCK, Mary Lockett Lecture Theatre [507:G16]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1538/4/e0ea77e2-10e9-4b66-9d18-de94dda96ede/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">11AM Monday</div>
+                <div class="col-sm-12">21-September-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: QE II - P BLOCK, Mary Lockett Lecture Theatre [507:G16]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1539/1/0429b36a-e60a-4394-8f08-6b8156f417d9/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">11AM Tuesday</div>
+                <div class="col-sm-12">22-September-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: QE II - P BLOCK, Mary Lockett Lecture Theatre [507:G16]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1539/2/6175808b-a23f-4192-bd4a-e6ac3128dad9/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">11AM Thursday</div>
+                <div class="col-sm-12">24-September-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: QE II - P BLOCK, Mary Lockett Lecture Theatre [507:G16]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1539/4/f14601d0-aa4b-47bb-a949-fc7a436bf10e/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">11AM Monday</div>
+                <div class="col-sm-12">05-October-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: QE II - P BLOCK, Mary Lockett Lecture Theatre [507:G16]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1541/1/578418a0-b8ec-4917-b8b8-411382deb324/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">11AM Tuesday</div>
+                <div class="col-sm-12">06-October-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: QE II - P BLOCK, Mary Lockett Lecture Theatre [507:G16]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1541/2/22dea523-32a9-41d9-b045-cf74a54a5a9f/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">11AM Thursday</div>
+                <div class="col-sm-12">08-October-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: QE II - P BLOCK, Mary Lockett Lecture Theatre [507:G16]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1541/4/61ad97cf-d5bf-4469-a86a-755c6e73e454/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">11AM Monday</div>
+                <div class="col-sm-12">12-October-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: QE II - P BLOCK, Mary Lockett Lecture Theatre [507:G16]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1542/1/483a267b-60cb-43a8-bad3-ff1e8653c2e1/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">11AM Tuesday</div>
+                <div class="col-sm-12">13-October-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: QE II - P BLOCK, Mary Lockett Lecture Theatre [507:G16]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1542/2/62bf2942-45c1-489e-a029-3633c7fb1de3/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">11AM Thursday</div>
+                <div class="col-sm-12">15-October-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: QE II - P BLOCK, Mary Lockett Lecture Theatre [507:G16]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1542/4/40b51c78-730e-485b-babe-b4a5d8e2d185/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">11AM Monday</div>
+                <div class="col-sm-12">19-October-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: QE II - P BLOCK, Mary Lockett Lecture Theatre [507:G16]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1543/1/7c67d79e-e30f-4fb7-8c4e-c346706434d8/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">11AM Tuesday</div>
+                <div class="col-sm-12">20-October-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: QE II - P BLOCK, Mary Lockett Lecture Theatre [507:G16]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1543/2/0d367ad1-bc75-4f17-b963-4c4ff4057be3/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">11AM Thursday</div>
+                <div class="col-sm-12">22-October-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: QE II - P BLOCK, Mary Lockett Lecture Theatre [507:G16]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1543/4/094ba08b-943d-4304-88ef-065c96b49ac0/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">11AM Monday</div>
+                <div class="col-sm-12">26-October-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: QE II - P BLOCK, Mary Lockett Lecture Theatre [507:G16]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1544/1/b45dbf66-89e6-4111-bf0c-5308ab276757/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">11AM Tuesday</div>
+                <div class="col-sm-12">27-October-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: QE II - P BLOCK, Mary Lockett Lecture Theatre [507:G16]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1544/2/d71f1041-f5e9-4c99-892d-49fbfd0abde7/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">11AM Thursday</div>
+                <div class="col-sm-12">29-October-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: QE II - P BLOCK, Mary Lockett Lecture Theatre [507:G16]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1544/4/59b9d132-c497-4266-b6fd-cb3e4d6e3a66/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        

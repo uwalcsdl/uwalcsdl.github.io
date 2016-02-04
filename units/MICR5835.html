@@ -2,14 +2,14 @@
 <html lang="en">
 
 <head>
-
+    <base = href="file:///home/alastair/Desktop/uwalcsdl"/>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="uwalcsdl.github.io" content="">
 
-    <title>MICR5835 Lectures</title>
+    <title>MICR5835</title>
 
     <!-- jQuery Version 1.11.1 -->
     <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
@@ -33,7 +33,7 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-
+    <script src="/uwalcsdl.js"></script>
 </head>
 
 <body>
@@ -49,17 +49,19 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="../index.html">UWA LCS DL</a>
+                <a class="navbar-brand" href="/index.html">UWA LCS DL</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
+                <ul class="nav navbar-nav" id="navbar-list">
                     <li>
-                        <a href="../unitList.html">Units</a>
+                        <a href="/unitList.html">Units</a>
                     </li>
                     <li>
-                        <a href="../index.html">Search</a>
+                        <a href="/index.html">Search</a>
                     </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
                     <li>
                         <a href="https://github.com/uwalcsdl/uwalcsdl.github.io">GitHub</a>
                     </li>
@@ -69,27 +71,330 @@
         </div>
         <!-- /.container -->
     </nav>
-
+    <script type="text/javascript">
+        getUnitShortcuts();
+    </script>
     <!-- Page Content -->
     <div class="container"> 
 
         <div class="row">
-            <div class="col-sm-12 text-center">
-                <h1>MICR5835 Lectures </h1>
-                <ul class="list-unstyled">
+            <div class="col-sm-12 text-center" id="unit-title-div">
+                <h1>MICR5835 Lectures: </h1>
+            </div>
+            <script type="text/javascript">addUnitShortcutButton();</script>
+        </div>
 
-<li><a download="MICR5835 2015-07-27 1PM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1531/1/7b3d81a4-ed4f-4974-b9bc-58a8fa8e9027/audio-vga.m4v">2015-07-27 1PM</a></li>
-<li><a download="MICR5835 2015-08-03 1PM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1532/1/3596ea1a-6464-480c-9e52-9cf1374ef6d6/audio-vga.m4v">2015-08-03 1PM</a></li>
-<li><a download="MICR5835 2015-08-10 1PM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1533/1/cb6879a2-297b-48ec-aa15-6f04cac0efe5/audio-vga.m4v">2015-08-10 1PM</a></li>
-<li><a download="MICR5835 2015-08-17 1PM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1534/1/0b014c14-edc1-4c88-a5f4-079a966b3152/audio-vga.m4v">2015-08-17 1PM</a></li>
-<li><a download="MICR5835 2015-08-24 1PM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1535/1/60be719f-fefb-49e5-bef3-42e028444c0e/audio-vga.m4v">2015-08-24 1PM</a></li>
-<li><a download="MICR5835 2015-08-31 1PM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1536/1/a5065948-6f0c-4510-91d4-548500da1d68/audio-vga.m4v">2015-08-31 1PM</a></li>
-<li><a download="MICR5835 2015-09-07 1PM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1537/1/0e3a48ac-34e5-4768-9e5a-da7fba21df1f/audio-vga.m4v">2015-09-07 1PM</a></li>
-<li><a download="MICR5835 2015-09-14 1PM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1538/1/2419f11f-1d0f-4045-86a3-8082d574361c/audio-vga.m4v">2015-09-14 1PM</a></li>
-<li><a download="MICR5835 2015-09-21 1PM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1539/1/bd0b6ec9-8aff-43c8-b739-d3f599e24973/audio-vga.m4v">2015-09-21 1PM</a></li>
-<li><a download="MICR5835 2015-10-05 1PM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1541/1/69e015f5-d66b-4eb8-a243-6209183eaa65/audio-vga.m4v">2015-10-05 1PM</a></li>
-<li><a download="MICR5835 2015-10-12 3PM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1542/1/a72ebcb9-301f-4b46-b3ee-fd316aba3f4c/audio-vga.m4v">2015-10-12 3PM</a></li>
-<li><a download="MICR5835 2015-10-12 1PM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1542/1/d0b8aeac-efac-42ef-afac-1bdc5cbd1657/audio-vga.m4v">2015-10-12 1PM</a></li>
-<li><a download="MICR5835 2015-10-15 4PM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1542/4/0dcbf5fb-2ac9-4acb-a7e6-89126a260bbb/audio-vga.m4v">2015-10-15 4PM</a></li>
-<li><a download="MICR5835 2015-10-15 4PM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1542/4/d74e67cf-d87e-4f29-9a1c-7022d06872de/audio-vga.m4v">2015-10-15 4PM</a></li>
-<li><a download="MICR5835 2015-10-19 1PM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1543/1/b5fe9265-e1c9-43c4-b5ce-f20578855f09/audio-vga.m4v">2015-10-19 1PM</a></li>
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">1PM Monday</div>
+                <div class="col-sm-12">27-July-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: QE II - L BLOCK, Microbiology Seminar Room [503:101]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1531/1/7b3d81a4-ed4f-4974-b9bc-58a8fa8e9027/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">1PM Monday</div>
+                <div class="col-sm-12">03-August-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: QE II - L BLOCK, Microbiology Seminar Room [503:101]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1532/1/3596ea1a-6464-480c-9e52-9cf1374ef6d6/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">1PM Monday</div>
+                <div class="col-sm-12">10-August-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: QE II - L BLOCK, Microbiology Seminar Room [503:101]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1533/1/cb6879a2-297b-48ec-aa15-6f04cac0efe5/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">1PM Monday</div>
+                <div class="col-sm-12">17-August-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: QE II - L BLOCK, Microbiology Seminar Room [503:101]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1534/1/0b014c14-edc1-4c88-a5f4-079a966b3152/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">1PM Monday</div>
+                <div class="col-sm-12">24-August-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: QE II - L BLOCK, Microbiology Seminar Room [503:101]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1535/1/60be719f-fefb-49e5-bef3-42e028444c0e/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">1PM Monday</div>
+                <div class="col-sm-12">31-August-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: QE II - L BLOCK, Microbiology Seminar Room [503:101]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1536/1/a5065948-6f0c-4510-91d4-548500da1d68/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">1PM Monday</div>
+                <div class="col-sm-12">07-September-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: QE II - L BLOCK, Microbiology Seminar Room [503:101]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1537/1/0e3a48ac-34e5-4768-9e5a-da7fba21df1f/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">1PM Monday</div>
+                <div class="col-sm-12">14-September-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: QE II - L BLOCK, Microbiology Seminar Room [503:101]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1538/1/2419f11f-1d0f-4045-86a3-8082d574361c/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">1PM Monday</div>
+                <div class="col-sm-12">21-September-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: QE II - L BLOCK, Microbiology Seminar Room [503:101]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1539/1/bd0b6ec9-8aff-43c8-b739-d3f599e24973/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">1PM Monday</div>
+                <div class="col-sm-12">05-October-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: QE II - L BLOCK, Microbiology Seminar Room [503:101]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1541/1/69e015f5-d66b-4eb8-a243-6209183eaa65/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">3PM Monday</div>
+                <div class="col-sm-12">12-October-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: QE II - L BLOCK, Microbiology Seminar Room [503:101]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1542/1/a72ebcb9-301f-4b46-b3ee-fd316aba3f4c/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">1PM Monday</div>
+                <div class="col-sm-12">12-October-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: QE II - L BLOCK, Microbiology Seminar Room [503:101]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1542/1/d0b8aeac-efac-42ef-afac-1bdc5cbd1657/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">4PM Thursday</div>
+                <div class="col-sm-12">15-October-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: QE II - L BLOCK, Microbiology Seminar Room [503:101]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1542/4/0dcbf5fb-2ac9-4acb-a7e6-89126a260bbb/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">4PM Thursday</div>
+                <div class="col-sm-12">15-October-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: QE II - L BLOCK, Microbiology Seminar Room [503:101]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1542/4/d74e67cf-d87e-4f29-9a1c-7022d06872de/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">1PM Monday</div>
+                <div class="col-sm-12">19-October-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: QE II - L BLOCK, Microbiology Seminar Room [503:101]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1543/1/b5fe9265-e1c9-43c4-b5ce-f20578855f09/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        

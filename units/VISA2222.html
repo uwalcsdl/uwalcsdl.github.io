@@ -2,14 +2,14 @@
 <html lang="en">
 
 <head>
-
+    <base = href="file:///home/alastair/Desktop/uwalcsdl"/>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="uwalcsdl.github.io" content="">
 
-    <title>VISA2222 Lectures</title>
+    <title>VISA2222</title>
 
     <!-- jQuery Version 1.11.1 -->
     <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
@@ -33,7 +33,7 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-
+    <script src="/uwalcsdl.js"></script>
 </head>
 
 <body>
@@ -49,17 +49,19 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="../index.html">UWA LCS DL</a>
+                <a class="navbar-brand" href="/index.html">UWA LCS DL</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
+                <ul class="nav navbar-nav" id="navbar-list">
                     <li>
-                        <a href="../unitList.html">Units</a>
+                        <a href="/unitList.html">Units</a>
                     </li>
                     <li>
-                        <a href="../index.html">Search</a>
+                        <a href="/index.html">Search</a>
                     </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
                     <li>
                         <a href="https://github.com/uwalcsdl/uwalcsdl.github.io">GitHub</a>
                     </li>
@@ -69,23 +71,246 @@
         </div>
         <!-- /.container -->
     </nav>
-
+    <script type="text/javascript">
+        getUnitShortcuts();
+    </script>
     <!-- Page Content -->
     <div class="container"> 
 
         <div class="row">
-            <div class="col-sm-12 text-center">
-                <h1>VISA2222 Lectures </h1>
-                <ul class="list-unstyled">
+            <div class="col-sm-12 text-center" id="unit-title-div">
+                <h1>VISA2222 Lectures: </h1>
+            </div>
+            <script type="text/javascript">addUnitShortcutButton();</script>
+        </div>
 
-<li><a download="VISA2222 2015-07-29 9AM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1531/3/e19164ea-8d90-4bcb-839d-bb58dcc3eae7/audio-vga.m4v">2015-07-29 9AM</a></li>
-<li><a download="VISA2222 2015-08-05 9AM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1532/3/0b3cd259-4cb9-41bc-9c0e-614de71cc799/audio-vga.m4v">2015-08-05 9AM</a></li>
-<li><a download="VISA2222 2015-08-12 9AM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1533/3/30de9b3f-19a5-42fc-b35c-f02abba2c750/audio-vga.m4v">2015-08-12 9AM</a></li>
-<li><a download="VISA2222 2015-08-19 9AM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1534/3/93eb7018-38e9-4e97-a492-dd74454dd280/audio-vga.m4v">2015-08-19 9AM</a></li>
-<li><a download="VISA2222 2015-08-26 9AM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1535/3/fb4bacdf-3239-4af6-bdda-cece76bc834c/audio-vga.m4v">2015-08-26 9AM</a></li>
-<li><a download="VISA2222 2015-09-02 9AM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1536/3/41449309-8276-479e-8ce5-5b2e167c9dc5/audio-vga.m4v">2015-09-02 9AM</a></li>
-<li><a download="VISA2222 2015-09-09 9AM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1537/3/f1f6b07c-8a21-4465-a944-adcbe18a9c4c/audio-vga.m4v">2015-09-09 9AM</a></li>
-<li><a download="VISA2222 2015-09-16 9AM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1538/3/bf22a0a6-cf9c-4f75-98b0-fa079b74660e/audio-vga.m4v">2015-09-16 9AM</a></li>
-<li><a download="VISA2222 2015-09-23 9AM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1539/3/207058de-5c92-46e0-8424-bdb9c89f22d4/audio-vga.m4v">2015-09-23 9AM</a></li>
-<li><a download="VISA2222 2015-10-07 9AM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1541/3/3046d26f-9e7a-40df-a54a-1a98782583d8/audio-vga.m4v">2015-10-07 9AM</a></li>
-<li><a download="VISA2222 2015-10-14 9AM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1542/3/6b94710d-6c07-4aa5-a318-8cff1ca3262a/audio-vga.m4v">2015-10-14 9AM</a></li>
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">9AM Wednesday</div>
+                <div class="col-sm-12">29-July-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: NEDLANDS LECTURE THEATRE, Hew Roberts Lecture Theatre [686:102]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1531/3/e19164ea-8d90-4bcb-839d-bb58dcc3eae7/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">9AM Wednesday</div>
+                <div class="col-sm-12">05-August-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: NEDLANDS LECTURE THEATRE, Hew Roberts Lecture Theatre [686:102]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1532/3/0b3cd259-4cb9-41bc-9c0e-614de71cc799/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">9AM Wednesday</div>
+                <div class="col-sm-12">12-August-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: NEDLANDS LECTURE THEATRE, Hew Roberts Lecture Theatre [686:102]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1533/3/30de9b3f-19a5-42fc-b35c-f02abba2c750/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">9AM Wednesday</div>
+                <div class="col-sm-12">19-August-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: NEDLANDS LECTURE THEATRE, Hew Roberts Lecture Theatre [686:102]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1534/3/93eb7018-38e9-4e97-a492-dd74454dd280/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">9AM Wednesday</div>
+                <div class="col-sm-12">26-August-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: NEDLANDS LECTURE THEATRE, Hew Roberts Lecture Theatre [686:102]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1535/3/fb4bacdf-3239-4af6-bdda-cece76bc834c/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">9AM Wednesday</div>
+                <div class="col-sm-12">02-September-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: NEDLANDS LECTURE THEATRE, Hew Roberts Lecture Theatre [686:102]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1536/3/41449309-8276-479e-8ce5-5b2e167c9dc5/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">9AM Wednesday</div>
+                <div class="col-sm-12">09-September-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: NEDLANDS LECTURE THEATRE, Hew Roberts Lecture Theatre [686:102]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1537/3/f1f6b07c-8a21-4465-a944-adcbe18a9c4c/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">9AM Wednesday</div>
+                <div class="col-sm-12">16-September-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: NEDLANDS LECTURE THEATRE, Hew Roberts Lecture Theatre [686:102]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1538/3/bf22a0a6-cf9c-4f75-98b0-fa079b74660e/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">9AM Wednesday</div>
+                <div class="col-sm-12">23-September-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: NEDLANDS LECTURE THEATRE, Hew Roberts Lecture Theatre [686:102]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1539/3/207058de-5c92-46e0-8424-bdb9c89f22d4/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">9AM Wednesday</div>
+                <div class="col-sm-12">07-October-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: NEDLANDS LECTURE THEATRE, Hew Roberts Lecture Theatre [686:102]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1541/3/3046d26f-9e7a-40df-a54a-1a98782583d8/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">9AM Wednesday</div>
+                <div class="col-sm-12">14-October-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: NEDLANDS LECTURE THEATRE, Hew Roberts Lecture Theatre [686:102]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1542/3/6b94710d-6c07-4aa5-a318-8cff1ca3262a/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        

@@ -35,14 +35,7 @@
     <![endif]-->
     <!-- Find unit redirect script
             Redirects to /units/$InputValue -->
-    <script type="text/javascript">
-        function unitRedirect(){
-            var unitCode = $('#unitCode').val();
-            window.location = 'units/'+unitCode+'.html';
-            return false;
-        }
-    </script>
-
+    <script src="/uwalcsdl.js"></script>
 </head>
 
 <body>
@@ -58,17 +51,19 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html">UWA LCS DL</a>
+                <a class="navbar-brand" href="/index.html">UWA LCS DL</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
+                <ul class="nav navbar-nav" id="navbar-list">
                     <li>
-                        <a href="unitList.html">Units</a>
+                        <a href="/unitList.html">Units</a>
                     </li>
                     <li>
-                        <a href="index.html">Search</a>
+                        <a href="/index.html">Search</a>
                     </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
                     <li>
                         <a href="https://github.com/uwalcsdl/uwalcsdl.github.io">GitHub</a>
                     </li>
@@ -78,6 +73,9 @@
         </div>
         <!-- /.container -->
     </nav>
+    <script type="text/javascript">
+        getUnitShortcuts();
+    </script>
 
     <!-- Page Content -->
     <div class="container"> 
@@ -85,12 +83,12 @@
         <div class="row">
             <div class="col-sm-12 text-center">
                 <h1>Find Unit Lectures:</h1>
-                <form class="form-inline">
+                <form  onsubmit="return unitRedirect()" class="form-inline" id="find-unit-form">
                   <div class="form-group">
                     <label class="sr-only" for="unitCode">Unit to find</label>
                     <div class="input-group">
-                      <input type="text" class="form-control" id="unitCode" nanme="unitCoode" placeholder="UNIT1001">
+                      <input type="text" class="form-control" id="unitCode" nanme="unitCode" placeholder="UNIT1001">
                     </div>
                   </div>
-                <input type="button" id="findUnitForm" name="submit" onclick="unitRedirect()" value="Go to unit" class="btn btn-primary"/>
+                <input type="button" id="findUnitForm" name="submit" onclick="unitRedirect()" value="Go To Unit" class="btn btn-primary"/>
                 </form>

@@ -2,14 +2,14 @@
 <html lang="en">
 
 <head>
-
+    <base = href="file:///home/alastair/Desktop/uwalcsdl"/>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="uwalcsdl.github.io" content="">
 
-    <title>CHEM1004 Lectures</title>
+    <title>CHEM1004</title>
 
     <!-- jQuery Version 1.11.1 -->
     <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
@@ -33,7 +33,7 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-
+    <script src="/uwalcsdl.js"></script>
 </head>
 
 <body>
@@ -49,17 +49,19 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="../index.html">UWA LCS DL</a>
+                <a class="navbar-brand" href="/index.html">UWA LCS DL</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
+                <ul class="nav navbar-nav" id="navbar-list">
                     <li>
-                        <a href="../unitList.html">Units</a>
+                        <a href="/unitList.html">Units</a>
                     </li>
                     <li>
-                        <a href="../index.html">Search</a>
+                        <a href="/index.html">Search</a>
                     </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
                     <li>
                         <a href="https://github.com/uwalcsdl/uwalcsdl.github.io">GitHub</a>
                     </li>
@@ -69,51 +71,834 @@
         </div>
         <!-- /.container -->
     </nav>
-
+    <script type="text/javascript">
+        getUnitShortcuts();
+    </script>
     <!-- Page Content -->
     <div class="container"> 
 
         <div class="row">
-            <div class="col-sm-12 text-center">
-                <h1>CHEM1004 Lectures </h1>
-                <ul class="list-unstyled">
+            <div class="col-sm-12 text-center" id="unit-title-div">
+                <h1>CHEM1004 Lectures: </h1>
+            </div>
+            <script type="text/javascript">addUnitShortcutButton();</script>
+        </div>
 
-<li><a download="CHEM1004 2015-07-27 12PM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1531/1/55bf21f9-7059-474d-b7af-935ef6a35036/audio-vga.m4v">2015-07-27 12PM</a></li>
-<li><a download="CHEM1004 2015-07-29 9AM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1531/3/02c6fcaf-7cca-44f8-93c8-4b732a73391a/audio-vga.m4v">2015-07-29 9AM</a></li>
-<li><a download="CHEM1004 2015-07-31 11AM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1531/5/b3d4fd8d-0749-4966-8180-e005758fb27d/audio-vga.m4v">2015-07-31 11AM</a></li>
-<li><a download="CHEM1004 2015-08-03 12PM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1532/1/ac6cc892-1fc7-48f7-a283-ebee0c9e616f/audio-vga.m4v">2015-08-03 12PM</a></li>
-<li><a download="CHEM1004 2015-08-05 9AM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1532/3/0d491d07-e068-4b39-8d80-12b526e1f1d8/audio-vga.m4v">2015-08-05 9AM</a></li>
-<li><a download="CHEM1004 2015-08-07 11AM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1532/5/21c817f4-19ef-41b8-bb11-16146f74b0bb/audio-vga.m4v">2015-08-07 11AM</a></li>
-<li><a download="CHEM1004 2015-08-10 12PM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1533/1/70cf63d1-2789-46e0-bda0-b0aba5949742/audio-vga.m4v">2015-08-10 12PM</a></li>
-<li><a download="CHEM1004 2015-08-12 9AM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1533/3/ef395b91-e5e6-4889-a985-18c8fb7ea85a/audio-vga.m4v">2015-08-12 9AM</a></li>
-<li><a download="CHEM1004 2015-08-14 11AM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1533/5/2963de6a-706c-4901-8cda-d401acd00cb1/audio-vga.m4v">2015-08-14 11AM</a></li>
-<li><a download="CHEM1004 2015-08-17 12PM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1534/1/95fec119-6c96-4397-89c8-ebe0bb58d077/audio-vga.m4v">2015-08-17 12PM</a></li>
-<li><a download="CHEM1004 2015-08-19 9AM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1534/3/d8ff18bb-c612-4b1d-bf68-3467eac59fa6/audio-vga.m4v">2015-08-19 9AM</a></li>
-<li><a download="CHEM1004 2015-08-21 11AM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1534/5/24daceb0-e457-4b89-84c7-b8c31ec89ecd/audio-vga.m4v">2015-08-21 11AM</a></li>
-<li><a download="CHEM1004 2015-08-24 12PM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1535/1/7b3363c1-a4fc-43a1-8415-74d59902825d/audio-vga.m4v">2015-08-24 12PM</a></li>
-<li><a download="CHEM1004 2015-08-26 9AM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1535/3/3df7097f-a143-432c-b6e4-a78786c2271a/audio-vga.m4v">2015-08-26 9AM</a></li>
-<li><a download="CHEM1004 2015-08-28 11AM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1535/5/6406045b-3d49-4ad3-822d-a82af88392c1/audio-vga.m4v">2015-08-28 11AM</a></li>
-<li><a download="CHEM1004 2015-08-31 12PM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1536/1/5081dd3b-909e-4198-8592-679cfc953e53/audio-vga.m4v">2015-08-31 12PM</a></li>
-<li><a download="CHEM1004 2015-09-02 9AM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1536/3/60961a13-30e4-4dc3-bbaf-5ca7e0fb32f1/audio-vga.m4v">2015-09-02 9AM</a></li>
-<li><a download="CHEM1004 2015-09-04 11AM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1536/5/b44687d6-fb18-4439-80ec-c47ea9329e5f/audio-vga.m4v">2015-09-04 11AM</a></li>
-<li><a download="CHEM1004 2015-09-07 12PM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1537/1/5d8742c8-5089-4175-bd43-9c29b6f43733/audio-vga.m4v">2015-09-07 12PM</a></li>
-<li><a download="CHEM1004 2015-09-09 9AM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1537/3/ddf70f91-7976-4971-81e6-7c0078515940/audio-vga.m4v">2015-09-09 9AM</a></li>
-<li><a download="CHEM1004 2015-09-11 11AM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1537/5/b1da70ea-e632-40a6-9f19-57feb74b02ce/audio-vga.m4v">2015-09-11 11AM</a></li>
-<li><a download="CHEM1004 2015-09-14 12PM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1538/1/3e8dabb8-c9c4-465e-9a6c-24671d71cd01/audio-vga.m4v">2015-09-14 12PM</a></li>
-<li><a download="CHEM1004 2015-09-16 9AM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1538/3/8691f0da-0bc8-40c9-a420-83be83167cb4/audio-vga.m4v">2015-09-16 9AM</a></li>
-<li><a download="CHEM1004 2015-09-18 11AM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1538/5/8c9b4f1a-97dc-45b6-bb65-fe97c8653e7c/audio-vga.m4v">2015-09-18 11AM</a></li>
-<li><a download="CHEM1004 2015-09-21 12PM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1539/1/bd6c7716-6d30-4069-9a08-bf4265e65e02/audio-vga.m4v">2015-09-21 12PM</a></li>
-<li><a download="CHEM1004 2015-09-23 9AM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1539/3/25802472-a2d3-46e8-bbc3-9d0b60b80932/audio-vga.m4v">2015-09-23 9AM</a></li>
-<li><a download="CHEM1004 2015-09-25 11AM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1539/5/5f7b8a1b-5245-41dd-ac50-c41fbfd25121/audio-vga.m4v">2015-09-25 11AM</a></li>
-<li><a download="CHEM1004 2015-10-05 12PM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1541/1/55a2218f-989a-45d7-b675-4ed6efaa1403/audio-vga.m4v">2015-10-05 12PM</a></li>
-<li><a download="CHEM1004 2015-10-07 9AM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1541/3/de038aa4-e7e1-4fa2-a208-7506dafd0ac0/audio-vga.m4v">2015-10-07 9AM</a></li>
-<li><a download="CHEM1004 2015-10-09 11AM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1541/5/aa169fea-f15e-4a73-9b70-de72ab3c747f/audio-vga.m4v">2015-10-09 11AM</a></li>
-<li><a download="CHEM1004 2015-10-12 12PM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1542/1/aea8f082-b0a6-4819-ad2c-dade84b523b5/audio-vga.m4v">2015-10-12 12PM</a></li>
-<li><a download="CHEM1004 2015-10-14 9AM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1542/3/9c940835-6566-4c84-a723-68d8f1aab058/audio-vga.m4v">2015-10-14 9AM</a></li>
-<li><a download="CHEM1004 2015-10-16 11AM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1542/5/be9d9080-c7de-4098-8a90-c02b973f4487/audio-vga.m4v">2015-10-16 11AM</a></li>
-<li><a download="CHEM1004 2015-10-19 12PM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1543/1/fbd62287-1a54-4a1b-8476-638eb4f77c3b/audio-vga.m4v">2015-10-19 12PM</a></li>
-<li><a download="CHEM1004 2015-10-21 9AM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1543/3/cdc8a150-7e6e-40f9-a3e3-db7873f54cc1/audio-vga.m4v">2015-10-21 9AM</a></li>
-<li><a download="CHEM1004 2015-10-23 11AM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1543/5/145c06f7-f74f-42e8-b5fa-175de9941945/audio-vga.m4v">2015-10-23 11AM</a></li>
-<li><a download="CHEM1004 2015-10-26 12PM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1544/1/e5c89945-7f51-47a1-8448-812d75c4a83b/audio-vga.m4v">2015-10-26 12PM</a></li>
-<li><a download="CHEM1004 2015-10-28 9AM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1544/3/f4adf863-ffac-4bb2-816a-6751a20b0989/audio-vga.m4v">2015-10-28 9AM</a></li>
-<li><a download="CHEM1004 2015-10-30 11AM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1544/5/76c8d2d8-a5d3-4c8e-9a33-c6b91a1ff2b0/audio-vga.m4v">2015-10-30 11AM</a></li>
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">12PM Monday</div>
+                <div class="col-sm-12">27-July-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: OCTAGON THEATRE, Octagon Theatre [143:G11]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1531/1/55bf21f9-7059-474d-b7af-935ef6a35036/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">9AM Wednesday</div>
+                <div class="col-sm-12">29-July-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: OCTAGON THEATRE, Octagon Theatre [143:G11]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1531/3/02c6fcaf-7cca-44f8-93c8-4b732a73391a/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">11AM Friday</div>
+                <div class="col-sm-12">31-July-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: OCTAGON THEATRE, Octagon Theatre [143:G11]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1531/5/b3d4fd8d-0749-4966-8180-e005758fb27d/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">12PM Monday</div>
+                <div class="col-sm-12">03-August-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: OCTAGON THEATRE, Octagon Theatre [143:G11]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1532/1/ac6cc892-1fc7-48f7-a283-ebee0c9e616f/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">9AM Wednesday</div>
+                <div class="col-sm-12">05-August-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: OCTAGON THEATRE, Octagon Theatre [143:G11]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1532/3/0d491d07-e068-4b39-8d80-12b526e1f1d8/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">11AM Friday</div>
+                <div class="col-sm-12">07-August-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: OCTAGON THEATRE, Octagon Theatre [143:G11]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1532/5/21c817f4-19ef-41b8-bb11-16146f74b0bb/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">12PM Monday</div>
+                <div class="col-sm-12">10-August-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: OCTAGON THEATRE, Octagon Theatre [143:G11]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1533/1/70cf63d1-2789-46e0-bda0-b0aba5949742/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">9AM Wednesday</div>
+                <div class="col-sm-12">12-August-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: OCTAGON THEATRE, Octagon Theatre [143:G11]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1533/3/ef395b91-e5e6-4889-a985-18c8fb7ea85a/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">11AM Friday</div>
+                <div class="col-sm-12">14-August-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: OCTAGON THEATRE, Octagon Theatre [143:G11]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1533/5/2963de6a-706c-4901-8cda-d401acd00cb1/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">12PM Monday</div>
+                <div class="col-sm-12">17-August-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: OCTAGON THEATRE, Octagon Theatre [143:G11]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1534/1/95fec119-6c96-4397-89c8-ebe0bb58d077/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">9AM Wednesday</div>
+                <div class="col-sm-12">19-August-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: OCTAGON THEATRE, Octagon Theatre [143:G11]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1534/3/d8ff18bb-c612-4b1d-bf68-3467eac59fa6/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">11AM Friday</div>
+                <div class="col-sm-12">21-August-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: OCTAGON THEATRE, Octagon Theatre [143:G11]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1534/5/24daceb0-e457-4b89-84c7-b8c31ec89ecd/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">12PM Monday</div>
+                <div class="col-sm-12">24-August-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: OCTAGON THEATRE, Octagon Theatre [143:G11]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1535/1/7b3363c1-a4fc-43a1-8415-74d59902825d/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">9AM Wednesday</div>
+                <div class="col-sm-12">26-August-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: OCTAGON THEATRE, Octagon Theatre [143:G11]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1535/3/3df7097f-a143-432c-b6e4-a78786c2271a/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">11AM Friday</div>
+                <div class="col-sm-12">28-August-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: OCTAGON THEATRE, Octagon Theatre [143:G11]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1535/5/6406045b-3d49-4ad3-822d-a82af88392c1/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">12PM Monday</div>
+                <div class="col-sm-12">31-August-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: OCTAGON THEATRE, Octagon Theatre [143:G11]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1536/1/5081dd3b-909e-4198-8592-679cfc953e53/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">9AM Wednesday</div>
+                <div class="col-sm-12">02-September-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: OCTAGON THEATRE, Octagon Theatre [143:G11]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1536/3/60961a13-30e4-4dc3-bbaf-5ca7e0fb32f1/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">11AM Friday</div>
+                <div class="col-sm-12">04-September-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: OCTAGON THEATRE, Octagon Theatre [143:G11]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1536/5/b44687d6-fb18-4439-80ec-c47ea9329e5f/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">12PM Monday</div>
+                <div class="col-sm-12">07-September-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: OCTAGON THEATRE, Octagon Theatre [143:G11]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1537/1/5d8742c8-5089-4175-bd43-9c29b6f43733/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">9AM Wednesday</div>
+                <div class="col-sm-12">09-September-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: OCTAGON THEATRE, Octagon Theatre [143:G11]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1537/3/ddf70f91-7976-4971-81e6-7c0078515940/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">11AM Friday</div>
+                <div class="col-sm-12">11-September-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: OCTAGON THEATRE, Octagon Theatre [143:G11]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1537/5/b1da70ea-e632-40a6-9f19-57feb74b02ce/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">12PM Monday</div>
+                <div class="col-sm-12">14-September-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: OCTAGON THEATRE, Octagon Theatre [143:G11]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1538/1/3e8dabb8-c9c4-465e-9a6c-24671d71cd01/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">9AM Wednesday</div>
+                <div class="col-sm-12">16-September-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: OCTAGON THEATRE, Octagon Theatre [143:G11]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1538/3/8691f0da-0bc8-40c9-a420-83be83167cb4/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">11AM Friday</div>
+                <div class="col-sm-12">18-September-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: OCTAGON THEATRE, Octagon Theatre [143:G11]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1538/5/8c9b4f1a-97dc-45b6-bb65-fe97c8653e7c/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">12PM Monday</div>
+                <div class="col-sm-12">21-September-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: OCTAGON THEATRE, Octagon Theatre [143:G11]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1539/1/bd6c7716-6d30-4069-9a08-bf4265e65e02/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">9AM Wednesday</div>
+                <div class="col-sm-12">23-September-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: OCTAGON THEATRE, Octagon Theatre [143:G11]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1539/3/25802472-a2d3-46e8-bbc3-9d0b60b80932/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">11AM Friday</div>
+                <div class="col-sm-12">25-September-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: OCTAGON THEATRE, Octagon Theatre [143:G11]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1539/5/5f7b8a1b-5245-41dd-ac50-c41fbfd25121/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">12PM Monday</div>
+                <div class="col-sm-12">05-October-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: OCTAGON THEATRE, Octagon Theatre [143:G11]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1541/1/55a2218f-989a-45d7-b675-4ed6efaa1403/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">9AM Wednesday</div>
+                <div class="col-sm-12">07-October-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: OCTAGON THEATRE, Octagon Theatre [143:G11]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1541/3/de038aa4-e7e1-4fa2-a208-7506dafd0ac0/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">11AM Friday</div>
+                <div class="col-sm-12">09-October-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: OCTAGON THEATRE, Octagon Theatre [143:G11]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1541/5/aa169fea-f15e-4a73-9b70-de72ab3c747f/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">12PM Monday</div>
+                <div class="col-sm-12">12-October-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: OCTAGON THEATRE, Octagon Theatre [143:G11]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1542/1/aea8f082-b0a6-4819-ad2c-dade84b523b5/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">9AM Wednesday</div>
+                <div class="col-sm-12">14-October-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: OCTAGON THEATRE, Octagon Theatre [143:G11]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1542/3/9c940835-6566-4c84-a723-68d8f1aab058/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">11AM Friday</div>
+                <div class="col-sm-12">16-October-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: OCTAGON THEATRE, Octagon Theatre [143:G11]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1542/5/be9d9080-c7de-4098-8a90-c02b973f4487/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">12PM Monday</div>
+                <div class="col-sm-12">19-October-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: OCTAGON THEATRE, Octagon Theatre [143:G11]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1543/1/fbd62287-1a54-4a1b-8476-638eb4f77c3b/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">9AM Wednesday</div>
+                <div class="col-sm-12">21-October-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: OCTAGON THEATRE, Octagon Theatre [143:G11]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1543/3/cdc8a150-7e6e-40f9-a3e3-db7873f54cc1/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">11AM Friday</div>
+                <div class="col-sm-12">23-October-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: OCTAGON THEATRE, Octagon Theatre [143:G11]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1543/5/145c06f7-f74f-42e8-b5fa-175de9941945/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">12PM Monday</div>
+                <div class="col-sm-12">26-October-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: OCTAGON THEATRE, Octagon Theatre [143:G11]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1544/1/e5c89945-7f51-47a1-8448-812d75c4a83b/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">9AM Wednesday</div>
+                <div class="col-sm-12">28-October-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: OCTAGON THEATRE, Octagon Theatre [143:G11]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1544/3/f4adf863-ffac-4bb2-816a-6751a20b0989/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">11AM Friday</div>
+                <div class="col-sm-12">30-October-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: OCTAGON THEATRE, Octagon Theatre [143:G11]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1544/5/76c8d2d8-a5d3-4c8e-9a33-c6b91a1ff2b0/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        

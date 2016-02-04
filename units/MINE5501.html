@@ -2,14 +2,14 @@
 <html lang="en">
 
 <head>
-
+    <base = href="file:///home/alastair/Desktop/uwalcsdl"/>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="uwalcsdl.github.io" content="">
 
-    <title>MINE5501 Lectures</title>
+    <title>MINE5501</title>
 
     <!-- jQuery Version 1.11.1 -->
     <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
@@ -33,7 +33,7 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-
+    <script src="/uwalcsdl.js"></script>
 </head>
 
 <body>
@@ -49,17 +49,19 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="../index.html">UWA LCS DL</a>
+                <a class="navbar-brand" href="/index.html">UWA LCS DL</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
+                <ul class="nav navbar-nav" id="navbar-list">
                     <li>
-                        <a href="../unitList.html">Units</a>
+                        <a href="/unitList.html">Units</a>
                     </li>
                     <li>
-                        <a href="../index.html">Search</a>
+                        <a href="/index.html">Search</a>
                     </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
                     <li>
                         <a href="https://github.com/uwalcsdl/uwalcsdl.github.io">GitHub</a>
                     </li>
@@ -69,38 +71,561 @@
         </div>
         <!-- /.container -->
     </nav>
-
+    <script type="text/javascript">
+        getUnitShortcuts();
+    </script>
     <!-- Page Content -->
     <div class="container"> 
 
         <div class="row">
-            <div class="col-sm-12 text-center">
-                <h1>MINE5501 Lectures </h1>
-                <ul class="list-unstyled">
+            <div class="col-sm-12 text-center" id="unit-title-div">
+                <h1>MINE5501 Lectures: </h1>
+            </div>
+            <script type="text/javascript">addUnitShortcutButton();</script>
+        </div>
 
-<li><a download="MINE5501 2015-07-29 9AM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1531/3/f85f9117-591f-4682-8f09-703dd763349c/audio-vga.m4v">2015-07-29 9AM</a></li>
-<li><a download="MINE5501 2015-07-30 11AM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1531/4/153dd098-60dd-4601-ad8d-8d5d207f8bdf/audio-vga.m4v">2015-07-30 11AM</a></li>
-<li><a download="MINE5501 2015-08-05 9AM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1532/3/42c7298f-951f-452c-86f9-aef9ec19aa78/audio-vga.m4v">2015-08-05 9AM</a></li>
-<li><a download="MINE5501 2015-08-06 11AM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1532/4/4b7006c6-a6d0-4cb9-94db-3750cebc4709/audio-vga.m4v">2015-08-06 11AM</a></li>
-<li><a download="MINE5501 2015-08-12 9AM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1533/3/ffa4cf0e-b7c8-4b8a-88c7-6fb4092c36d7/audio-vga.m4v">2015-08-12 9AM</a></li>
-<li><a download="MINE5501 2015-08-13 11AM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1533/4/73dbd8fb-b770-4a81-95d0-3579f2bde640/audio-vga.m4v">2015-08-13 11AM</a></li>
-<li><a download="MINE5501 2015-08-19 9AM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1534/3/c4c95f8d-da59-46a7-8f95-178bc42d3a98/audio-vga.m4v">2015-08-19 9AM</a></li>
-<li><a download="MINE5501 2015-08-20 11AM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1534/4/7dbc02c1-ea96-4982-8aa3-b21a834a235d/audio-vga.m4v">2015-08-20 11AM</a></li>
-<li><a download="MINE5501 2015-08-26 9AM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1535/3/148d3d1c-9416-41e0-882c-64a47dc9e93a/audio-vga.m4v">2015-08-26 9AM</a></li>
-<li><a download="MINE5501 2015-08-27 11AM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1535/4/35662934-1b55-490b-ab31-a2e10df446a7/audio-vga.m4v">2015-08-27 11AM</a></li>
-<li><a download="MINE5501 2015-09-02 9AM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1536/3/aa20ff6b-99a9-402b-a172-11e139ce2838/audio-vga.m4v">2015-09-02 9AM</a></li>
-<li><a download="MINE5501 2015-09-03 11AM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1536/4/43b0f654-ca2c-49ee-b78c-2f71cc30dc06/audio-vga.m4v">2015-09-03 11AM</a></li>
-<li><a download="MINE5501 2015-09-09 9AM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1537/3/03a0de8d-03fd-4cc2-ab78-0a67b7a63a67/audio-vga.m4v">2015-09-09 9AM</a></li>
-<li><a download="MINE5501 2015-09-10 11AM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1537/4/258d709b-95d9-4307-8c48-4b05ea38824e/audio-vga.m4v">2015-09-10 11AM</a></li>
-<li><a download="MINE5501 2015-09-16 9AM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1538/3/5f461b36-53a3-4978-a82a-84d24baefa13/audio-vga.m4v">2015-09-16 9AM</a></li>
-<li><a download="MINE5501 2015-09-17 11AM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1538/4/d09af8ef-d68f-43ac-a6cd-e177017a268d/audio-vga.m4v">2015-09-17 11AM</a></li>
-<li><a download="MINE5501 2015-09-23 9AM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1539/3/f5021d83-8bd4-4326-a8aa-0e9bfaf9e210/audio-vga.m4v">2015-09-23 9AM</a></li>
-<li><a download="MINE5501 2015-09-24 11AM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1539/4/dadc9211-f3b6-4a8e-a27d-450fa8468b51/audio-vga.m4v">2015-09-24 11AM</a></li>
-<li><a download="MINE5501 2015-10-07 9AM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1541/3/e6ecfd5c-513c-466d-8c17-e48b7eb7a3c6/audio-vga.m4v">2015-10-07 9AM</a></li>
-<li><a download="MINE5501 2015-10-08 11AM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1541/4/da39200b-7248-4d00-8ac6-423d3607c5fe/audio-vga.m4v">2015-10-08 11AM</a></li>
-<li><a download="MINE5501 2015-10-14 9AM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1542/3/720913f3-288b-4c16-a2d5-43549ab057a0/audio-vga.m4v">2015-10-14 9AM</a></li>
-<li><a download="MINE5501 2015-10-15 11AM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1542/4/bec6cd1f-a0fc-40ba-9267-5a23f306593b/audio-vga.m4v">2015-10-15 11AM</a></li>
-<li><a download="MINE5501 2015-10-21 9AM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1543/3/15ca7fe9-de2f-4c3e-b407-fffe93aa06bf/audio-vga.m4v">2015-10-21 9AM</a></li>
-<li><a download="MINE5501 2015-10-22 11AM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1543/4/78dbf00f-2192-4a15-9eab-20167c70e71e/audio-vga.m4v">2015-10-22 11AM</a></li>
-<li><a download="MINE5501 2015-10-28 9AM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1544/3/7b8fe37e-1dca-4858-8a9c-7b6b77e93214/audio-vga.m4v">2015-10-28 9AM</a></li>
-<li><a download="MINE5501 2015-10-29 11AM.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1544/4/c8525402-f035-4287-b9b7-954752be56ce/audio-vga.m4v">2015-10-29 11AM</a></li>
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">9AM Wednesday</div>
+                <div class="col-sm-12">29-July-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: GEOGRAPHY AND GEOLOGY, Webb Lecture Theatre [225:G21]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1531/3/f85f9117-591f-4682-8f09-703dd763349c/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">11AM Thursday</div>
+                <div class="col-sm-12">30-July-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: ROBERT STREET BUILDING (GP2), Robert Street Lecture Theatre [272:G16]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1531/4/153dd098-60dd-4601-ad8d-8d5d207f8bdf/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">9AM Wednesday</div>
+                <div class="col-sm-12">05-August-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: GEOGRAPHY AND GEOLOGY, Webb Lecture Theatre [225:G21]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1532/3/42c7298f-951f-452c-86f9-aef9ec19aa78/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">11AM Thursday</div>
+                <div class="col-sm-12">06-August-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: ROBERT STREET BUILDING (GP2), Robert Street Lecture Theatre [272:G16]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1532/4/4b7006c6-a6d0-4cb9-94db-3750cebc4709/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">9AM Wednesday</div>
+                <div class="col-sm-12">12-August-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: GEOGRAPHY AND GEOLOGY, Webb Lecture Theatre [225:G21]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1533/3/ffa4cf0e-b7c8-4b8a-88c7-6fb4092c36d7/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">11AM Thursday</div>
+                <div class="col-sm-12">13-August-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: ROBERT STREET BUILDING (GP2), Robert Street Lecture Theatre [272:G16]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1533/4/73dbd8fb-b770-4a81-95d0-3579f2bde640/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">9AM Wednesday</div>
+                <div class="col-sm-12">19-August-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: GEOGRAPHY AND GEOLOGY, Webb Lecture Theatre [225:G21]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1534/3/c4c95f8d-da59-46a7-8f95-178bc42d3a98/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">11AM Thursday</div>
+                <div class="col-sm-12">20-August-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: ROBERT STREET BUILDING (GP2), Robert Street Lecture Theatre [272:G16]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1534/4/7dbc02c1-ea96-4982-8aa3-b21a834a235d/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">9AM Wednesday</div>
+                <div class="col-sm-12">26-August-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: GEOGRAPHY AND GEOLOGY, Webb Lecture Theatre [225:G21]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1535/3/148d3d1c-9416-41e0-882c-64a47dc9e93a/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">11AM Thursday</div>
+                <div class="col-sm-12">27-August-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: ROBERT STREET BUILDING (GP2), Robert Street Lecture Theatre [272:G16]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1535/4/35662934-1b55-490b-ab31-a2e10df446a7/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">9AM Wednesday</div>
+                <div class="col-sm-12">02-September-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: GEOGRAPHY AND GEOLOGY, Webb Lecture Theatre [225:G21]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1536/3/aa20ff6b-99a9-402b-a172-11e139ce2838/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">11AM Thursday</div>
+                <div class="col-sm-12">03-September-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: ROBERT STREET BUILDING (GP2), Robert Street Lecture Theatre [272:G16]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1536/4/43b0f654-ca2c-49ee-b78c-2f71cc30dc06/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">9AM Wednesday</div>
+                <div class="col-sm-12">09-September-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: GEOGRAPHY AND GEOLOGY, Webb Lecture Theatre [225:G21]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1537/3/03a0de8d-03fd-4cc2-ab78-0a67b7a63a67/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">11AM Thursday</div>
+                <div class="col-sm-12">10-September-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: ROBERT STREET BUILDING (GP2), Robert Street Lecture Theatre [272:G16]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1537/4/258d709b-95d9-4307-8c48-4b05ea38824e/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">9AM Wednesday</div>
+                <div class="col-sm-12">16-September-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: GEOGRAPHY AND GEOLOGY, Webb Lecture Theatre [225:G21]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1538/3/5f461b36-53a3-4978-a82a-84d24baefa13/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">11AM Thursday</div>
+                <div class="col-sm-12">17-September-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: ROBERT STREET BUILDING (GP2), Robert Street Lecture Theatre [272:G16]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1538/4/d09af8ef-d68f-43ac-a6cd-e177017a268d/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">9AM Wednesday</div>
+                <div class="col-sm-12">23-September-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: GEOGRAPHY AND GEOLOGY, Webb Lecture Theatre [225:G21]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1539/3/f5021d83-8bd4-4326-a8aa-0e9bfaf9e210/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">11AM Thursday</div>
+                <div class="col-sm-12">24-September-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: ROBERT STREET BUILDING (GP2), Robert Street Lecture Theatre [272:G16]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1539/4/dadc9211-f3b6-4a8e-a27d-450fa8468b51/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">9AM Wednesday</div>
+                <div class="col-sm-12">07-October-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: GEOGRAPHY AND GEOLOGY, Webb Lecture Theatre [225:G21]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1541/3/e6ecfd5c-513c-466d-8c17-e48b7eb7a3c6/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">11AM Thursday</div>
+                <div class="col-sm-12">08-October-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: ROBERT STREET BUILDING (GP2), Robert Street Lecture Theatre [272:G16]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1541/4/da39200b-7248-4d00-8ac6-423d3607c5fe/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">9AM Wednesday</div>
+                <div class="col-sm-12">14-October-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: GEOGRAPHY AND GEOLOGY, Webb Lecture Theatre [225:G21]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1542/3/720913f3-288b-4c16-a2d5-43549ab057a0/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">11AM Thursday</div>
+                <div class="col-sm-12">15-October-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: ROBERT STREET BUILDING (GP2), Robert Street Lecture Theatre [272:G16]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1542/4/bec6cd1f-a0fc-40ba-9267-5a23f306593b/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">9AM Wednesday</div>
+                <div class="col-sm-12">21-October-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: GEOGRAPHY AND GEOLOGY, Webb Lecture Theatre [225:G21]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1543/3/15ca7fe9-de2f-4c3e-b407-fffe93aa06bf/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">11AM Thursday</div>
+                <div class="col-sm-12">22-October-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: ROBERT STREET BUILDING (GP2), Robert Street Lecture Theatre [272:G16]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1543/4/78dbf00f-2192-4a15-9eab-20167c70e71e/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">9AM Wednesday</div>
+                <div class="col-sm-12">28-October-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: GEOGRAPHY AND GEOLOGY, Webb Lecture Theatre [225:G21]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1544/3/7b8fe37e-1dca-4858-8a9c-7b6b77e93214/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">11AM Thursday</div>
+                <div class="col-sm-12">29-October-2015 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: ROBERT STREET BUILDING (GP2), Robert Street Lecture Theatre [272:G16]</div>
+                </div>
+            <div class="col-sm-2"> 
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1544/4/c8525402-f035-4287-b9b7-954752be56ce/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        

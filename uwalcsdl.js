@@ -30,6 +30,7 @@ function stringInList( string, list) {
 
 function unitRedirect(){
     var unitCode = $('#unitCode').val();
+    unitCode = unitCode.toUpperCase()
     window.location = '/units/'+unitCode+'.html';
     return false;
 }

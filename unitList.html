@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    <script src="uwalcsdl.js"></script>
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -26,57 +27,21 @@
         /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
     }
     </style>
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-    <script src="uwalcsdl.js"></script>
 </head>
 
 <body>
 
     <!-- Navigation -->
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="index.html">UWA LCS DL</a>
-            </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav" id="navbar-list">
-                    <li>
-                        <a href="index.html">Find Unit</a>
-                    </li>
-                    <li>
-                        <a href="unitList.html">List Units</a>
-                    </li>
-                </ul>
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a href="https://github.com/uwalcsdl/uwalcsdl.github.io">GitHub</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container -->
-    </nav>
+    <script type="text/javascript">
+        insertNavbar();
+    </script>
+    <!-- Unit Shortcuts from cookie -->
     <script type="text/javascript">
         getUnitShortcuts();
     </script>
 
     <!-- Page Content -->
-    <div class="container"> 
+    <div class="container">
 
         <div class="row">
             <div class="col-md-12 text-center">
@@ -93,7 +58,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">ACCT1113:</div>
@@ -103,7 +68,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">ACCT2112:</div>
@@ -113,7 +78,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">ACCT2201:</div>
@@ -123,7 +88,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">ACCT3203:</div>
@@ -133,7 +98,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">ACCT3206:</div>
@@ -143,7 +108,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">ACCT3302:</div>
@@ -153,7 +118,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">ACCT3322:</div>
@@ -163,7 +128,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">ACCT5432:</div>
@@ -173,7 +138,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">ACCT5511:</div>
@@ -183,7 +148,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">ACCT5522:</div>
@@ -193,7 +158,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">ACCT5531:</div>
@@ -203,7 +168,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">ACCT5633:</div>
@@ -213,7 +178,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">AGRI5503:</div>
@@ -223,7 +188,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">AGRI5521:</div>
@@ -233,7 +198,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">AGRI5525:</div>
@@ -243,7 +208,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">AGRI5535:</div>
@@ -253,7 +218,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">AHEA2203:</div>
@@ -263,7 +228,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">AHEA2204:</div>
@@ -273,7 +238,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">AHEA2205:</div>
@@ -283,7 +248,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">ANHB0035:</div>
@@ -293,7 +258,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">ANHB1102:</div>
@@ -303,7 +268,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">ANHB2214:</div>
@@ -313,7 +278,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">ANHB2216:</div>
@@ -323,7 +288,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">ANHB3315:</div>
@@ -333,7 +298,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">ANHB3316:</div>
@@ -343,7 +308,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">ANHB3320:</div>
@@ -353,7 +318,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">ANIM2207:</div>
@@ -363,7 +328,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">ANIM2208:</div>
@@ -373,7 +338,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">ANIM3306:</div>
@@ -383,7 +348,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">ANIM3353:</div>
@@ -393,7 +358,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">ANIM3363:</div>
@@ -403,7 +368,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">ANIM3365:</div>
@@ -413,7 +378,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">ANTH1002:</div>
@@ -423,7 +388,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">ANTH2001:</div>
@@ -433,7 +398,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">ANTH2402:</div>
@@ -443,7 +408,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">ANTH3601:</div>
@@ -453,7 +418,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">ANTH3801:</div>
@@ -463,7 +428,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">APHB4002:</div>
@@ -473,7 +438,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">ARCT1030:</div>
@@ -483,7 +448,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">ARCT2050:</div>
@@ -493,7 +458,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">ARCT4440:</div>
@@ -503,7 +468,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">ARCT4470:</div>
@@ -513,7 +478,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">ARCT5001:</div>
@@ -523,7 +488,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">ARCT5512:</div>
@@ -533,7 +498,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">ARCT5585:</div>
@@ -543,7 +508,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">ARCT5589:</div>
@@ -553,7 +518,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">ARCY1002:</div>
@@ -563,7 +528,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">ARCY2002:</div>
@@ -573,7 +538,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">ARCY3002:</div>
@@ -583,7 +548,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">ARCY3003:</div>
@@ -593,7 +558,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">ARCY3005:</div>
@@ -603,7 +568,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">ARCY4102:</div>
@@ -613,7 +578,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">ASIA1002:</div>
@@ -623,7 +588,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">ASIA1002:</div>
@@ -633,7 +598,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">ASIA2001:</div>
@@ -643,7 +608,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">ASIA3002:</div>
@@ -653,7 +618,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">ASIA3004:</div>
@@ -663,7 +628,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">AUST0014:</div>
@@ -673,7 +638,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">AUST0062:</div>
@@ -683,7 +648,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">AUST0073:</div>
@@ -693,7 +658,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">BIOC2002:</div>
@@ -703,7 +668,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">BIOC3001:</div>
@@ -713,7 +678,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">BIOC3005:</div>
@@ -723,7 +688,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">BIOL1131:</div>
@@ -733,7 +698,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">BIOL2261:</div>
@@ -743,7 +708,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">BUSN1102:</div>
@@ -753,7 +718,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">CELT1112:</div>
@@ -763,7 +728,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">CHEM0037:</div>
@@ -773,7 +738,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">CHEM1001:</div>
@@ -783,7 +748,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">CHEM1002:</div>
@@ -793,7 +758,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">CHEM1004:</div>
@@ -803,7 +768,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">CHEM2002:</div>
@@ -813,7 +778,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">CHEM2003:</div>
@@ -823,7 +788,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">CHEM3002:</div>
@@ -833,7 +798,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">CHEM3004:</div>
@@ -843,7 +808,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">CHEM3006:</div>
@@ -853,7 +818,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">CHEM4001:</div>
@@ -863,7 +828,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">CHEM4309:</div>
@@ -873,7 +838,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">CHIN1402:</div>
@@ -883,7 +848,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">CHIN1404:</div>
@@ -893,7 +858,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">CHIN1406:</div>
@@ -903,7 +868,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">CHIN3410:</div>
@@ -913,7 +878,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">CHPR4405:</div>
@@ -923,7 +888,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">CHPR4411:</div>
@@ -933,7 +898,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">CHPR5552:</div>
@@ -943,7 +908,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">CITS1402:</div>
@@ -953,7 +918,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">CITS2002:</div>
@@ -963,7 +928,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">CITS2211:</div>
@@ -973,7 +938,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">CITS2401:</div>
@@ -983,7 +948,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">CITS3003:</div>
@@ -993,7 +958,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">CITS3200:</div>
@@ -1003,7 +968,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">CITS3402:</div>
@@ -1013,7 +978,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">CITS4404:</div>
@@ -1023,7 +988,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">CITS4405:</div>
@@ -1033,7 +998,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">CITS4419:</div>
@@ -1043,7 +1008,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">CITS5502:</div>
@@ -1053,7 +1018,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">CITS5503:</div>
@@ -1063,7 +1028,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">CIVL4403:</div>
@@ -1073,7 +1038,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">CIVL5501:</div>
@@ -1083,7 +1048,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">CIVL5503:</div>
@@ -1093,7 +1058,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">CIVL5505:</div>
@@ -1103,7 +1068,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">CIVL5551:</div>
@@ -1113,7 +1078,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">CLAN1002:</div>
@@ -1123,7 +1088,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">CLAN2002:</div>
@@ -1133,7 +1098,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">CLAN2103:</div>
@@ -1143,7 +1108,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">CLAN3004:</div>
@@ -1153,7 +1118,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">CLAN3005:</div>
@@ -1163,7 +1128,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">COMM1002:</div>
@@ -1173,7 +1138,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">COMM1901:</div>
@@ -1183,7 +1148,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">COMM2001:</div>
@@ -1193,7 +1158,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">COMM2001:</div>
@@ -1203,7 +1168,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">COMM3001:</div>
@@ -1213,7 +1178,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">COMM3002:</div>
@@ -1223,7 +1188,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">COMM3003:</div>
@@ -1233,7 +1198,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">DENT4105:</div>
@@ -1243,7 +1208,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">DENT4106:</div>
@@ -1253,7 +1218,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">DENT4107:</div>
@@ -1263,7 +1228,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">DENT4108:</div>
@@ -1273,7 +1238,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">DENT4206:</div>
@@ -1283,7 +1248,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">DENT4207:</div>
@@ -1293,7 +1258,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">DENT5305:</div>
@@ -1303,7 +1268,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">DENT5306:</div>
@@ -1313,7 +1278,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">DENT5307:</div>
@@ -1323,7 +1288,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">DENT5308:</div>
@@ -1333,7 +1298,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">EART1104:</div>
@@ -1343,7 +1308,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">EART1108:</div>
@@ -1353,7 +1318,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">EART2234:</div>
@@ -1363,7 +1328,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">EART3320:</div>
@@ -1373,7 +1338,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">EART3339:</div>
@@ -1383,7 +1348,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">EART3353:</div>
@@ -1393,7 +1358,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">EBUS5504:</div>
@@ -1403,7 +1368,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">ECON1101:</div>
@@ -1413,7 +1378,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">ECON1102:</div>
@@ -1423,7 +1388,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">ECON1111:</div>
@@ -1433,7 +1398,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">ECON1120:</div>
@@ -1443,7 +1408,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">ECON2234:</div>
@@ -1453,7 +1418,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">ECON2245:</div>
@@ -1463,7 +1428,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">ECON2271:</div>
@@ -1473,7 +1438,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">ECON3220:</div>
@@ -1483,7 +1448,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">ECON3235:</div>
@@ -1493,7 +1458,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">ECON3272:</div>
@@ -1503,7 +1468,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">ECON3303:</div>
@@ -1513,7 +1478,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">ECON3350:</div>
@@ -1523,7 +1488,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">ECON3371:</div>
@@ -1533,7 +1498,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">ECON3395:</div>
@@ -1543,7 +1508,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">ECON4405:</div>
@@ -1553,7 +1518,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">ECON4415:</div>
@@ -1563,7 +1528,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">ECON4418:</div>
@@ -1573,7 +1538,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">ECON4450:</div>
@@ -1583,7 +1548,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">ECON4503:</div>
@@ -1593,7 +1558,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">ECON5541:</div>
@@ -1603,7 +1568,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">EDUC1103:</div>
@@ -1613,7 +1578,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">EDUC5454:</div>
@@ -1623,7 +1588,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">EDUC5546:</div>
@@ -1633,7 +1598,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">EDUC5612:</div>
@@ -1643,7 +1608,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">ELEC3307:</div>
@@ -1653,7 +1618,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">ELEC4403:</div>
@@ -1663,7 +1628,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">ELEC5501:</div>
@@ -1673,7 +1638,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">ELEC5502:</div>
@@ -1683,7 +1648,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">ELEC5505:</div>
@@ -1693,7 +1658,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">EMPL1206:</div>
@@ -1703,7 +1668,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">EMPL2202:</div>
@@ -1713,7 +1678,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">EMPL3208:</div>
@@ -1723,7 +1688,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">EMPL3241:</div>
@@ -1733,7 +1698,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">EMPL4401:</div>
@@ -1743,7 +1708,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">EMPL5501:</div>
@@ -1753,7 +1718,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">ENGL1001:</div>
@@ -1763,7 +1728,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">ENGL1501:</div>
@@ -1773,7 +1738,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">ENGL2501:</div>
@@ -1783,7 +1748,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">ENGL2704:</div>
@@ -1793,7 +1758,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">ENGL2801:</div>
@@ -1803,7 +1768,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">ENGL3001:</div>
@@ -1813,7 +1778,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">ENGL3603:</div>
@@ -1823,7 +1788,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">ENGL3701:</div>
@@ -1833,7 +1798,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">ENSC1001:</div>
@@ -1843,7 +1808,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">ENSC1002:</div>
@@ -1853,7 +1818,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">ENSC2001:</div>
@@ -1863,7 +1828,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">ENSC2002:</div>
@@ -1873,7 +1838,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">ENSC3001:</div>
@@ -1883,7 +1848,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">ENSC3002:</div>
@@ -1893,7 +1858,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">ENSC3005:</div>
@@ -1903,7 +1868,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">ENSC3007:</div>
@@ -1913,7 +1878,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">ENSC3008:</div>
@@ -1923,7 +1888,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">ENSC3010:</div>
@@ -1933,7 +1898,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">ENSC3011:</div>
@@ -1943,7 +1908,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">ENSC3012:</div>
@@ -1953,7 +1918,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">ENSC3015:</div>
@@ -1963,7 +1928,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">ENSC3016:</div>
@@ -1973,7 +1938,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">ENSC3018:</div>
@@ -1983,7 +1948,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">ENSC3019:</div>
@@ -1993,7 +1958,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">ENVE4401:</div>
@@ -2003,7 +1968,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">ENVT2221:</div>
@@ -2013,7 +1978,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">ENVT2251:</div>
@@ -2023,7 +1988,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">ENVT3307:</div>
@@ -2033,7 +1998,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">ENVT3362:</div>
@@ -2043,7 +2008,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">ENVT3363:</div>
@@ -2053,7 +2018,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">EURO2209:</div>
@@ -2063,7 +2028,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">FINA1109:</div>
@@ -2073,7 +2038,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">FINA1221:</div>
@@ -2083,7 +2048,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">FINA2209:</div>
@@ -2093,7 +2058,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">FINA2221:</div>
@@ -2103,7 +2068,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">FINA2222:</div>
@@ -2113,7 +2078,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">FINA3306:</div>
@@ -2123,7 +2088,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">FINA3307:</div>
@@ -2133,7 +2098,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">FINA3326:</div>
@@ -2143,7 +2108,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">FINA4482:</div>
@@ -2153,7 +2118,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">FINA4491:</div>
@@ -2163,7 +2128,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">FINA5432:</div>
@@ -2173,7 +2138,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">FINA5632:</div>
@@ -2183,7 +2148,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">FNSC2200:</div>
@@ -2193,7 +2158,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">FNSC5614:</div>
@@ -2203,7 +2168,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">FREN1401:</div>
@@ -2213,7 +2178,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">FREN1402:</div>
@@ -2223,7 +2188,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">FREN1404:</div>
@@ -2233,7 +2198,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">FREN2404:</div>
@@ -2243,7 +2208,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">FREN2812:</div>
@@ -2253,7 +2218,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">FREN3814:</div>
@@ -2263,7 +2228,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">GEND1902:</div>
@@ -2273,7 +2238,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">GEND2901:</div>
@@ -2283,7 +2248,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">GENE2230:</div>
@@ -2293,7 +2258,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">GENE3340:</div>
@@ -2303,7 +2268,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">GENE3350:</div>
@@ -2313,7 +2278,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">GENG4402:</div>
@@ -2323,7 +2288,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">GENG4405:</div>
@@ -2333,7 +2298,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">GENG5502:</div>
@@ -2343,7 +2308,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">GENG5504:</div>
@@ -2353,7 +2318,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">GENG5505:</div>
@@ -2363,7 +2328,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">GENG5507:</div>
@@ -2373,7 +2338,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">GENG5508:</div>
@@ -2383,7 +2348,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">GENG5803:</div>
@@ -2393,7 +2358,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">GRMN1401:</div>
@@ -2403,7 +2368,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">GRMN1402:</div>
@@ -2413,7 +2378,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">GRMN1404:</div>
@@ -2423,7 +2388,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">GRMN1406:</div>
@@ -2433,7 +2398,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">GRMN2408:</div>
@@ -2443,7 +2408,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">HIST1002:</div>
@@ -2453,7 +2418,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">HIST2001:</div>
@@ -2463,7 +2428,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">HIST2008:</div>
@@ -2473,7 +2438,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">HIST2015:</div>
@@ -2483,7 +2448,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">HIST3005:</div>
@@ -2493,7 +2458,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">HIST3008:</div>
@@ -2503,7 +2468,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">HIST5504:</div>
@@ -2513,7 +2478,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">HRMT3345:</div>
@@ -2523,7 +2488,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">HRMT5502:</div>
@@ -2533,7 +2498,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">HRMT5504:</div>
@@ -2543,7 +2508,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">HRMT5530:</div>
@@ -2553,7 +2518,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">HSMD3316:</div>
@@ -2563,7 +2528,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">HUMA1901:</div>
@@ -2573,7 +2538,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">HUMA1902:</div>
@@ -2583,7 +2548,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">IDES2001:</div>
@@ -2593,7 +2558,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">IDES2040:</div>
@@ -2603,7 +2568,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">IDES3010:</div>
@@ -2613,7 +2578,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">IDNT5512:</div>
@@ -2623,7 +2588,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">IMED3304:</div>
@@ -2633,7 +2598,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">IMED5803:</div>
@@ -2643,7 +2608,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">IMED6651:</div>
@@ -2653,7 +2618,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">INDG1160:</div>
@@ -2663,7 +2628,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">INDG2200:</div>
@@ -2673,7 +2638,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">INDG2500:</div>
@@ -2683,7 +2648,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">INDG2700:</div>
@@ -2693,7 +2658,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">INDG3400:</div>
@@ -2703,7 +2668,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">INDG5108:</div>
@@ -2713,7 +2678,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">INDO1402:</div>
@@ -2723,7 +2688,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">INMT2232:</div>
@@ -2733,7 +2698,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">INMT5501:</div>
@@ -2743,7 +2708,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">INMT5526:</div>
@@ -2753,7 +2718,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">ITAL1401:</div>
@@ -2763,7 +2728,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">ITAL1402:</div>
@@ -2773,7 +2738,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">ITAL1404:</div>
@@ -2783,7 +2748,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">ITAL2812:</div>
@@ -2793,7 +2758,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">ITAL3814:</div>
@@ -2803,7 +2768,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">JAPN1402:</div>
@@ -2813,7 +2778,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">JAPN1404:</div>
@@ -2823,7 +2788,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">JAPN1406:</div>
@@ -2833,7 +2798,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">JAPN2406:</div>
@@ -2843,7 +2808,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">JAPN2408:</div>
@@ -2853,7 +2818,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">KORE1402:</div>
@@ -2863,7 +2828,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">KORE2402:</div>
@@ -2873,7 +2838,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">KORE3406:</div>
@@ -2883,7 +2848,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">LACH1020:</div>
@@ -2893,7 +2858,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">LAWS1104:</div>
@@ -2903,7 +2868,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">LAWS1111:</div>
@@ -2913,7 +2878,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">LAWS2206:</div>
@@ -2923,7 +2888,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">LAWS2223:</div>
@@ -2933,7 +2898,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">LAWS2225:</div>
@@ -2943,7 +2908,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">LAWS2226:</div>
@@ -2953,7 +2918,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">LAWS2301:</div>
@@ -2963,7 +2928,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">LAWS2309:</div>
@@ -2973,7 +2938,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">LAWS3308:</div>
@@ -2983,7 +2948,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">LAWS3322:</div>
@@ -2993,7 +2958,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">LAWS3332:</div>
@@ -3003,7 +2968,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">LAWS3338:</div>
@@ -3013,7 +2978,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">LAWS3340:</div>
@@ -3023,7 +2988,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">LAWS3344:</div>
@@ -3033,7 +2998,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">LAWS3358:</div>
@@ -3043,7 +3008,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">LAWS3370:</div>
@@ -3053,7 +3018,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">LAWS3371:</div>
@@ -3063,7 +3028,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">LAWS3376:</div>
@@ -3073,7 +3038,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">LAWS3386:</div>
@@ -3083,7 +3048,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">LAWS3391:</div>
@@ -3093,7 +3058,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">LAWS4022:</div>
@@ -3103,7 +3068,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">LAWS4105:</div>
@@ -3113,7 +3078,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">LAWS4106:</div>
@@ -3123,7 +3088,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">LAWS4107:</div>
@@ -3133,7 +3098,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">LAWS4108:</div>
@@ -3143,7 +3108,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">LAWS4345:</div>
@@ -3153,7 +3118,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">LAWS4346:</div>
@@ -3163,7 +3128,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">LAWS4401:</div>
@@ -3173,7 +3138,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">LAWS4404:</div>
@@ -3183,7 +3148,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">LAWS5105:</div>
@@ -3193,7 +3158,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">LAWS5106:</div>
@@ -3203,7 +3168,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">LAWS5115:</div>
@@ -3213,7 +3178,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">LAWS5118:</div>
@@ -3223,7 +3188,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">LAWS5150:</div>
@@ -3233,7 +3198,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">LAWS5167:</div>
@@ -3243,7 +3208,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">LAWS5174:</div>
@@ -3253,7 +3218,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">LAWS5254:</div>
@@ -3263,7 +3228,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">LAWS5508:</div>
@@ -3273,7 +3238,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">LAWS5555:</div>
@@ -3283,7 +3248,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">LING1002:</div>
@@ -3293,7 +3258,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">LING1901:</div>
@@ -3303,7 +3268,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">LING2003:</div>
@@ -3313,7 +3278,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">LING3001:</div>
@@ -3323,7 +3288,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">LING3002:</div>
@@ -3333,7 +3298,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">LING3006:</div>
@@ -3343,7 +3308,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">LING4103:</div>
@@ -3353,7 +3318,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">MATH0038:</div>
@@ -3363,7 +3328,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">MATH1001:</div>
@@ -3373,7 +3338,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">MATH1002:</div>
@@ -3383,7 +3348,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">MATH1720:</div>
@@ -3393,7 +3358,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">MATH1721:</div>
@@ -3403,7 +3368,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">MATH1722:</div>
@@ -3413,7 +3378,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">MATH2501:</div>
@@ -3423,7 +3388,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">MATH3022:</div>
@@ -3433,7 +3398,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">MATH3032:</div>
@@ -3443,7 +3408,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">MATH4022:</div>
@@ -3453,7 +3418,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">MATH4033:</div>
@@ -3463,7 +3428,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">MATH5540:</div>
@@ -3473,7 +3438,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">MECH3403:</div>
@@ -3483,7 +3448,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">MECH4424:</div>
@@ -3493,7 +3458,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">MECH5502:</div>
@@ -3503,7 +3468,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">MECH5504:</div>
@@ -3513,7 +3478,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">MECH5551:</div>
@@ -3523,7 +3488,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">MECH5552:</div>
@@ -3533,7 +3498,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">MEMS1001:</div>
@@ -3543,7 +3508,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">MEMS2001:</div>
@@ -3553,7 +3518,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">MEMS3002:</div>
@@ -3563,7 +3528,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">MGMT1135:</div>
@@ -3573,7 +3538,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">MGMT1136:</div>
@@ -3583,7 +3548,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">MGMT2311:</div>
@@ -3593,7 +3558,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">MGMT3304:</div>
@@ -3603,7 +3568,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">MGMT3308:</div>
@@ -3613,7 +3578,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">MGMT3346:</div>
@@ -3623,7 +3588,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">MGMT3347:</div>
@@ -3633,7 +3598,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">MGMT5504:</div>
@@ -3643,7 +3608,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">MGMT5506:</div>
@@ -3653,7 +3618,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">MGMT5507:</div>
@@ -3663,7 +3628,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">MGMT5508:</div>
@@ -3673,7 +3638,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">MGMT5511:</div>
@@ -3683,7 +3648,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">MGMT5610:</div>
@@ -3693,7 +3658,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">MICR2209:</div>
@@ -3703,7 +3668,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">MICR3320:</div>
@@ -3713,7 +3678,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">MICR3350:</div>
@@ -3723,7 +3688,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">MICR5814:</div>
@@ -3733,7 +3698,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">MICR5831:</div>
@@ -3743,7 +3708,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">MICR5832:</div>
@@ -3753,7 +3718,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">MICR5833:</div>
@@ -3763,7 +3728,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">MICR5834:</div>
@@ -3773,7 +3738,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">MICR5835:</div>
@@ -3783,7 +3748,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">MICR5836:</div>
@@ -3793,7 +3758,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">MINE4404:</div>
@@ -3803,7 +3768,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">MINE5501:</div>
@@ -3813,7 +3778,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">MINE5502:</div>
@@ -3823,7 +3788,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">MINE5551:</div>
@@ -3833,7 +3798,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">MINE5552:</div>
@@ -3843,7 +3808,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">MKTG1203:</div>
@@ -3853,7 +3818,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">MKTG1204:</div>
@@ -3863,7 +3828,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">MKTG2238:</div>
@@ -3873,7 +3838,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">MKTG2301:</div>
@@ -3883,7 +3848,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">MKTG3301:</div>
@@ -3893,7 +3858,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">MKTG3303:</div>
@@ -3903,7 +3868,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">MKTG3306:</div>
@@ -3913,7 +3878,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">MKTG3311:</div>
@@ -3923,7 +3888,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">MKTG4401:</div>
@@ -3933,7 +3898,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">MKTG5406:</div>
@@ -3943,7 +3908,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">MKTG5408:</div>
@@ -3953,7 +3918,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">MKTG5462:</div>
@@ -3963,7 +3928,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">MKTG5505:</div>
@@ -3973,7 +3938,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">MKTG5561:</div>
@@ -3983,7 +3948,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">MUSC1322:</div>
@@ -3993,7 +3958,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">MUSC1350:</div>
@@ -4003,7 +3968,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">MUSC1981:</div>
@@ -4013,7 +3978,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">MUSC1982:</div>
@@ -4023,7 +3988,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">MUSC2332:</div>
@@ -4033,7 +3998,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">MUSC2350:</div>
@@ -4043,7 +4008,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">MUSC2525:</div>
@@ -4053,7 +4018,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">MUSC3334:</div>
@@ -4063,7 +4028,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">MUSC3544:</div>
@@ -4073,7 +4038,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">NEUR3301:</div>
@@ -4083,7 +4048,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">NURS5810:</div>
@@ -4093,7 +4058,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">NURS5819:</div>
@@ -4103,7 +4068,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">NURS5820:</div>
@@ -4113,7 +4078,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">OGEG5809:</div>
@@ -4123,7 +4088,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">PATH2220:</div>
@@ -4133,7 +4098,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">PATH3304:</div>
@@ -4143,7 +4108,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">PATH3304:</div>
@@ -4153,7 +4118,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">PATH3308:</div>
@@ -4163,7 +4128,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">PATH3309:</div>
@@ -4173,7 +4138,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">PATH5121:</div>
@@ -4183,7 +4148,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">PATH5121:</div>
@@ -4193,7 +4158,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">PATH5131:</div>
@@ -4203,7 +4168,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">PATH5151:</div>
@@ -4213,7 +4178,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">PATH5514:</div>
@@ -4223,7 +4188,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">PATH5561:</div>
@@ -4233,7 +4198,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">PETR4511:</div>
@@ -4243,7 +4208,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">PHAR1101:</div>
@@ -4253,7 +4218,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">PHAR2220:</div>
@@ -4263,7 +4228,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">PHAR3320:</div>
@@ -4273,7 +4238,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">PHCY5603:</div>
@@ -4283,7 +4248,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">PHIL1003:</div>
@@ -4293,7 +4258,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">PHIL2002:</div>
@@ -4303,7 +4268,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">PHIL2004:</div>
@@ -4313,7 +4278,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">PHIL3001:</div>
@@ -4323,7 +4288,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">PHIL3002:</div>
@@ -4333,7 +4298,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">PHYL2002:</div>
@@ -4343,7 +4308,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">PHYL3003:</div>
@@ -4353,7 +4318,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">PHYL3004:</div>
@@ -4363,7 +4328,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">PHYL3305:</div>
@@ -4373,7 +4338,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">PHYS1002:</div>
@@ -4383,7 +4348,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">PHYS1022:</div>
@@ -4393,7 +4358,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">PHYS1030:</div>
@@ -4403,7 +4368,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">PHYS2002:</div>
@@ -4413,7 +4378,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">PHYS3002:</div>
@@ -4423,7 +4388,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">PHYS3002:</div>
@@ -4433,7 +4398,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">PHYS3012:</div>
@@ -4443,7 +4408,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">PHYS5010:</div>
@@ -4453,7 +4418,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">PLNG2202:</div>
@@ -4463,7 +4428,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">PLNG2203:</div>
@@ -4473,7 +4438,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">PLNG3303:</div>
@@ -4483,7 +4448,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">PLNT2201:</div>
@@ -4493,7 +4458,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">PLNT2204:</div>
@@ -4503,7 +4468,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">PLNT3306:</div>
@@ -4513,7 +4478,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">PODI4105:</div>
@@ -4523,7 +4488,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">PODI4106:</div>
@@ -4533,7 +4498,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">PODI4107:</div>
@@ -4543,7 +4508,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">PODI4206:</div>
@@ -4553,7 +4518,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">PODI4207:</div>
@@ -4563,7 +4528,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">PODI4208:</div>
@@ -4573,7 +4538,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">PODI4402:</div>
@@ -4583,7 +4548,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">PODI4404:</div>
@@ -4593,7 +4558,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">PODI4408:</div>
@@ -4603,7 +4568,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">PODI5307:</div>
@@ -4613,7 +4578,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">POLS1102:</div>
@@ -4623,7 +4588,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">POLS2214:</div>
@@ -4633,7 +4598,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">POLS2216:</div>
@@ -4643,7 +4608,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">POLS2220:</div>
@@ -4653,7 +4618,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">POLS2232:</div>
@@ -4663,7 +4628,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">POLS3308:</div>
@@ -4673,7 +4638,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">POLS3313:</div>
@@ -4683,7 +4648,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">POLS3323:</div>
@@ -4693,7 +4658,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">POLS3335:</div>
@@ -4703,7 +4668,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">POLS5611:</div>
@@ -4713,7 +4678,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">POLS5612:</div>
@@ -4723,7 +4688,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">POLS5661:</div>
@@ -4733,7 +4698,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">POLS5662:</div>
@@ -4743,7 +4708,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">PSYC1102:</div>
@@ -4753,7 +4718,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">PSYC2214:</div>
@@ -4763,7 +4728,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">PSYC2218:</div>
@@ -4773,7 +4738,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">PSYC3302:</div>
@@ -4783,7 +4748,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">PSYC4410:</div>
@@ -4793,7 +4758,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">PSYC4413:</div>
@@ -4803,7 +4768,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">PSYC5515:</div>
@@ -4813,7 +4778,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">PSYC5516:</div>
@@ -4823,7 +4788,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">PSYC5535:</div>
@@ -4833,7 +4798,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">PSYC5537:</div>
@@ -4843,7 +4808,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">PSYC5538:</div>
@@ -4853,7 +4818,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">PSYC5674:</div>
@@ -4863,7 +4828,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">PSYC5675:</div>
@@ -4873,7 +4838,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">PSYC5830:</div>
@@ -4883,7 +4848,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">PSYC7413:</div>
@@ -4893,7 +4858,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">PUBH1102:</div>
@@ -4903,7 +4868,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">PUBH2203:</div>
@@ -4913,7 +4878,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">PUBH2208:</div>
@@ -4923,7 +4888,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">PUBH2209:</div>
@@ -4933,7 +4898,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">PUBH3302:</div>
@@ -4943,7 +4908,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">PUBH3307:</div>
@@ -4953,7 +4918,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">PUBH4401:</div>
@@ -4963,7 +4928,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">PUBH5749:</div>
@@ -4973,7 +4938,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">PUBH5752:</div>
@@ -4983,7 +4948,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">PUBH5769:</div>
@@ -4993,7 +4958,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">PUBH5805:</div>
@@ -5003,7 +4968,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">RMED5816:</div>
@@ -5013,7 +4978,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">SCIE1104:</div>
@@ -5023,7 +4988,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">SCIE1106:</div>
@@ -5033,7 +4998,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">SCIE1122:</div>
@@ -5043,7 +5008,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">SCIE3314:</div>
@@ -5053,7 +5018,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">SCIE3367:</div>
@@ -5063,7 +5028,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">SCIE4401:</div>
@@ -5073,7 +5038,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">SCIE4501:</div>
@@ -5083,7 +5048,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">SCOM2205:</div>
@@ -5093,7 +5058,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">SCOM3319:</div>
@@ -5103,7 +5068,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">SCOM3321:</div>
@@ -5113,7 +5078,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">SOCS0047:</div>
@@ -5123,7 +5088,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">SSEH1102:</div>
@@ -5133,7 +5098,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">SSEH1103:</div>
@@ -5143,7 +5108,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">SSEH1104:</div>
@@ -5153,7 +5118,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">SSEH2240:</div>
@@ -5163,7 +5128,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">SSEH2270:</div>
@@ -5173,7 +5138,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">SSEH2290:</div>
@@ -5183,7 +5148,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">SSEH3366:</div>
@@ -5193,7 +5158,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">SSEH3375:</div>
@@ -5203,7 +5168,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">SSEH3376:</div>
@@ -5213,7 +5178,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">SSEH3385:</div>
@@ -5223,7 +5188,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">SSEH3389:</div>
@@ -5233,7 +5198,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">SSEH5474:</div>
@@ -5243,7 +5208,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">SSEH5667:</div>
@@ -5253,7 +5218,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">SSEH5692:</div>
@@ -5263,7 +5228,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">STAT1400:</div>
@@ -5273,7 +5238,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">STAT1520:</div>
@@ -5283,7 +5248,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">STAT2062:</div>
@@ -5293,7 +5258,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">STAT2402:</div>
@@ -5303,7 +5268,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">STAT3062:</div>
@@ -5313,7 +5278,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">STAT3404:</div>
@@ -5323,7 +5288,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">STAT4063:</div>
@@ -5333,7 +5298,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">SWSP5404:</div>
@@ -5343,7 +5308,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">SWSP5406:</div>
@@ -5353,7 +5318,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">SWSP5407:</div>
@@ -5363,7 +5328,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">SWSP5634:</div>
@@ -5373,7 +5338,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">TRNS5002:</div>
@@ -5383,7 +5348,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">TRNS5107:</div>
@@ -5393,7 +5358,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">TRNS5109:</div>
@@ -5403,7 +5368,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">VISA1001:</div>
@@ -5413,7 +5378,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">VISA1054:</div>
@@ -5423,7 +5388,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">VISA2222:</div>
@@ -5433,7 +5398,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">VISA2249:</div>
@@ -5443,7 +5408,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">VISA2275:</div>
@@ -5453,7 +5418,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">VISA2276:</div>
@@ -5463,7 +5428,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">VISA3330:</div>
@@ -5473,7 +5438,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">VISA3333:</div>
@@ -5483,7 +5448,7 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        
+
 		<div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-1">VISA3361:</div>
@@ -5493,4 +5458,3 @@
             </div>
             <div class="col-md-4"></div>
         </div>
-        

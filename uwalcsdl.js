@@ -29,9 +29,10 @@ function stringInList( string, list) {
 }
 
 function unitRedirect(){
+    var baseURL = document.URL.substr(0,document.URL.lastIndexOf('/'));
     var unitCode = $('#unitCode').val();
     unitCode = unitCode.toUpperCase()
-    window.location = '/units/'+unitCode+'.html';
+    window.location = baseURL+'/units/'+unitCode+'.html';
     return false;
 }
 
@@ -77,4 +78,53 @@ function addUnitShortcut(unitCode) {
 function removeUnitShortcut(unitCode) {
     eraseCookie(unitCode);
     document.location.reload(true);
+}
+
+
+function insertNavbar() {
+document.write('\
+  <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">\
+      <div class="container">\
+          <!-- Brand and toggle get grouped for better mobile display -->\
+          <div class="navbar-header">\
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">\
+                  <span class="sr-only">Toggle navigation</span>\
+                  <span class="icon-bar"></span>\
+                  <span class="icon-bar"></span>\
+                  <span class="icon-bar"></span>\
+              </button>\
+              <a class="navbar-brand" href="index.html">UWA LCS DL</a>\
+          </div>\
+          <!-- Collect the nav links, forms, and other content for toggling -->\
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">\
+              <ul class="nav navbar-nav" id="navbar-list">\
+                  <li>\
+                      <a href="index.html">Find Unit</a>\
+                  </li>\
+                  <li>\
+                      <a href="unitList.html">List Units</a>\
+                  </li>\
+              </ul>\
+              <ul class="nav navbar-nav navbar-right">\
+                  <li>\
+                      <div class="dropdown">\
+                          <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">\
+                            <span class="glyphicon glyphicon-cog"></span>\
+                          </button>\
+                          <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">\
+                          <li><a href="customUnitID.html">Request Unit</a></li>\
+                          <li><a href="clearShortcuts.html">Clear Shortcuts</a></li>\
+                          <li role="separator" class="divider"></li>\
+                          <li><a href="about.html">About</a></li>\
+                          <li><a href="https://github.com/uwalcsdl/uwalcsdl.github.io">GitHub</a></li>\
+                        </ul>\
+                      </div>\
+                  </li>\
+              </ul>\
+          </div>\
+          <!-- /.navbar-collapse -->\
+      </div>\
+      <!-- /.container -->\
+  </nav>\
+')
 }

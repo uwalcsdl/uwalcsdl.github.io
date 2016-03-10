@@ -1,6 +1,9 @@
 /*
  *
  */
+function getRootURL() {
+  return document.URL.substr(0,document.URL.lastIndexOf('/'));
+}
 
 function createCookie(name) {
     var expires = "";
@@ -29,10 +32,10 @@ function stringInList( string, list) {
 }
 
 function unitRedirect(){
-    var baseURL = document.URL.substr(0,document.URL.lastIndexOf('/'));
+    var rootURL = getRootURL();
     var unitCode = $('#unitCode').val();
     unitCode = unitCode.toUpperCase()
-    window.location = baseURL+'/units/'+unitCode+'.html';
+    window.location = rootURL+'/units/'+unitCode+'.html';
     return false;
 }
 
@@ -80,6 +83,22 @@ function removeUnitShortcut(unitCode) {
     document.location.reload(true);
 }
 
+function insertResources() {
+  document.write('\
+    <!-- jQuery Version 1.11.1 -->\
+    <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>\
+    \
+    <!-- Bootstrap Core CSS -->\
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">\
+    \
+    <!-- Bootstrap Core JavaScript -->\
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>\
+    \
+    <!-- Custom CSS -->\
+    <link rel="stylesheet" href="uwalcsdl.css">\
+    \
+  ')
+}
 
 function insertNavbar() {
 document.write('\
@@ -112,10 +131,12 @@ document.write('\
                   </a>\
                   <ul class="dropdown-menu">\
                     <li><a href="customUnitID.html">Request Unit</a></li>\
-                    <li><a href="clearShortcuts.html">Clear Shortcuts</a></li>\
+                    <li><a href="pastUnits.html"> Past Units</a></li>\
                     <li role="separator" class="divider"></li>\
                     <li><a href="about.html">About</a></li>\
                     <li><a href="https://github.com/uwalcsdl/uwalcsdl.github.io">GitHub</a></li>\
+                    <li role="separator" class="divider"></li>\
+                    <li><a href="clearShortcuts.html">Clear Shortcuts</a></li>\
                   </ul>\
                 </li>\
               </ul>\

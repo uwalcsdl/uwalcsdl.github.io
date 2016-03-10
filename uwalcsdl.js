@@ -106,20 +106,18 @@ document.write('\
                   </li>\
               </ul>\
               <ul class="nav navbar-nav navbar-right">\
-                  <li>\
-                      <div class="dropdown">\
-                          <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">\
-                            <span class="glyphicon glyphicon-cog"></span>\
-                          </button>\
-                          <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">\
-                          <li><a href="customUnitID.html">Request Unit</a></li>\
-                          <li><a href="clearShortcuts.html">Clear Shortcuts</a></li>\
-                          <li role="separator" class="divider"></li>\
-                          <li><a href="about.html">About</a></li>\
-                          <li><a href="https://github.com/uwalcsdl/uwalcsdl.github.io">GitHub</a></li>\
-                        </ul>\
-                      </div>\
-                  </li>\
+                <li class="dropdown">\
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">\
+                    <span class="glyphicon glyphicon-cog"></span>\
+                  </a>\
+                  <ul class="dropdown-menu">\
+                    <li><a href="customUnitID.html">Request Unit</a></li>\
+                    <li><a href="clearShortcuts.html">Clear Shortcuts</a></li>\
+                    <li role="separator" class="divider"></li>\
+                    <li><a href="about.html">About</a></li>\
+                    <li><a href="https://github.com/uwalcsdl/uwalcsdl.github.io">GitHub</a></li>\
+                  </ul>\
+                </li>\
               </ul>\
           </div>\
           <!-- /.navbar-collapse -->\

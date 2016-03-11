@@ -70,9 +70,12 @@ class UnitXML:
 
     def get_sem(self):
         longName = self.tree.find('name')
-        if len(longName.text) < 20:
+        #Attempt to split the name at "Standard semester "
+        semester = longName.text.split(sep='Standard semester ')
+        if len(semester) < 2:
+            #String does not contain "Standard semester "
             return None
-        return longName.text[-15]
+        return semester[1][0]
 
     def get_unit_code(self):
         unitCode = self.tree.find('course').find('identifier')

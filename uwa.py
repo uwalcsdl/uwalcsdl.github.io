@@ -226,7 +226,7 @@ def save_unit_semester_links(year, semester,
 
 def fetch_days_units(year, week, day):
     check_year_week_day(year, week, day)
-    print('day '+str(day))
+    print('fetching /%02d%020d/%01d'%(year, week, day))
     lectureHashes = get_hashes_from_dir('%s%02d%02d/%01d'%(BASE_URL,year,week,day))
     for lectureHash in lectureHashes:
         try:
@@ -249,9 +249,13 @@ def unit_has_page(unitCode):
     return os.path.isfile('units/'+unitCode+'.html')
 
 def fetch_weeks_units(year, week):
-    print('Fetching /'+str(year)+str(week))
+    print('Fetching /%02d%02d/'%(year, week))
     for day in range(1, 8):
-        fetch_days_units(year, week, day)
+        try:
+            fetch_days_units(year, week, day)
+        except urllib.error.HTTPError:
+            print('skipping day %01d, 404 returned'%day)
+            continue
 
 def add_unit(unitCode):
     pass

@@ -2,80 +2,34 @@
 <html lang="en">
 
 <head>
-    <base = href="file:///home/alastair/Desktop/uwalcsdl"/>
+    <title>SSEH1103</title>
+
+    <script src="uwalcsdl.js"></script>
+
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
-    <meta name="uwalcsdl.github.io" content="">
 
-    <title>SSEH1103</title>
+    <script type="text/javascript">
+      insertResources();
+    </script>
 
-    <!-- jQuery Version 1.11.1 -->
-    <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
-
-    <!-- Bootstrap Core CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-    <!-- Custom CSS -->
-    <style>
-    body {
-        padding-top: 70px;
-        /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
-    }
-    </style>
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-    <script src="../uwalcsdl.js"></script>
 </head>
 
 <body>
 
     <!-- Navigation -->
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="../index.html">UWA LCS DL</a>
-            </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav" id="navbar-list">
-                    <li>
-                        <a href="../index.html">Find Unit</a>
-                    </li>
-                    <li>
-                        <a href="../unitList.html">List Units</a>
-                    </li>
-                </ul>
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a href="https://github.com/uwalcsdl/uwalcsdl.github.io">GitHub</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container -->
-    </nav>
+    <script type="text/javascript">
+        insertNavbar();
+    </script>
+    <!-- Unit Shortcuts from cookie -->
     <script type="text/javascript">
         getUnitShortcuts();
     </script>
+
     <!-- Page Content -->
-    <div class="container"> 
+    <div class="container">
 
         <div class="row">
             <div class="col-sm-12 text-center" id="unit-title-div">
@@ -84,17 +38,18 @@
             <script type="text/javascript">addUnitShortcutButton();</script>
         </div>
 
+
         <div class="row">
             <div class="col-sm-3"></div>
             <div class="col-sm-2">
-                <div class="col-sm-12">1PM Monday</div>
-                <div class="col-sm-12">27 July 2015 </div>
+                <div class="col-sm-12">12PM Monday</div>
+                <div class="col-sm-12">07 March 2016 </div>
             </div>
             <div class="col-sm-4">
-                <div class="col-sm-12">Crawley: HUMAN MOVEMENT, John Bloomfield Lecture Theatre [444:102]</div>
+                <div class="col-sm-12">Crawley: UWA BUSINESS SCHOOL, Wesfarmers Lecture Theatre [441:G91]</div>
                 </div>
-            <div class="col-sm-2"> 
-                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1531/1/4e381bd3-73d9-4131-a071-4d558321de89/audio-vga.m4v">Download</a></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1610/1/612d67d2-fc96-4c1f-9301-ba48a99c0319/audio-vga.m4v">Download</a></div>
             </div>
             <div class="col-sm-1"></div>
         </div>
@@ -108,14 +63,14 @@
         <div class="row">
             <div class="col-sm-3"></div>
             <div class="col-sm-2">
-                <div class="col-sm-12">1PM Wednesday</div>
-                <div class="col-sm-12">29 July 2015 </div>
+                <div class="col-sm-12">11AM Tuesday</div>
+                <div class="col-sm-12">08 March 2016 </div>
             </div>
             <div class="col-sm-4">
-                <div class="col-sm-12">Crawley: HUMAN MOVEMENT, John Bloomfield Lecture Theatre [444:102]</div>
+                <div class="col-sm-12">Crawley: SOCIAL SCIENCES, Social Sciences Lecture Theatre [352:G130]</div>
                 </div>
-            <div class="col-sm-2"> 
-                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1531/3/031d8bf3-c9b2-4511-8201-6f1d7a417a85/audio-vga.m4v">Download</a></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1610/2/978dbb7d-d710-40fd-b50b-5cb1727870d0/audio-vga.m4v">Download</a></div>
             </div>
             <div class="col-sm-1"></div>
         </div>
@@ -129,14 +84,14 @@
         <div class="row">
             <div class="col-sm-3"></div>
             <div class="col-sm-2">
-                <div class="col-sm-12">1PM Monday</div>
-                <div class="col-sm-12">03 August 2015 </div>
+                <div class="col-sm-12">12PM Monday</div>
+                <div class="col-sm-12">14 March 2016 </div>
             </div>
             <div class="col-sm-4">
-                <div class="col-sm-12">Crawley: HUMAN MOVEMENT, John Bloomfield Lecture Theatre [444:102]</div>
+                <div class="col-sm-12">Crawley: UWA BUSINESS SCHOOL, Wesfarmers Lecture Theatre [441:G91]</div>
                 </div>
-            <div class="col-sm-2"> 
-                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1532/1/053f7c08-30df-46a7-8176-7fa727c90338/audio-vga.m4v">Download</a></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1611/1/87e476a1-dfa8-4276-98e9-c4e234cd1b08/audio-vga.m4v">Download</a></div>
             </div>
             <div class="col-sm-1"></div>
         </div>
@@ -150,14 +105,14 @@
         <div class="row">
             <div class="col-sm-3"></div>
             <div class="col-sm-2">
-                <div class="col-sm-12">1PM Wednesday</div>
-                <div class="col-sm-12">05 August 2015 </div>
+                <div class="col-sm-12">11AM Tuesday</div>
+                <div class="col-sm-12">15 March 2016 </div>
             </div>
             <div class="col-sm-4">
-                <div class="col-sm-12">Crawley: HUMAN MOVEMENT, John Bloomfield Lecture Theatre [444:102]</div>
+                <div class="col-sm-12">Crawley: SOCIAL SCIENCES, Social Sciences Lecture Theatre [352:G130]</div>
                 </div>
-            <div class="col-sm-2"> 
-                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1532/3/4cbe9866-641d-4f00-8af9-da6715f2dd63/audio-vga.m4v">Download</a></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1611/2/0fafdd5d-2c83-4b5d-84d2-673ccbbfb1a5/audio-vga.m4v">Download</a></div>
             </div>
             <div class="col-sm-1"></div>
         </div>
@@ -171,455 +126,14 @@
         <div class="row">
             <div class="col-sm-3"></div>
             <div class="col-sm-2">
-                <div class="col-sm-12">1PM Monday</div>
-                <div class="col-sm-12">10 August 2015 </div>
+                <div class="col-sm-12">12PM Monday</div>
+                <div class="col-sm-12">21 March 2016 </div>
             </div>
             <div class="col-sm-4">
-                <div class="col-sm-12">Crawley: HUMAN MOVEMENT, John Bloomfield Lecture Theatre [444:102]</div>
+                <div class="col-sm-12">Crawley: UWA BUSINESS SCHOOL, Wesfarmers Lecture Theatre [441:G91]</div>
                 </div>
-            <div class="col-sm-2"> 
-                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1533/1/dbe11a90-25cb-45fb-a478-433757bc4e1a/audio-vga.m4v">Download</a></div>
-            </div>
-            <div class="col-sm-1"></div>
-        </div>
-
-        <div class="row">
-            <div class="col-sm-12">&nbsp</div>
-        </div>
-
-        
-
-        <div class="row">
-            <div class="col-sm-3"></div>
             <div class="col-sm-2">
-                <div class="col-sm-12">1PM Wednesday</div>
-                <div class="col-sm-12">12 August 2015 </div>
-            </div>
-            <div class="col-sm-4">
-                <div class="col-sm-12">Crawley: HUMAN MOVEMENT, John Bloomfield Lecture Theatre [444:102]</div>
-                </div>
-            <div class="col-sm-2"> 
-                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1533/3/bcc1b198-a27a-4b0d-b19a-3a8d2062a3e8/audio-vga.m4v">Download</a></div>
-            </div>
-            <div class="col-sm-1"></div>
-        </div>
-
-        <div class="row">
-            <div class="col-sm-12">&nbsp</div>
-        </div>
-
-        
-
-        <div class="row">
-            <div class="col-sm-3"></div>
-            <div class="col-sm-2">
-                <div class="col-sm-12">1PM Monday</div>
-                <div class="col-sm-12">17 August 2015 </div>
-            </div>
-            <div class="col-sm-4">
-                <div class="col-sm-12">Crawley: HUMAN MOVEMENT, John Bloomfield Lecture Theatre [444:102]</div>
-                </div>
-            <div class="col-sm-2"> 
-                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1534/1/b2821289-4e8e-450a-97db-82e81e34618a/audio-vga.m4v">Download</a></div>
-            </div>
-            <div class="col-sm-1"></div>
-        </div>
-
-        <div class="row">
-            <div class="col-sm-12">&nbsp</div>
-        </div>
-
-        
-
-        <div class="row">
-            <div class="col-sm-3"></div>
-            <div class="col-sm-2">
-                <div class="col-sm-12">1PM Wednesday</div>
-                <div class="col-sm-12">19 August 2015 </div>
-            </div>
-            <div class="col-sm-4">
-                <div class="col-sm-12">Crawley: HUMAN MOVEMENT, John Bloomfield Lecture Theatre [444:102]</div>
-                </div>
-            <div class="col-sm-2"> 
-                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1534/3/ce99d245-ca8b-4cc1-9498-7ffb954766ab/audio-vga.m4v">Download</a></div>
-            </div>
-            <div class="col-sm-1"></div>
-        </div>
-
-        <div class="row">
-            <div class="col-sm-12">&nbsp</div>
-        </div>
-
-        
-
-        <div class="row">
-            <div class="col-sm-3"></div>
-            <div class="col-sm-2">
-                <div class="col-sm-12">1PM Monday</div>
-                <div class="col-sm-12">24 August 2015 </div>
-            </div>
-            <div class="col-sm-4">
-                <div class="col-sm-12">Crawley: HUMAN MOVEMENT, John Bloomfield Lecture Theatre [444:102]</div>
-                </div>
-            <div class="col-sm-2"> 
-                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1535/1/df61199e-7e90-43e6-9278-86cb3842a365/audio-vga.m4v">Download</a></div>
-            </div>
-            <div class="col-sm-1"></div>
-        </div>
-
-        <div class="row">
-            <div class="col-sm-12">&nbsp</div>
-        </div>
-
-        
-
-        <div class="row">
-            <div class="col-sm-3"></div>
-            <div class="col-sm-2">
-                <div class="col-sm-12">1PM Wednesday</div>
-                <div class="col-sm-12">26 August 2015 </div>
-            </div>
-            <div class="col-sm-4">
-                <div class="col-sm-12">Crawley: HUMAN MOVEMENT, John Bloomfield Lecture Theatre [444:102]</div>
-                </div>
-            <div class="col-sm-2"> 
-                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1535/3/a4f72f7a-dca1-4ae7-98dc-17d9b69b8757/audio-vga.m4v">Download</a></div>
-            </div>
-            <div class="col-sm-1"></div>
-        </div>
-
-        <div class="row">
-            <div class="col-sm-12">&nbsp</div>
-        </div>
-
-        
-
-        <div class="row">
-            <div class="col-sm-3"></div>
-            <div class="col-sm-2">
-                <div class="col-sm-12">1PM Monday</div>
-                <div class="col-sm-12">31 August 2015 </div>
-            </div>
-            <div class="col-sm-4">
-                <div class="col-sm-12">Crawley: HUMAN MOVEMENT, John Bloomfield Lecture Theatre [444:102]</div>
-                </div>
-            <div class="col-sm-2"> 
-                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1536/1/3cb31390-0d1d-45ef-927d-a20fb497fee3/audio-vga.m4v">Download</a></div>
-            </div>
-            <div class="col-sm-1"></div>
-        </div>
-
-        <div class="row">
-            <div class="col-sm-12">&nbsp</div>
-        </div>
-
-        
-
-        <div class="row">
-            <div class="col-sm-3"></div>
-            <div class="col-sm-2">
-                <div class="col-sm-12">1PM Wednesday</div>
-                <div class="col-sm-12">02 September 2015 </div>
-            </div>
-            <div class="col-sm-4">
-                <div class="col-sm-12">Crawley: HUMAN MOVEMENT, John Bloomfield Lecture Theatre [444:102]</div>
-                </div>
-            <div class="col-sm-2"> 
-                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1536/3/c090f271-3e64-4c48-a4c7-1ae9b10b69fb/audio-vga.m4v">Download</a></div>
-            </div>
-            <div class="col-sm-1"></div>
-        </div>
-
-        <div class="row">
-            <div class="col-sm-12">&nbsp</div>
-        </div>
-
-        
-
-        <div class="row">
-            <div class="col-sm-3"></div>
-            <div class="col-sm-2">
-                <div class="col-sm-12">1PM Monday</div>
-                <div class="col-sm-12">07 September 2015 </div>
-            </div>
-            <div class="col-sm-4">
-                <div class="col-sm-12">Crawley: HUMAN MOVEMENT, John Bloomfield Lecture Theatre [444:102]</div>
-                </div>
-            <div class="col-sm-2"> 
-                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1537/1/83355746-770f-4655-b919-79cef8bd7d39/audio-vga.m4v">Download</a></div>
-            </div>
-            <div class="col-sm-1"></div>
-        </div>
-
-        <div class="row">
-            <div class="col-sm-12">&nbsp</div>
-        </div>
-
-        
-
-        <div class="row">
-            <div class="col-sm-3"></div>
-            <div class="col-sm-2">
-                <div class="col-sm-12">1PM Wednesday</div>
-                <div class="col-sm-12">09 September 2015 </div>
-            </div>
-            <div class="col-sm-4">
-                <div class="col-sm-12">Crawley: HUMAN MOVEMENT, John Bloomfield Lecture Theatre [444:102]</div>
-                </div>
-            <div class="col-sm-2"> 
-                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1537/3/7b8270d7-cd73-4e23-ad91-60f06dd5c686/audio-vga.m4v">Download</a></div>
-            </div>
-            <div class="col-sm-1"></div>
-        </div>
-
-        <div class="row">
-            <div class="col-sm-12">&nbsp</div>
-        </div>
-
-        
-
-        <div class="row">
-            <div class="col-sm-3"></div>
-            <div class="col-sm-2">
-                <div class="col-sm-12">1PM Monday</div>
-                <div class="col-sm-12">14 September 2015 </div>
-            </div>
-            <div class="col-sm-4">
-                <div class="col-sm-12">Crawley: HUMAN MOVEMENT, John Bloomfield Lecture Theatre [444:102]</div>
-                </div>
-            <div class="col-sm-2"> 
-                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1538/1/d91ca656-69cf-4b56-bace-efe3a441dfbf/audio-vga.m4v">Download</a></div>
-            </div>
-            <div class="col-sm-1"></div>
-        </div>
-
-        <div class="row">
-            <div class="col-sm-12">&nbsp</div>
-        </div>
-
-        
-
-        <div class="row">
-            <div class="col-sm-3"></div>
-            <div class="col-sm-2">
-                <div class="col-sm-12">1PM Wednesday</div>
-                <div class="col-sm-12">16 September 2015 </div>
-            </div>
-            <div class="col-sm-4">
-                <div class="col-sm-12">Crawley: HUMAN MOVEMENT, John Bloomfield Lecture Theatre [444:102]</div>
-                </div>
-            <div class="col-sm-2"> 
-                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1538/3/74a4595e-0488-47c5-8ae0-ce1e4517bfd1/audio-vga.m4v">Download</a></div>
-            </div>
-            <div class="col-sm-1"></div>
-        </div>
-
-        <div class="row">
-            <div class="col-sm-12">&nbsp</div>
-        </div>
-
-        
-
-        <div class="row">
-            <div class="col-sm-3"></div>
-            <div class="col-sm-2">
-                <div class="col-sm-12">1PM Monday</div>
-                <div class="col-sm-12">21 September 2015 </div>
-            </div>
-            <div class="col-sm-4">
-                <div class="col-sm-12">Crawley: HUMAN MOVEMENT, John Bloomfield Lecture Theatre [444:102]</div>
-                </div>
-            <div class="col-sm-2"> 
-                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1539/1/c01589d8-2880-45d4-bbab-06a443fed20a/audio-vga.m4v">Download</a></div>
-            </div>
-            <div class="col-sm-1"></div>
-        </div>
-
-        <div class="row">
-            <div class="col-sm-12">&nbsp</div>
-        </div>
-
-        
-
-        <div class="row">
-            <div class="col-sm-3"></div>
-            <div class="col-sm-2">
-                <div class="col-sm-12">1PM Wednesday</div>
-                <div class="col-sm-12">23 September 2015 </div>
-            </div>
-            <div class="col-sm-4">
-                <div class="col-sm-12">Crawley: HUMAN MOVEMENT, John Bloomfield Lecture Theatre [444:102]</div>
-                </div>
-            <div class="col-sm-2"> 
-                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1539/3/80f7b394-2b12-45ca-bb62-40bd51d66539/audio-vga.m4v">Download</a></div>
-            </div>
-            <div class="col-sm-1"></div>
-        </div>
-
-        <div class="row">
-            <div class="col-sm-12">&nbsp</div>
-        </div>
-
-        
-
-        <div class="row">
-            <div class="col-sm-3"></div>
-            <div class="col-sm-2">
-                <div class="col-sm-12">1PM Monday</div>
-                <div class="col-sm-12">05 October 2015 </div>
-            </div>
-            <div class="col-sm-4">
-                <div class="col-sm-12">Crawley: HUMAN MOVEMENT, John Bloomfield Lecture Theatre [444:102]</div>
-                </div>
-            <div class="col-sm-2"> 
-                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1541/1/f05404be-16c1-47d4-92dd-9773e829a953/audio-vga.m4v">Download</a></div>
-            </div>
-            <div class="col-sm-1"></div>
-        </div>
-
-        <div class="row">
-            <div class="col-sm-12">&nbsp</div>
-        </div>
-
-        
-
-        <div class="row">
-            <div class="col-sm-3"></div>
-            <div class="col-sm-2">
-                <div class="col-sm-12">1PM Wednesday</div>
-                <div class="col-sm-12">07 October 2015 </div>
-            </div>
-            <div class="col-sm-4">
-                <div class="col-sm-12">Crawley: HUMAN MOVEMENT, John Bloomfield Lecture Theatre [444:102]</div>
-                </div>
-            <div class="col-sm-2"> 
-                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1541/3/803395d5-fb0a-46de-be60-6ec74b4e411e/audio-vga.m4v">Download</a></div>
-            </div>
-            <div class="col-sm-1"></div>
-        </div>
-
-        <div class="row">
-            <div class="col-sm-12">&nbsp</div>
-        </div>
-
-        
-
-        <div class="row">
-            <div class="col-sm-3"></div>
-            <div class="col-sm-2">
-                <div class="col-sm-12">1PM Monday</div>
-                <div class="col-sm-12">12 October 2015 </div>
-            </div>
-            <div class="col-sm-4">
-                <div class="col-sm-12">Crawley: HUMAN MOVEMENT, John Bloomfield Lecture Theatre [444:102]</div>
-                </div>
-            <div class="col-sm-2"> 
-                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1542/1/d1a2f3bf-f9b6-41bc-be57-b15c7c525e82/audio-vga.m4v">Download</a></div>
-            </div>
-            <div class="col-sm-1"></div>
-        </div>
-
-        <div class="row">
-            <div class="col-sm-12">&nbsp</div>
-        </div>
-
-        
-
-        <div class="row">
-            <div class="col-sm-3"></div>
-            <div class="col-sm-2">
-                <div class="col-sm-12">1PM Wednesday</div>
-                <div class="col-sm-12">14 October 2015 </div>
-            </div>
-            <div class="col-sm-4">
-                <div class="col-sm-12">Crawley: HUMAN MOVEMENT, John Bloomfield Lecture Theatre [444:102]</div>
-                </div>
-            <div class="col-sm-2"> 
-                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1542/3/645e5d6b-ab3a-49fb-a83d-266d6567d34f/audio-vga.m4v">Download</a></div>
-            </div>
-            <div class="col-sm-1"></div>
-        </div>
-
-        <div class="row">
-            <div class="col-sm-12">&nbsp</div>
-        </div>
-
-        
-
-        <div class="row">
-            <div class="col-sm-3"></div>
-            <div class="col-sm-2">
-                <div class="col-sm-12">1PM Monday</div>
-                <div class="col-sm-12">19 October 2015 </div>
-            </div>
-            <div class="col-sm-4">
-                <div class="col-sm-12">Crawley: HUMAN MOVEMENT, John Bloomfield Lecture Theatre [444:102]</div>
-                </div>
-            <div class="col-sm-2"> 
-                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1543/1/b8ed7f8b-383d-47e0-8b5b-575f15ea4132/audio-vga.m4v">Download</a></div>
-            </div>
-            <div class="col-sm-1"></div>
-        </div>
-
-        <div class="row">
-            <div class="col-sm-12">&nbsp</div>
-        </div>
-
-        
-
-        <div class="row">
-            <div class="col-sm-3"></div>
-            <div class="col-sm-2">
-                <div class="col-sm-12">1PM Wednesday</div>
-                <div class="col-sm-12">21 October 2015 </div>
-            </div>
-            <div class="col-sm-4">
-                <div class="col-sm-12">Crawley: HUMAN MOVEMENT, John Bloomfield Lecture Theatre [444:102]</div>
-                </div>
-            <div class="col-sm-2"> 
-                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1543/3/6ac0731a-209a-4a75-84a6-2d90cecaa5f1/audio-vga.m4v">Download</a></div>
-            </div>
-            <div class="col-sm-1"></div>
-        </div>
-
-        <div class="row">
-            <div class="col-sm-12">&nbsp</div>
-        </div>
-
-        
-
-        <div class="row">
-            <div class="col-sm-3"></div>
-            <div class="col-sm-2">
-                <div class="col-sm-12">1PM Monday</div>
-                <div class="col-sm-12">26 October 2015 </div>
-            </div>
-            <div class="col-sm-4">
-                <div class="col-sm-12">Crawley: HUMAN MOVEMENT, John Bloomfield Lecture Theatre [444:102]</div>
-                </div>
-            <div class="col-sm-2"> 
-                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1544/1/4c63676f-b119-4dc8-81d8-2d72fdd5f97d/audio-vga.m4v">Download</a></div>
-            </div>
-            <div class="col-sm-1"></div>
-        </div>
-
-        <div class="row">
-            <div class="col-sm-12">&nbsp</div>
-        </div>
-
-        
-
-        <div class="row">
-            <div class="col-sm-3"></div>
-            <div class="col-sm-2">
-                <div class="col-sm-12">1PM Wednesday</div>
-                <div class="col-sm-12">28 October 2015 </div>
-            </div>
-            <div class="col-sm-4">
-                <div class="col-sm-12">Crawley: HUMAN MOVEMENT, John Bloomfield Lecture Theatre [444:102]</div>
-                </div>
-            <div class="col-sm-2"> 
-                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1544/3/13df9fe1-b186-427e-aaba-ae7b8cbb6c59/audio-vga.m4v">Download</a></div>
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1612/1/0be1cf3f-7cba-499f-b5e3-412d51c1c248/audio-vga.m4v">Download</a></div>
             </div>
             <div class="col-sm-1"></div>
         </div>

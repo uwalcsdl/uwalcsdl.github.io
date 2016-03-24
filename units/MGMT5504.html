@@ -2,80 +2,34 @@
 <html lang="en">
 
 <head>
-    <base = href="file:///home/alastair/Desktop/uwalcsdl"/>
+    <title>MGMT5504</title>
+
+    <script src="uwalcsdl.js"></script>
+
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
-    <meta name="uwalcsdl.github.io" content="">
 
-    <title>MGMT5504</title>
+    <script type="text/javascript">
+      insertResources();
+    </script>
 
-    <!-- jQuery Version 1.11.1 -->
-    <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
-
-    <!-- Bootstrap Core CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-    <!-- Custom CSS -->
-    <style>
-    body {
-        padding-top: 70px;
-        /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
-    }
-    </style>
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-    <script src="../uwalcsdl.js"></script>
 </head>
 
 <body>
 
     <!-- Navigation -->
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="../index.html">UWA LCS DL</a>
-            </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav" id="navbar-list">
-                    <li>
-                        <a href="../index.html">Find Unit</a>
-                    </li>
-                    <li>
-                        <a href="../unitList.html">List Units</a>
-                    </li>
-                </ul>
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a href="https://github.com/uwalcsdl/uwalcsdl.github.io">GitHub</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container -->
-    </nav>
+    <script type="text/javascript">
+        insertNavbar();
+    </script>
+    <!-- Unit Shortcuts from cookie -->
     <script type="text/javascript">
         getUnitShortcuts();
     </script>
+
     <!-- Page Content -->
-    <div class="container"> 
+    <div class="container">
 
         <div class="row">
             <div class="col-sm-12 text-center" id="unit-title-div">
@@ -84,17 +38,39 @@
             <script type="text/javascript">addUnitShortcutButton();</script>
         </div>
 
+
         <div class="row">
             <div class="col-sm-3"></div>
             <div class="col-sm-2">
                 <div class="col-sm-12">2PM Tuesday</div>
-                <div class="col-sm-12">28 July 2015 </div>
+                <div class="col-sm-12">08 March 2016 </div>
             </div>
             <div class="col-sm-4">
                 <div class="col-sm-12">Crawley: UWA BUSINESS SCHOOL, Sir Rod Eddington Case Study Room [441:142]</div>
                 </div>
-            <div class="col-sm-2"> 
-                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1531/2/de52c9e1-59db-4d0e-93d1-44df9bbbe4d6/audio-vga.m4v">Download</a></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1610/2/0beba9a8-e86a-488e-b99a-15a180238991/audio-vga.m4v">Download</a></div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">&nbsp</div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12">5PM Wednesday</div>
+                <div class="col-sm-12">09 March 2016 </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="col-sm-12">Crawley: UWA BUSINESS SCHOOL, Sir Rod Eddington Case Study Room [441:142]</div>
+                </div>
+            <div class="col-sm-2">
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1610/3/ebf37268-6cb4-4713-ac99-cb482c4fb6f0/audio-vga.m4v">Download</a></div>
             </div>
             <div class="col-sm-1"></div>
         </div>
@@ -109,13 +85,13 @@
             <div class="col-sm-3"></div>
             <div class="col-sm-2">
                 <div class="col-sm-12">2PM Tuesday</div>
-                <div class="col-sm-12">04 August 2015 </div>
+                <div class="col-sm-12">15 March 2016 </div>
             </div>
             <div class="col-sm-4">
                 <div class="col-sm-12">Crawley: UWA BUSINESS SCHOOL, Sir Rod Eddington Case Study Room [441:142]</div>
                 </div>
-            <div class="col-sm-2"> 
-                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1532/2/aa4e3fd6-e1ed-485c-98d3-0cb5a960bd36/audio-vga.m4v">Download</a></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1611/2/fb2bb84f-f75e-4758-b2fb-470d3ce46724/audio-vga.m4v">Download</a></div>
             </div>
             <div class="col-sm-1"></div>
         </div>
@@ -129,224 +105,14 @@
         <div class="row">
             <div class="col-sm-3"></div>
             <div class="col-sm-2">
-                <div class="col-sm-12">2PM Tuesday</div>
-                <div class="col-sm-12">11 August 2015 </div>
+                <div class="col-sm-12">5PM Wednesday</div>
+                <div class="col-sm-12">16 March 2016 </div>
             </div>
             <div class="col-sm-4">
                 <div class="col-sm-12">Crawley: UWA BUSINESS SCHOOL, Sir Rod Eddington Case Study Room [441:142]</div>
                 </div>
-            <div class="col-sm-2"> 
-                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1533/2/3b7bdf3e-97ff-4c20-9454-0c3b8bd69511/audio-vga.m4v">Download</a></div>
-            </div>
-            <div class="col-sm-1"></div>
-        </div>
-
-        <div class="row">
-            <div class="col-sm-12">&nbsp</div>
-        </div>
-
-        
-
-        <div class="row">
-            <div class="col-sm-3"></div>
             <div class="col-sm-2">
-                <div class="col-sm-12">2PM Tuesday</div>
-                <div class="col-sm-12">18 August 2015 </div>
-            </div>
-            <div class="col-sm-4">
-                <div class="col-sm-12">Crawley: UWA BUSINESS SCHOOL, Sir Rod Eddington Case Study Room [441:142]</div>
-                </div>
-            <div class="col-sm-2"> 
-                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1534/2/12a9ee71-2a48-4925-a6d1-6690f29ed3cc/audio-vga.m4v">Download</a></div>
-            </div>
-            <div class="col-sm-1"></div>
-        </div>
-
-        <div class="row">
-            <div class="col-sm-12">&nbsp</div>
-        </div>
-
-        
-
-        <div class="row">
-            <div class="col-sm-3"></div>
-            <div class="col-sm-2">
-                <div class="col-sm-12">2PM Tuesday</div>
-                <div class="col-sm-12">25 August 2015 </div>
-            </div>
-            <div class="col-sm-4">
-                <div class="col-sm-12">Crawley: UWA BUSINESS SCHOOL, Sir Rod Eddington Case Study Room [441:142]</div>
-                </div>
-            <div class="col-sm-2"> 
-                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1535/2/f28ede3d-3c97-449f-96e4-51feedd70d7d/audio-vga.m4v">Download</a></div>
-            </div>
-            <div class="col-sm-1"></div>
-        </div>
-
-        <div class="row">
-            <div class="col-sm-12">&nbsp</div>
-        </div>
-
-        
-
-        <div class="row">
-            <div class="col-sm-3"></div>
-            <div class="col-sm-2">
-                <div class="col-sm-12">2PM Tuesday</div>
-                <div class="col-sm-12">01 September 2015 </div>
-            </div>
-            <div class="col-sm-4">
-                <div class="col-sm-12">Crawley: UWA BUSINESS SCHOOL, Sir Rod Eddington Case Study Room [441:142]</div>
-                </div>
-            <div class="col-sm-2"> 
-                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1536/2/022511ca-a03c-4f90-8989-7d740102f7f8/audio-vga.m4v">Download</a></div>
-            </div>
-            <div class="col-sm-1"></div>
-        </div>
-
-        <div class="row">
-            <div class="col-sm-12">&nbsp</div>
-        </div>
-
-        
-
-        <div class="row">
-            <div class="col-sm-3"></div>
-            <div class="col-sm-2">
-                <div class="col-sm-12">2PM Tuesday</div>
-                <div class="col-sm-12">08 September 2015 </div>
-            </div>
-            <div class="col-sm-4">
-                <div class="col-sm-12">Crawley: UWA BUSINESS SCHOOL, Sir Rod Eddington Case Study Room [441:142]</div>
-                </div>
-            <div class="col-sm-2"> 
-                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1537/2/ef2e5b4b-e54e-43ad-afd2-94fb74200e19/audio-vga.m4v">Download</a></div>
-            </div>
-            <div class="col-sm-1"></div>
-        </div>
-
-        <div class="row">
-            <div class="col-sm-12">&nbsp</div>
-        </div>
-
-        
-
-        <div class="row">
-            <div class="col-sm-3"></div>
-            <div class="col-sm-2">
-                <div class="col-sm-12">2PM Tuesday</div>
-                <div class="col-sm-12">15 September 2015 </div>
-            </div>
-            <div class="col-sm-4">
-                <div class="col-sm-12">Crawley: UWA BUSINESS SCHOOL, Sir Rod Eddington Case Study Room [441:142]</div>
-                </div>
-            <div class="col-sm-2"> 
-                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1538/2/47daf4d7-ce86-492f-b289-0f6bfd26a58a/audio-vga.m4v">Download</a></div>
-            </div>
-            <div class="col-sm-1"></div>
-        </div>
-
-        <div class="row">
-            <div class="col-sm-12">&nbsp</div>
-        </div>
-
-        
-
-        <div class="row">
-            <div class="col-sm-3"></div>
-            <div class="col-sm-2">
-                <div class="col-sm-12">2PM Tuesday</div>
-                <div class="col-sm-12">22 September 2015 </div>
-            </div>
-            <div class="col-sm-4">
-                <div class="col-sm-12">Crawley: UWA BUSINESS SCHOOL, Sir Rod Eddington Case Study Room [441:142]</div>
-                </div>
-            <div class="col-sm-2"> 
-                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1539/2/136cde57-1f57-40bb-889a-12af37307cdc/audio-vga.m4v">Download</a></div>
-            </div>
-            <div class="col-sm-1"></div>
-        </div>
-
-        <div class="row">
-            <div class="col-sm-12">&nbsp</div>
-        </div>
-
-        
-
-        <div class="row">
-            <div class="col-sm-3"></div>
-            <div class="col-sm-2">
-                <div class="col-sm-12">2PM Tuesday</div>
-                <div class="col-sm-12">06 October 2015 </div>
-            </div>
-            <div class="col-sm-4">
-                <div class="col-sm-12">Crawley: UWA BUSINESS SCHOOL, Sir Rod Eddington Case Study Room [441:142]</div>
-                </div>
-            <div class="col-sm-2"> 
-                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1541/2/6a96de7c-cbde-4759-9449-4dda55ad1d42/audio-vga.m4v">Download</a></div>
-            </div>
-            <div class="col-sm-1"></div>
-        </div>
-
-        <div class="row">
-            <div class="col-sm-12">&nbsp</div>
-        </div>
-
-        
-
-        <div class="row">
-            <div class="col-sm-3"></div>
-            <div class="col-sm-2">
-                <div class="col-sm-12">2PM Tuesday</div>
-                <div class="col-sm-12">13 October 2015 </div>
-            </div>
-            <div class="col-sm-4">
-                <div class="col-sm-12">Crawley: UWA BUSINESS SCHOOL, Sir Rod Eddington Case Study Room [441:142]</div>
-                </div>
-            <div class="col-sm-2"> 
-                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1542/2/f51ac5be-5742-4395-9095-7404d5af3be1/audio-vga.m4v">Download</a></div>
-            </div>
-            <div class="col-sm-1"></div>
-        </div>
-
-        <div class="row">
-            <div class="col-sm-12">&nbsp</div>
-        </div>
-
-        
-
-        <div class="row">
-            <div class="col-sm-3"></div>
-            <div class="col-sm-2">
-                <div class="col-sm-12">2PM Tuesday</div>
-                <div class="col-sm-12">20 October 2015 </div>
-            </div>
-            <div class="col-sm-4">
-                <div class="col-sm-12">Crawley: UWA BUSINESS SCHOOL, Sir Rod Eddington Case Study Room [441:142]</div>
-                </div>
-            <div class="col-sm-2"> 
-                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1543/2/63b6233e-d536-4402-9095-7682ad5d0779/audio-vga.m4v">Download</a></div>
-            </div>
-            <div class="col-sm-1"></div>
-        </div>
-
-        <div class="row">
-            <div class="col-sm-12">&nbsp</div>
-        </div>
-
-        
-
-        <div class="row">
-            <div class="col-sm-3"></div>
-            <div class="col-sm-2">
-                <div class="col-sm-12">2PM Tuesday</div>
-                <div class="col-sm-12">27 October 2015 </div>
-            </div>
-            <div class="col-sm-4">
-                <div class="col-sm-12">Crawley: UWA BUSINESS SCHOOL, Sir Rod Eddington Case Study Room [441:142]</div>
-                </div>
-            <div class="col-sm-2"> 
-                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1544/2/29046ccf-24cc-4bf7-89ec-c5766b6f85c9/audio-vga.m4v">Download</a></div>
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1611/3/7807fd47-1492-41e9-b9b2-71952e66dd93/audio-vga.m4v">Download</a></div>
             </div>
             <div class="col-sm-1"></div>
         </div>

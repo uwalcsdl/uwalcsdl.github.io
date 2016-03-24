@@ -2,80 +2,34 @@
 <html lang="en">
 
 <head>
-    <base = href="file:///home/alastair/Desktop/uwalcsdl"/>
+    <title>GENG5507</title>
+
+    <script src="uwalcsdl.js"></script>
+
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
-    <meta name="uwalcsdl.github.io" content="">
 
-    <title>GENG5507</title>
+    <script type="text/javascript">
+      insertResources();
+    </script>
 
-    <!-- jQuery Version 1.11.1 -->
-    <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
-
-    <!-- Bootstrap Core CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-    <!-- Custom CSS -->
-    <style>
-    body {
-        padding-top: 70px;
-        /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
-    }
-    </style>
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-    <script src="../uwalcsdl.js"></script>
 </head>
 
 <body>
 
     <!-- Navigation -->
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="../index.html">UWA LCS DL</a>
-            </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav" id="navbar-list">
-                    <li>
-                        <a href="../index.html">Find Unit</a>
-                    </li>
-                    <li>
-                        <a href="../unitList.html">List Units</a>
-                    </li>
-                </ul>
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a href="https://github.com/uwalcsdl/uwalcsdl.github.io">GitHub</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container -->
-    </nav>
+    <script type="text/javascript">
+        insertNavbar();
+    </script>
+    <!-- Unit Shortcuts from cookie -->
     <script type="text/javascript">
         getUnitShortcuts();
     </script>
+
     <!-- Page Content -->
-    <div class="container"> 
+    <div class="container">
 
         <div class="row">
             <div class="col-sm-12 text-center" id="unit-title-div">
@@ -84,17 +38,18 @@
             <script type="text/javascript">addUnitShortcutButton();</script>
         </div>
 
+
         <div class="row">
             <div class="col-sm-3"></div>
             <div class="col-sm-2">
-                <div class="col-sm-12">2PM Monday</div>
-                <div class="col-sm-12">27 July 2015 </div>
+                <div class="col-sm-12">8AM Tuesday</div>
+                <div class="col-sm-12">08 March 2016 </div>
             </div>
             <div class="col-sm-4">
-                <div class="col-sm-12">Crawley: CHEMISTRY - LECTURE THEATRES, Tattersall Lecture Theatre [210:G106]</div>
+                <div class="col-sm-12">Crawley: MATHEMATICS, Weatherburn Lecture Theatre [223:G40]</div>
                 </div>
-            <div class="col-sm-2"> 
-                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1531/1/d1532aff-9a46-4c1b-8b31-06cc8f0b13e9/audio-vga.m4v">Download</a></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1610/1/d8a807f4-7659-4362-a979-983db985c991/audio-vga.m4v">Download</a></div>
             </div>
             <div class="col-sm-1"></div>
         </div>
@@ -108,14 +63,14 @@
         <div class="row">
             <div class="col-sm-3"></div>
             <div class="col-sm-2">
-                <div class="col-sm-12">2PM Friday</div>
-                <div class="col-sm-12">31 July 2015 </div>
+                <div class="col-sm-12">11AM Monday</div>
+                <div class="col-sm-12">07 March 2016 </div>
             </div>
             <div class="col-sm-4">
-                <div class="col-sm-12">Crawley: CHEMISTRY - LECTURE THEATRES, Wilsmore Lecture Theatre [210:G108]</div>
+                <div class="col-sm-12">Crawley: MATHEMATICS, Weatherburn Lecture Theatre [223:G40]</div>
                 </div>
-            <div class="col-sm-2"> 
-                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1531/5/4ce424af-ae36-448a-b2c4-5316928cc717/audio-vga.m4v">Download</a></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1610/1/748db338-9d4d-45f5-8a5f-7b7ff170c79b/audio-vga.m4v">Download</a></div>
             </div>
             <div class="col-sm-1"></div>
         </div>
@@ -129,14 +84,14 @@
         <div class="row">
             <div class="col-sm-3"></div>
             <div class="col-sm-2">
-                <div class="col-sm-12">2PM Monday</div>
-                <div class="col-sm-12">03 August 2015 </div>
+                <div class="col-sm-12">8AM Tuesday</div>
+                <div class="col-sm-12">15 March 2016 </div>
             </div>
             <div class="col-sm-4">
-                <div class="col-sm-12">Crawley: CHEMISTRY - LECTURE THEATRES, Tattersall Lecture Theatre [210:G106]</div>
+                <div class="col-sm-12">Crawley: MATHEMATICS, Weatherburn Lecture Theatre [223:G40]</div>
                 </div>
-            <div class="col-sm-2"> 
-                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1532/1/9648a82a-a7b9-49e0-b505-aaf30b0adfe9/audio-vga.m4v">Download</a></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1611/1/a807f352-9de2-4d7e-8173-d370afcd9b33/audio-vga.m4v">Download</a></div>
             </div>
             <div class="col-sm-1"></div>
         </div>
@@ -150,14 +105,14 @@
         <div class="row">
             <div class="col-sm-3"></div>
             <div class="col-sm-2">
-                <div class="col-sm-12">2PM Friday</div>
-                <div class="col-sm-12">07 August 2015 </div>
+                <div class="col-sm-12">11AM Monday</div>
+                <div class="col-sm-12">14 March 2016 </div>
             </div>
             <div class="col-sm-4">
-                <div class="col-sm-12">Crawley: CHEMISTRY - LECTURE THEATRES, Wilsmore Lecture Theatre [210:G108]</div>
+                <div class="col-sm-12">Crawley: MATHEMATICS, Weatherburn Lecture Theatre [223:G40]</div>
                 </div>
-            <div class="col-sm-2"> 
-                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1532/5/31dc318b-38f0-4ae7-a11d-a90f8b7f8dbf/audio-vga.m4v">Download</a></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1611/1/6a05a994-e405-4bbc-bc94-f75d708b4801/audio-vga.m4v">Download</a></div>
             </div>
             <div class="col-sm-1"></div>
         </div>
@@ -171,14 +126,14 @@
         <div class="row">
             <div class="col-sm-3"></div>
             <div class="col-sm-2">
-                <div class="col-sm-12">2PM Monday</div>
-                <div class="col-sm-12">10 August 2015 </div>
+                <div class="col-sm-12">11AM Monday</div>
+                <div class="col-sm-12">21 March 2016 </div>
             </div>
             <div class="col-sm-4">
-                <div class="col-sm-12">Crawley: CHEMISTRY - LECTURE THEATRES, Tattersall Lecture Theatre [210:G106]</div>
+                <div class="col-sm-12">Crawley: MATHEMATICS, Weatherburn Lecture Theatre [223:G40]</div>
                 </div>
-            <div class="col-sm-2"> 
-                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1533/1/e7b9efd1-63ad-4d89-a8a4-128634dcec73/audio-vga.m4v">Download</a></div>
+            <div class="col-sm-2">
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1612/1/f537c303-e586-41e1-bd6c-6ef8e1d115fc/audio-vga.m4v">Download</a></div>
             </div>
             <div class="col-sm-1"></div>
         </div>
@@ -192,434 +147,14 @@
         <div class="row">
             <div class="col-sm-3"></div>
             <div class="col-sm-2">
-                <div class="col-sm-12">2PM Friday</div>
-                <div class="col-sm-12">14 August 2015 </div>
+                <div class="col-sm-12">8AM Tuesday</div>
+                <div class="col-sm-12">22 March 2016 </div>
             </div>
             <div class="col-sm-4">
-                <div class="col-sm-12">Crawley: CHEMISTRY - LECTURE THEATRES, Wilsmore Lecture Theatre [210:G108]</div>
+                <div class="col-sm-12">Crawley: MATHEMATICS, Weatherburn Lecture Theatre [223:G40]</div>
                 </div>
-            <div class="col-sm-2"> 
-                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1533/5/f8d551ee-c8e3-43c6-ae9d-f1f7b0e4cbd4/audio-vga.m4v">Download</a></div>
-            </div>
-            <div class="col-sm-1"></div>
-        </div>
-
-        <div class="row">
-            <div class="col-sm-12">&nbsp</div>
-        </div>
-
-        
-
-        <div class="row">
-            <div class="col-sm-3"></div>
             <div class="col-sm-2">
-                <div class="col-sm-12">2PM Monday</div>
-                <div class="col-sm-12">17 August 2015 </div>
-            </div>
-            <div class="col-sm-4">
-                <div class="col-sm-12">Crawley: CHEMISTRY - LECTURE THEATRES, Tattersall Lecture Theatre [210:G106]</div>
-                </div>
-            <div class="col-sm-2"> 
-                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1534/1/af5da870-2e99-4f25-a791-e9298d1ce34e/audio-vga.m4v">Download</a></div>
-            </div>
-            <div class="col-sm-1"></div>
-        </div>
-
-        <div class="row">
-            <div class="col-sm-12">&nbsp</div>
-        </div>
-
-        
-
-        <div class="row">
-            <div class="col-sm-3"></div>
-            <div class="col-sm-2">
-                <div class="col-sm-12">2PM Friday</div>
-                <div class="col-sm-12">21 August 2015 </div>
-            </div>
-            <div class="col-sm-4">
-                <div class="col-sm-12">Crawley: CHEMISTRY - LECTURE THEATRES, Wilsmore Lecture Theatre [210:G108]</div>
-                </div>
-            <div class="col-sm-2"> 
-                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1534/5/dff4de48-51b4-4e73-b213-bb51b231fe6a/audio-vga.m4v">Download</a></div>
-            </div>
-            <div class="col-sm-1"></div>
-        </div>
-
-        <div class="row">
-            <div class="col-sm-12">&nbsp</div>
-        </div>
-
-        
-
-        <div class="row">
-            <div class="col-sm-3"></div>
-            <div class="col-sm-2">
-                <div class="col-sm-12">2PM Monday</div>
-                <div class="col-sm-12">24 August 2015 </div>
-            </div>
-            <div class="col-sm-4">
-                <div class="col-sm-12">Crawley: CHEMISTRY - LECTURE THEATRES, Tattersall Lecture Theatre [210:G106]</div>
-                </div>
-            <div class="col-sm-2"> 
-                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1535/1/6064f18c-71ca-4706-a775-aab42c803a51/audio-vga.m4v">Download</a></div>
-            </div>
-            <div class="col-sm-1"></div>
-        </div>
-
-        <div class="row">
-            <div class="col-sm-12">&nbsp</div>
-        </div>
-
-        
-
-        <div class="row">
-            <div class="col-sm-3"></div>
-            <div class="col-sm-2">
-                <div class="col-sm-12">2PM Friday</div>
-                <div class="col-sm-12">28 August 2015 </div>
-            </div>
-            <div class="col-sm-4">
-                <div class="col-sm-12">Crawley: CHEMISTRY - LECTURE THEATRES, Wilsmore Lecture Theatre [210:G108]</div>
-                </div>
-            <div class="col-sm-2"> 
-                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1535/5/8cf80798-9ad0-479b-a34c-ee8fa6a44de9/audio-vga.m4v">Download</a></div>
-            </div>
-            <div class="col-sm-1"></div>
-        </div>
-
-        <div class="row">
-            <div class="col-sm-12">&nbsp</div>
-        </div>
-
-        
-
-        <div class="row">
-            <div class="col-sm-3"></div>
-            <div class="col-sm-2">
-                <div class="col-sm-12">2PM Monday</div>
-                <div class="col-sm-12">31 August 2015 </div>
-            </div>
-            <div class="col-sm-4">
-                <div class="col-sm-12">Crawley: CHEMISTRY - LECTURE THEATRES, Tattersall Lecture Theatre [210:G106]</div>
-                </div>
-            <div class="col-sm-2"> 
-                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1536/1/2218a3d9-bd67-4442-8126-21ca7b771676/audio-vga.m4v">Download</a></div>
-            </div>
-            <div class="col-sm-1"></div>
-        </div>
-
-        <div class="row">
-            <div class="col-sm-12">&nbsp</div>
-        </div>
-
-        
-
-        <div class="row">
-            <div class="col-sm-3"></div>
-            <div class="col-sm-2">
-                <div class="col-sm-12">2PM Friday</div>
-                <div class="col-sm-12">04 September 2015 </div>
-            </div>
-            <div class="col-sm-4">
-                <div class="col-sm-12">Crawley: CHEMISTRY - LECTURE THEATRES, Wilsmore Lecture Theatre [210:G108]</div>
-                </div>
-            <div class="col-sm-2"> 
-                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1536/5/2f32f6ac-40c2-42ee-9337-39bd1386c851/audio-vga.m4v">Download</a></div>
-            </div>
-            <div class="col-sm-1"></div>
-        </div>
-
-        <div class="row">
-            <div class="col-sm-12">&nbsp</div>
-        </div>
-
-        
-
-        <div class="row">
-            <div class="col-sm-3"></div>
-            <div class="col-sm-2">
-                <div class="col-sm-12">2PM Monday</div>
-                <div class="col-sm-12">07 September 2015 </div>
-            </div>
-            <div class="col-sm-4">
-                <div class="col-sm-12">Crawley: CHEMISTRY - LECTURE THEATRES, Tattersall Lecture Theatre [210:G106]</div>
-                </div>
-            <div class="col-sm-2"> 
-                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1537/1/8fe590ef-6aa3-4e83-bfd8-33e28173d469/audio-vga.m4v">Download</a></div>
-            </div>
-            <div class="col-sm-1"></div>
-        </div>
-
-        <div class="row">
-            <div class="col-sm-12">&nbsp</div>
-        </div>
-
-        
-
-        <div class="row">
-            <div class="col-sm-3"></div>
-            <div class="col-sm-2">
-                <div class="col-sm-12">2PM Friday</div>
-                <div class="col-sm-12">11 September 2015 </div>
-            </div>
-            <div class="col-sm-4">
-                <div class="col-sm-12">Crawley: CHEMISTRY - LECTURE THEATRES, Wilsmore Lecture Theatre [210:G108]</div>
-                </div>
-            <div class="col-sm-2"> 
-                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1537/5/4f90d166-323a-4cee-a078-32cd784e06d6/audio-vga.m4v">Download</a></div>
-            </div>
-            <div class="col-sm-1"></div>
-        </div>
-
-        <div class="row">
-            <div class="col-sm-12">&nbsp</div>
-        </div>
-
-        
-
-        <div class="row">
-            <div class="col-sm-3"></div>
-            <div class="col-sm-2">
-                <div class="col-sm-12">2PM Monday</div>
-                <div class="col-sm-12">14 September 2015 </div>
-            </div>
-            <div class="col-sm-4">
-                <div class="col-sm-12">Crawley: CHEMISTRY - LECTURE THEATRES, Tattersall Lecture Theatre [210:G106]</div>
-                </div>
-            <div class="col-sm-2"> 
-                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1538/1/c372dd75-64c8-4cf3-8565-96477509424c/audio-vga.m4v">Download</a></div>
-            </div>
-            <div class="col-sm-1"></div>
-        </div>
-
-        <div class="row">
-            <div class="col-sm-12">&nbsp</div>
-        </div>
-
-        
-
-        <div class="row">
-            <div class="col-sm-3"></div>
-            <div class="col-sm-2">
-                <div class="col-sm-12">2PM Friday</div>
-                <div class="col-sm-12">18 September 2015 </div>
-            </div>
-            <div class="col-sm-4">
-                <div class="col-sm-12">Crawley: CHEMISTRY - LECTURE THEATRES, Wilsmore Lecture Theatre [210:G108]</div>
-                </div>
-            <div class="col-sm-2"> 
-                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1538/5/34631c7b-0ea6-40d2-bab6-f94a3c2a3c19/audio-vga.m4v">Download</a></div>
-            </div>
-            <div class="col-sm-1"></div>
-        </div>
-
-        <div class="row">
-            <div class="col-sm-12">&nbsp</div>
-        </div>
-
-        
-
-        <div class="row">
-            <div class="col-sm-3"></div>
-            <div class="col-sm-2">
-                <div class="col-sm-12">2PM Monday</div>
-                <div class="col-sm-12">21 September 2015 </div>
-            </div>
-            <div class="col-sm-4">
-                <div class="col-sm-12">Crawley: CHEMISTRY - LECTURE THEATRES, Tattersall Lecture Theatre [210:G106]</div>
-                </div>
-            <div class="col-sm-2"> 
-                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1539/1/a19129d8-c7fd-4d3b-92bb-6de4dde3bd06/audio-vga.m4v">Download</a></div>
-            </div>
-            <div class="col-sm-1"></div>
-        </div>
-
-        <div class="row">
-            <div class="col-sm-12">&nbsp</div>
-        </div>
-
-        
-
-        <div class="row">
-            <div class="col-sm-3"></div>
-            <div class="col-sm-2">
-                <div class="col-sm-12">2PM Friday</div>
-                <div class="col-sm-12">25 September 2015 </div>
-            </div>
-            <div class="col-sm-4">
-                <div class="col-sm-12">Crawley: CHEMISTRY - LECTURE THEATRES, Wilsmore Lecture Theatre [210:G108]</div>
-                </div>
-            <div class="col-sm-2"> 
-                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1539/5/a357ed40-e544-4a18-b98b-b14e3c6e30a4/audio-vga.m4v">Download</a></div>
-            </div>
-            <div class="col-sm-1"></div>
-        </div>
-
-        <div class="row">
-            <div class="col-sm-12">&nbsp</div>
-        </div>
-
-        
-
-        <div class="row">
-            <div class="col-sm-3"></div>
-            <div class="col-sm-2">
-                <div class="col-sm-12">2PM Monday</div>
-                <div class="col-sm-12">05 October 2015 </div>
-            </div>
-            <div class="col-sm-4">
-                <div class="col-sm-12">Crawley: CHEMISTRY - LECTURE THEATRES, Tattersall Lecture Theatre [210:G106]</div>
-                </div>
-            <div class="col-sm-2"> 
-                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1541/1/c0b58ad8-e2b4-483b-a446-9e253ed078b0/audio-vga.m4v">Download</a></div>
-            </div>
-            <div class="col-sm-1"></div>
-        </div>
-
-        <div class="row">
-            <div class="col-sm-12">&nbsp</div>
-        </div>
-
-        
-
-        <div class="row">
-            <div class="col-sm-3"></div>
-            <div class="col-sm-2">
-                <div class="col-sm-12">2PM Friday</div>
-                <div class="col-sm-12">09 October 2015 </div>
-            </div>
-            <div class="col-sm-4">
-                <div class="col-sm-12">Crawley: CHEMISTRY - LECTURE THEATRES, Wilsmore Lecture Theatre [210:G108]</div>
-                </div>
-            <div class="col-sm-2"> 
-                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1541/5/e46d39b5-be98-4d32-bd01-c969affa49ec/audio-vga.m4v">Download</a></div>
-            </div>
-            <div class="col-sm-1"></div>
-        </div>
-
-        <div class="row">
-            <div class="col-sm-12">&nbsp</div>
-        </div>
-
-        
-
-        <div class="row">
-            <div class="col-sm-3"></div>
-            <div class="col-sm-2">
-                <div class="col-sm-12">2PM Monday</div>
-                <div class="col-sm-12">12 October 2015 </div>
-            </div>
-            <div class="col-sm-4">
-                <div class="col-sm-12">Crawley: CHEMISTRY - LECTURE THEATRES, Tattersall Lecture Theatre [210:G106]</div>
-                </div>
-            <div class="col-sm-2"> 
-                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1542/1/e5920e30-fc25-4fc8-aab1-847e9edf76c8/audio-vga.m4v">Download</a></div>
-            </div>
-            <div class="col-sm-1"></div>
-        </div>
-
-        <div class="row">
-            <div class="col-sm-12">&nbsp</div>
-        </div>
-
-        
-
-        <div class="row">
-            <div class="col-sm-3"></div>
-            <div class="col-sm-2">
-                <div class="col-sm-12">2PM Friday</div>
-                <div class="col-sm-12">16 October 2015 </div>
-            </div>
-            <div class="col-sm-4">
-                <div class="col-sm-12">Crawley: CHEMISTRY - LECTURE THEATRES, Wilsmore Lecture Theatre [210:G108]</div>
-                </div>
-            <div class="col-sm-2"> 
-                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1542/5/d246659e-176c-44df-84b1-ab73eb2eb63a/audio-vga.m4v">Download</a></div>
-            </div>
-            <div class="col-sm-1"></div>
-        </div>
-
-        <div class="row">
-            <div class="col-sm-12">&nbsp</div>
-        </div>
-
-        
-
-        <div class="row">
-            <div class="col-sm-3"></div>
-            <div class="col-sm-2">
-                <div class="col-sm-12">2PM Monday</div>
-                <div class="col-sm-12">19 October 2015 </div>
-            </div>
-            <div class="col-sm-4">
-                <div class="col-sm-12">Crawley: CHEMISTRY - LECTURE THEATRES, Tattersall Lecture Theatre [210:G106]</div>
-                </div>
-            <div class="col-sm-2"> 
-                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1543/1/45876716-de6b-4ed8-b8de-635be4e67509/audio-vga.m4v">Download</a></div>
-            </div>
-            <div class="col-sm-1"></div>
-        </div>
-
-        <div class="row">
-            <div class="col-sm-12">&nbsp</div>
-        </div>
-
-        
-
-        <div class="row">
-            <div class="col-sm-3"></div>
-            <div class="col-sm-2">
-                <div class="col-sm-12">2PM Friday</div>
-                <div class="col-sm-12">23 October 2015 </div>
-            </div>
-            <div class="col-sm-4">
-                <div class="col-sm-12">Crawley: CHEMISTRY - LECTURE THEATRES, Wilsmore Lecture Theatre [210:G108]</div>
-                </div>
-            <div class="col-sm-2"> 
-                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1543/5/22a8fe36-328b-4b67-88e8-a19e1e01ea72/audio-vga.m4v">Download</a></div>
-            </div>
-            <div class="col-sm-1"></div>
-        </div>
-
-        <div class="row">
-            <div class="col-sm-12">&nbsp</div>
-        </div>
-
-        
-
-        <div class="row">
-            <div class="col-sm-3"></div>
-            <div class="col-sm-2">
-                <div class="col-sm-12">2PM Monday</div>
-                <div class="col-sm-12">26 October 2015 </div>
-            </div>
-            <div class="col-sm-4">
-                <div class="col-sm-12">Crawley: CHEMISTRY - LECTURE THEATRES, Tattersall Lecture Theatre [210:G106]</div>
-                </div>
-            <div class="col-sm-2"> 
-                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1544/1/c63472e9-f67f-423f-8cee-6bcb1a873644/audio-vga.m4v">Download</a></div>
-            </div>
-            <div class="col-sm-1"></div>
-        </div>
-
-        <div class="row">
-            <div class="col-sm-12">&nbsp</div>
-        </div>
-
-        
-
-        <div class="row">
-            <div class="col-sm-3"></div>
-            <div class="col-sm-2">
-                <div class="col-sm-12">2PM Friday</div>
-                <div class="col-sm-12">30 October 2015 </div>
-            </div>
-            <div class="col-sm-4">
-                <div class="col-sm-12">Crawley: CHEMISTRY - LECTURE THEATRES, Wilsmore Lecture Theatre [210:G108]</div>
-                </div>
-            <div class="col-sm-2"> 
-                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1544/5/a1d012b4-6d6f-42e2-bd4d-517f4593bba0/audio-vga.m4v">Download</a></div>
+                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1612/1/8917fd68-520b-4ce4-9639-42d152d50b86/audio-vga.m4v">Download</a></div>
             </div>
             <div class="col-sm-1"></div>
         </div>

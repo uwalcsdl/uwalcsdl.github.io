@@ -227,7 +227,7 @@ def save_unit_semester_links(year, semester,
 def fetch_days_units(year, week, day):
     check_year_week_day(year, week, day)
     print('day '+str(day))
-    lectureHashes = get_hashes_from_dir(BASE_URL+str(year)+str(week)+'/'+str(day))
+    lectureHashes = get_hashes_from_dir('%s%02d%02d/%01d'%(BASE_URL,year,week,day))
     for lectureHash in lectureHashes:
         try:
             xml = LectureXML(year, week, day, lectureHash)

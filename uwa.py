@@ -9,6 +9,8 @@ from datetime import datetime, timedelta
 import re
 import os.path
 
+from tqdm import tqdm #pip3 install tqdm
+
 BASE_URL = 'http://media.lcs.uwa.edu.au/echocontent/'
 
 
@@ -189,7 +191,10 @@ def save_unit_semester_links(year, semester,
 
     # Fetch unit info from retrieved hashes
     output = []
-    for i, unitHash in enumerate(unitHashes):
+    print("Finding units from semester %s 20%s:"%(semester, year))
+    for i, unitHash in tqdm(enumerate(unitHashes),
+                            total=len(unitHashes),
+                            unit="units"):
         xml = UnitXML(unitHash)
         if xml.get_year() == year:
             if xml.get_sem() == semester:
@@ -199,9 +204,6 @@ def save_unit_semester_links(year, semester,
                 unitURL = xml.get_unit_url()
                 unitInfo = unitCode, unitURL
                 output.append(unitInfo)
-        if i % 500 == 0:
-            percent = str(i/len(unitHashes)*100)
-            print(percent + "%" +" complete")
     output.sort()
 
     # Write out unit.html file links to unitListFile
@@ -209,7 +211,7 @@ def save_unit_semester_links(year, semester,
     unitListTemplateFile = open(unitListTemplateFileName, 'r')
     unitListFileHTML = unitListTemplateFile.read()
     unitListFileHTML = unitListFileHTML.replace('{{semester}}', semester)
-    unitListFileHTML = unitListFileHTML.replace('{{year}}', year)
+    unitListFileHTML = unitListFileHTML.replace('{{year}}', "20"+year)
     for unit in output:
         unitListFileHTML += unitHTML.format(unit[0], unit[1], unitDirName)
     unitListFile = open(unitListFileName, 'w')
@@ -223,7 +225,7 @@ def save_unit_semester_links(year, semester,
     for unit in output:
         unitPage = open(unitDirName+'/'+unit[0]+'.html', 'w')
         uTemplate = template
-        uTemplate = utemplate.replace('{{pageTitle}}', unit[0])
+        uTemplate = uTemplate.replace('{{pageTitle}}', unit[0])
         uTemplate = uTemplate.replace('{{semester}}', semester)
         uTemplate = uTemplate.replace('{{year}}', year)
         unitPage.write(uTemplate)

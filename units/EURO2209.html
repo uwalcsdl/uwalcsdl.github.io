@@ -2,80 +2,35 @@
 <html lang="en">
 
 <head>
-    <base = href="file:///home/alastair/Desktop/uwalcsdl"/>
+    <title>EURO2209</title>
+
+    <!-- JS -->
+    <script src="/uwalcsdl.js"></script>
+
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
-    <meta name="uwalcsdl.github.io" content="">
 
-    <title>EURO2209</title>
+    <script type="text/javascript">
+      insertResources();
+    </script>
 
-    <!-- jQuery Version 1.11.1 -->
-    <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
-
-    <!-- Bootstrap Core CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-    <!-- Custom CSS -->
-    <style>
-    body {
-        padding-top: 70px;
-        /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
-    }
-    </style>
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-    <script src="../uwalcsdl.js"></script>
 </head>
 
 <body>
 
     <!-- Navigation -->
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="../index.html">UWA LCS DL</a>
-            </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav" id="navbar-list">
-                    <li>
-                        <a href="../index.html">Find Unit</a>
-                    </li>
-                    <li>
-                        <a href="../unitList.html">List Units</a>
-                    </li>
-                </ul>
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a href="https://github.com/uwalcsdl/uwalcsdl.github.io">GitHub</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container -->
-    </nav>
+    <script type="text/javascript">
+        insertNavbar();
+    </script>
+    <!-- Unit Shortcuts from cookie -->
     <script type="text/javascript">
         getUnitShortcuts();
     </script>
+
     <!-- Page Content -->
-    <div class="container"> 
+    <div class="container">
 
         <div class="row">
             <div class="col-sm-12 text-center" id="unit-title-div">
@@ -83,276 +38,3 @@
             </div>
             <script type="text/javascript">addUnitShortcutButton();</script>
         </div>
-
-        <div class="row">
-            <div class="col-sm-3"></div>
-            <div class="col-sm-2">
-                <div class="col-sm-12">4PM Wednesday</div>
-                <div class="col-sm-12">29 July 2015 </div>
-            </div>
-            <div class="col-sm-4">
-                <div class="col-sm-12">Crawley: ARTS, Austin Lecture Hall [106:159]</div>
-                </div>
-            <div class="col-sm-2"> 
-                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1531/3/0db7cb73-e353-49d3-921a-f8e263773b5b/audio-vga.m4v">Download</a></div>
-            </div>
-            <div class="col-sm-1"></div>
-        </div>
-
-        <div class="row">
-            <div class="col-sm-12">&nbsp</div>
-        </div>
-
-        
-
-        <div class="row">
-            <div class="col-sm-3"></div>
-            <div class="col-sm-2">
-                <div class="col-sm-12">4PM Wednesday</div>
-                <div class="col-sm-12">05 August 2015 </div>
-            </div>
-            <div class="col-sm-4">
-                <div class="col-sm-12">Crawley: ARTS, Austin Lecture Hall [106:159]</div>
-                </div>
-            <div class="col-sm-2"> 
-                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1532/3/b70e4319-f257-4029-bc7d-d5bc5fd2bea4/audio-vga.m4v">Download</a></div>
-            </div>
-            <div class="col-sm-1"></div>
-        </div>
-
-        <div class="row">
-            <div class="col-sm-12">&nbsp</div>
-        </div>
-
-        
-
-        <div class="row">
-            <div class="col-sm-3"></div>
-            <div class="col-sm-2">
-                <div class="col-sm-12">4PM Wednesday</div>
-                <div class="col-sm-12">12 August 2015 </div>
-            </div>
-            <div class="col-sm-4">
-                <div class="col-sm-12">Crawley: ARTS, Austin Lecture Hall [106:159]</div>
-                </div>
-            <div class="col-sm-2"> 
-                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1533/3/29f67c4d-651a-456f-b6aa-2046adb5a5ea/audio-vga.m4v">Download</a></div>
-            </div>
-            <div class="col-sm-1"></div>
-        </div>
-
-        <div class="row">
-            <div class="col-sm-12">&nbsp</div>
-        </div>
-
-        
-
-        <div class="row">
-            <div class="col-sm-3"></div>
-            <div class="col-sm-2">
-                <div class="col-sm-12">4PM Wednesday</div>
-                <div class="col-sm-12">19 August 2015 </div>
-            </div>
-            <div class="col-sm-4">
-                <div class="col-sm-12">Crawley: ARTS, Austin Lecture Hall [106:159]</div>
-                </div>
-            <div class="col-sm-2"> 
-                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1534/3/0ff7d813-a676-4b4b-8a12-7b820b16a372/audio-vga.m4v">Download</a></div>
-            </div>
-            <div class="col-sm-1"></div>
-        </div>
-
-        <div class="row">
-            <div class="col-sm-12">&nbsp</div>
-        </div>
-
-        
-
-        <div class="row">
-            <div class="col-sm-3"></div>
-            <div class="col-sm-2">
-                <div class="col-sm-12">4PM Wednesday</div>
-                <div class="col-sm-12">26 August 2015 </div>
-            </div>
-            <div class="col-sm-4">
-                <div class="col-sm-12">Crawley: ARTS, Austin Lecture Hall [106:159]</div>
-                </div>
-            <div class="col-sm-2"> 
-                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1535/3/e4975e57-3ee3-400c-acc8-7b424892f91f/audio-vga.m4v">Download</a></div>
-            </div>
-            <div class="col-sm-1"></div>
-        </div>
-
-        <div class="row">
-            <div class="col-sm-12">&nbsp</div>
-        </div>
-
-        
-
-        <div class="row">
-            <div class="col-sm-3"></div>
-            <div class="col-sm-2">
-                <div class="col-sm-12">4PM Wednesday</div>
-                <div class="col-sm-12">02 September 2015 </div>
-            </div>
-            <div class="col-sm-4">
-                <div class="col-sm-12">Crawley: ARTS, Austin Lecture Hall [106:159]</div>
-                </div>
-            <div class="col-sm-2"> 
-                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1536/3/e3f8a3bd-7743-4c63-b51c-fde820e24bb3/audio-vga.m4v">Download</a></div>
-            </div>
-            <div class="col-sm-1"></div>
-        </div>
-
-        <div class="row">
-            <div class="col-sm-12">&nbsp</div>
-        </div>
-
-        
-
-        <div class="row">
-            <div class="col-sm-3"></div>
-            <div class="col-sm-2">
-                <div class="col-sm-12">4PM Wednesday</div>
-                <div class="col-sm-12">09 September 2015 </div>
-            </div>
-            <div class="col-sm-4">
-                <div class="col-sm-12">Crawley: ARTS, Austin Lecture Hall [106:159]</div>
-                </div>
-            <div class="col-sm-2"> 
-                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1537/3/e81d4220-55d2-4f9d-aa48-4c7d5be80c9d/audio-vga.m4v">Download</a></div>
-            </div>
-            <div class="col-sm-1"></div>
-        </div>
-
-        <div class="row">
-            <div class="col-sm-12">&nbsp</div>
-        </div>
-
-        
-
-        <div class="row">
-            <div class="col-sm-3"></div>
-            <div class="col-sm-2">
-                <div class="col-sm-12">4PM Wednesday</div>
-                <div class="col-sm-12">16 September 2015 </div>
-            </div>
-            <div class="col-sm-4">
-                <div class="col-sm-12">Crawley: ARTS, Austin Lecture Hall [106:159]</div>
-                </div>
-            <div class="col-sm-2"> 
-                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1538/3/5f32b4f3-5782-428b-894c-6494c3cf4b97/audio-vga.m4v">Download</a></div>
-            </div>
-            <div class="col-sm-1"></div>
-        </div>
-
-        <div class="row">
-            <div class="col-sm-12">&nbsp</div>
-        </div>
-
-        
-
-        <div class="row">
-            <div class="col-sm-3"></div>
-            <div class="col-sm-2">
-                <div class="col-sm-12">4PM Wednesday</div>
-                <div class="col-sm-12">23 September 2015 </div>
-            </div>
-            <div class="col-sm-4">
-                <div class="col-sm-12">Crawley: ARTS, Austin Lecture Hall [106:159]</div>
-                </div>
-            <div class="col-sm-2"> 
-                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1539/3/b503a8e7-45f3-4dc5-bd8c-8345a1cc2efb/audio-vga.m4v">Download</a></div>
-            </div>
-            <div class="col-sm-1"></div>
-        </div>
-
-        <div class="row">
-            <div class="col-sm-12">&nbsp</div>
-        </div>
-
-        
-
-        <div class="row">
-            <div class="col-sm-3"></div>
-            <div class="col-sm-2">
-                <div class="col-sm-12">4PM Wednesday</div>
-                <div class="col-sm-12">07 October 2015 </div>
-            </div>
-            <div class="col-sm-4">
-                <div class="col-sm-12">Crawley: ARTS, Austin Lecture Hall [106:159]</div>
-                </div>
-            <div class="col-sm-2"> 
-                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1541/3/6c2bd92d-c09f-4d54-8977-a6edbc2dc56a/audio-vga.m4v">Download</a></div>
-            </div>
-            <div class="col-sm-1"></div>
-        </div>
-
-        <div class="row">
-            <div class="col-sm-12">&nbsp</div>
-        </div>
-
-        
-
-        <div class="row">
-            <div class="col-sm-3"></div>
-            <div class="col-sm-2">
-                <div class="col-sm-12">4PM Wednesday</div>
-                <div class="col-sm-12">14 October 2015 </div>
-            </div>
-            <div class="col-sm-4">
-                <div class="col-sm-12">Crawley: ARTS, Austin Lecture Hall [106:159]</div>
-                </div>
-            <div class="col-sm-2"> 
-                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1542/3/e7cca800-e48a-4185-931d-04c47f5580b0/audio-vga.m4v">Download</a></div>
-            </div>
-            <div class="col-sm-1"></div>
-        </div>
-
-        <div class="row">
-            <div class="col-sm-12">&nbsp</div>
-        </div>
-
-        
-
-        <div class="row">
-            <div class="col-sm-3"></div>
-            <div class="col-sm-2">
-                <div class="col-sm-12">4PM Wednesday</div>
-                <div class="col-sm-12">21 October 2015 </div>
-            </div>
-            <div class="col-sm-4">
-                <div class="col-sm-12">Crawley: ARTS, Austin Lecture Hall [106:159]</div>
-                </div>
-            <div class="col-sm-2"> 
-                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1543/3/0eb90c76-b906-4054-832e-a779077037c1/audio-vga.m4v">Download</a></div>
-            </div>
-            <div class="col-sm-1"></div>
-        </div>
-
-        <div class="row">
-            <div class="col-sm-12">&nbsp</div>
-        </div>
-
-        
-
-        <div class="row">
-            <div class="col-sm-3"></div>
-            <div class="col-sm-2">
-                <div class="col-sm-12">4PM Wednesday</div>
-                <div class="col-sm-12">28 October 2015 </div>
-            </div>
-            <div class="col-sm-4">
-                <div class="col-sm-12">Crawley: ARTS, Austin Lecture Hall [106:159]</div>
-                </div>
-            <div class="col-sm-2"> 
-                <div class="col-sm-12"><a download="download.m4v" href="http://media.lcs.uwa.edu.au/echocontent/1544/3/65d06ff8-fdf9-4fb5-8fd7-c90dfd9d6471/audio-vga.m4v">Download</a></div>
-            </div>
-            <div class="col-sm-1"></div>
-        </div>
-
-        <div class="row">
-            <div class="col-sm-12">&nbsp</div>
-        </div>
-
-        

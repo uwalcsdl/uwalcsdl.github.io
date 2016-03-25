@@ -95,7 +95,7 @@ function insertResources() {
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>\
     \
     <!-- Custom CSS -->\
-    <link rel="stylesheet" href="uwalcsdl.css">\
+    <link rel="stylesheet" href="/uwalcsdl.css">\
     \
   ')
 }
@@ -118,10 +118,10 @@ document.write('\
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">\
               <ul class="nav navbar-nav" id="navbar-list">\
                   <li>\
-                      <a href="index.html">Find Unit</a>\
+                      <a href="/index.html">Find Unit</a>\
                   </li>\
                   <li>\
-                      <a href="unitList.html">List Units</a>\
+                      <a href="/unitList.html">List Units</a>\
                   </li>\
               </ul>\
               <ul class="nav navbar-nav navbar-right">\
@@ -130,13 +130,13 @@ document.write('\
                     <span class="glyphicon glyphicon-cog"></span>\
                   </a>\
                   <ul class="dropdown-menu">\
-                    <li><a href="customUnitID.html">Request Unit</a></li>\
-                    <li><a href="pastUnits.html"> Past Units</a></li>\
+                    <li><a href="/customUnitID.html">Request Unit</a></li>\
+                    <li><a href="/pastUnits.html"> Past Units</a></li>\
                     <li role="separator" class="divider"></li>\
-                    <li><a href="about.html">About</a></li>\
+                    <li><a href="/about.html">About</a></li>\
                     <li><a href="https://github.com/uwalcsdl/uwalcsdl.github.io">GitHub</a></li>\
                     <li role="separator" class="divider"></li>\
-                    <li><a href="clearShortcuts.html">Clear Shortcuts</a></li>\
+                    <li><a href="/clearShortcuts.html">Clear Shortcuts</a></li>\
                   </ul>\
                 </li>\
               </ul>\

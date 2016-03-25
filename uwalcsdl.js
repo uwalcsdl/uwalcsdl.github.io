@@ -43,7 +43,7 @@ function getUnitShortcuts() {
     var cookies = document.cookie.split(';');
     var navbar = document.getElementById("navbar-list");
     for (var i = 0; i < cookies.length; i++) {
-        var unitCode = cookies[i].slice(8);
+        var unitCode = cookies[i].slice(9);
         var link = '/units/'+unitCode+'.html';
         var li = document.createElement('li');
         var a = document.createElement('a');

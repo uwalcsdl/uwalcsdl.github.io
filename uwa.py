@@ -208,6 +208,8 @@ def save_unit_semester_links(year, semester,
     print("Fetched "+str(len(output))+" units, writing to file...")
     unitListTemplateFile = open(unitListTemplateFileName, 'r')
     unitListFileHTML = unitListTemplateFile.read()
+    unitListFileHTML = unitListFileHTML.replace('{{semester}}', semester)
+    unitListFileHTML = unitListFileHTML.replace('{{year}}', year)
     for unit in output:
         unitListFileHTML += unitHTML.format(unit[0], unit[1], unitDirName)
     unitListFile = open(unitListFileName, 'w')
@@ -220,8 +222,11 @@ def save_unit_semester_links(year, semester,
     unitTemplateFile.close()
     for unit in output:
         unitPage = open(unitDirName+'/'+unit[0]+'.html', 'w')
-        unitTemplate = template.replace('{{pageTitle}}', unit[0])
-        unitPage.write(unitTemplate)
+        uTemplate = template
+        uTemplate = utemplate.replace('{{pageTitle}}', unit[0])
+        uTemplate = uTemplate.replace('{{semester}}', semester)
+        uTemplate = uTemplate.replace('{{year}}', year)
+        unitPage.write(uTemplate)
         unitPage.close()
 
 def fetch_days_units(year, week, day):

@@ -43,7 +43,7 @@ function getUnitShortcuts() {
     var cookies = document.cookie.split(';');
     var navbar = document.getElementById("navbar-list");
     for (var i = 0; i < cookies.length; i++) {
-        var unitCode = cookies[i];
+        var unitCode = cookies[i].slice(8);
         var link = '/units/'+unitCode+'.html';
         var li = document.createElement('li');
         var a = document.createElement('a');
@@ -81,6 +81,18 @@ function addUnitShortcut(unitCode) {
 function removeUnitShortcut(unitCode) {
     eraseCookie(unitCode);
     document.location.reload(true);
+}
+
+//From https://stackoverflow.com/questions/179355/clearing-all-cookies-with-javascript
+function deleteAllCookies() {
+    var cookies = document.cookie.split(";");
+
+    for (var i = 0; i < cookies.length; i++) {
+    	var cookie = cookies[i];
+    	var eqPos = cookie.indexOf("=");
+    	var name = eqPos > -1 ? cookie.substr(0, eqPos) : cookie;
+    	document.cookie = name + "=;expires=Thu, 01 Jan 1970 00:00:00 GMT";
+    }
 }
 
 function insertResources() {
@@ -136,7 +148,7 @@ document.write('\
                     <li><a href="/about.html">About</a></li>\
                     <li><a href="https://github.com/uwalcsdl/uwalcsdl.github.io">GitHub</a></li>\
                     <li role="separator" class="divider"></li>\
-                    <li><a href="/clearShortcuts.html">Clear Shortcuts</a></li>\
+                    <li><a onclick="deleteAllCookies()" href="#">Clear Shortcuts</a></li>\
                   </ul>\
                 </li>\
               </ul>\

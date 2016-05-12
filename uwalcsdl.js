@@ -11,7 +11,6 @@ function createCookie(name) {
 }
 
 function cookieValues() {
-  if (document.cookie == ""){return null;}
   var cookies = document.cookie.split(';');
   var values = [];
   for (var i = 0; i < cookies.length; i++) {
@@ -52,6 +51,7 @@ function unitRedirect(){
 }
 
 function getUnitShortcuts() {
+    if (document.cookie == ""){return null;}
     var cookies = cookieValues();
     var navbar = document.getElementById("navbar-list");
     for (var i = 0; i < cookies.length; i++) {

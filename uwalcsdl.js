@@ -83,7 +83,7 @@ function addUnitShortcutButton() {
     }
     var pageHeader = document.getElementById('unit-title-div');
     pageHeader.appendChild(button);
-    pageHeader.appendChild('&nbsp')
+    pageHeader.appendChild('&nbsp');
 }
 
 function addUnitShortcut(unitCode) {

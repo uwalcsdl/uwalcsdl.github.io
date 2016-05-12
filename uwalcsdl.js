@@ -10,6 +10,16 @@ function createCookie(name) {
     document.cookie = name+"="+name+expires+"; path=/";
 }
 
+function cookieValues() {
+  var cookies = document.cookie.split(';');
+  var values = [];
+  for (var i = 0; i < cookies.length; i++) {
+    var cookie = cookies[1]
+    values.push(cookies[i].split('=')[1])
+  }
+  return values;
+}
+
 function readCookie(name) {
     var nameEQ = name + "=";
     var ca = document.cookie.split(';');
@@ -40,10 +50,10 @@ function unitRedirect(){
 }
 
 function getUnitShortcuts() {
-    var cookies = document.cookie.split(';');
+    var cookies = cookieValues();
     var navbar = document.getElementById("navbar-list");
     for (var i = 0; i < cookies.length; i++) {
-        var unitCode = cookies[i].slice(9);
+        var unitCode = cookies[i];
         var link = '/units/'+unitCode+'.html';
         var li = document.createElement('li');
         var a = document.createElement('a');
@@ -55,7 +65,7 @@ function getUnitShortcuts() {
 }
 
 function addUnitShortcutButton() {
-    var cookies = document.cookie.split(';');
+    var cookies = cookieValues();
     var unitCode = document.title;
     var button = document.createElement('button');
     button.type = 'button';
@@ -85,14 +95,7 @@ function removeUnitShortcut(unitCode) {
 
 //From https://stackoverflow.com/questions/179355/clearing-all-cookies-with-javascript
 function deleteAllCookies() {
-    var cookies = document.cookie.split(";");
-
-    for (var i = 0; i < cookies.length; i++) {
-    	var cookie = cookies[i];
-    	var eqPos = cookie.indexOf("=");
-    	var name = eqPos > -1 ? cookie.substr(0, eqPos) : cookie;
-    	document.cookie = name + "=;expires=Thu, 01 Jan 1970 00:00:00 GMT";
-    }
+    document.cookie.split(";").forEach(function(c) { document.cookie = c.replace(/^ +/, "").replace(/=.*/, "=;expires=" + new Date().toUTCString() + ";path=/"); });
 }
 
 function insertResources() {

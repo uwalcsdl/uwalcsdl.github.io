@@ -148,9 +148,11 @@ document.write('\
                     <span class="glyphicon glyphicon-cog"></span>\
                   </a>\
                   <ul class="dropdown-menu">\
+                    <!--\
                     <li><a href="/customUnitID.html">Request Unit</a></li>\
                     <li><a href="/pastUnits.html"> Past Units</a></li>\
                     <li role="separator" class="divider"></li>\
+                    -->\
                     <li><a href="/about.html">About</a></li>\
                     <li><a href="https://github.com/uwalcsdl/uwalcsdl.github.io">GitHub</a></li>\
                     <li role="separator" class="divider"></li>\

@@ -11,6 +11,7 @@ function createCookie(name) {
 }
 
 function cookieValues() {
+  if (document.cookie == ""){return null;}
   var cookies = document.cookie.split(';');
   var values = [];
   for (var i = 0; i < cookies.length; i++) {
@@ -32,7 +33,8 @@ function readCookie(name) {
 }
 
 function eraseCookie(name) {
-    createCookie(name,"",-1);
+  // From http://stackoverflow.com/questions/10593013/delete-cookie-by-name
+  document.cookie = name + '=;expires=Thu, 01 Jan 1970 00:00:01 GMT;';
 }
 
 function stringInList( string, list) {

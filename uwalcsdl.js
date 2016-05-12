@@ -33,7 +33,7 @@ function readCookie(name) {
 
 function eraseCookie(name) {
   // From http://stackoverflow.com/questions/10593013/delete-cookie-by-name
-  document.cookie = name + '=;expires=Thu, 01 Jan 1970 00:00:01 GMT;';
+  document.cookie = name +'=; Path=/; Expires=Thu, 01 Jan 1970 00:00:01 GMT;';
 }
 
 function stringInList( string, list) {
@@ -95,9 +95,10 @@ function removeUnitShortcut(unitCode) {
     document.location.reload(true);
 }
 
-//From https://stackoverflow.com/questions/179355/clearing-all-cookies-with-javascript
 function deleteAllCookies() {
-    document.cookie.split(";").forEach(function(c) { document.cookie = c.replace(/^ +/, "").replace(/=.*/, "=;expires=" + new Date().toUTCString() + ";path=/"); });
+  // From https://stackoverflow.com/questions/179355/clearing-all-cookies-with-javascript
+  document.cookie.split(";").forEach(function(c) { document.cookie = c.replace(/^ +/, "").replace(/=.*/, "=;expires=" + new Date().toUTCString() + ";path=/"); });
+  document.location.reload(true);
 }
 
 function insertResources() {
